@@ -1,0 +1,69 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.pic{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.map{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0px auto;
+  z-index: 1111;
+  margin-top: 150px;
+}
+.inputText{
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  float: left;
+  width: 59%;
+  border-bottom: 1px white solid;
+  margin-bottom: 10px;
+  color: white;
+}
+.inputTextP{
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  width: 100%;
+  float: left;
+  color: white;
+  border-bottom: 1px white solid;
+}
+.bottom{
+  margin-bottom: 50px;
+}
+.btn{
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  width: 40%;
+  color: white;
+  text-align: center;
+  border: 1rpx white solid;
+  font-size: 15px;
+  border-radius: 10rpx;
+  margin-top: 10px;
+}
+.register{
+  text-align: center;
+  height: 60rpx;
+  font-size: 15px;
+  margin: 0px auto;
+  width: 60%;
+}
+.hide{
+ display: none;
+}
+.show{
+ display: block;
+}

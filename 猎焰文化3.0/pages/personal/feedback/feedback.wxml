@@ -1,0 +1,53 @@
+<!--pages/personal/feedback/feedback.wxml-->
+<!--留言板功能，这个是所有人都可以看到的，但是都会从数据库中存取和得到，后期可以直接删除某不良评论
+这里设有举报功能，举报的数据也会同时上传到数据库
+-->
+<view class='pic'>
+  <image class='pic_background' src='../../image/f_bgp.jpg'></image>
+</view>
+<view class='feedback_all' >
+    <view class='feedback_word'>
+      <view  wx:for="{{feedbacks}}" wx:key="feedback">
+        <view class='feedback_item' data-id="{{item.id}}">
+          <view class='card'>
+            <!--这是主要的文字层-->
+            <view class='feedback_word_txt'>
+              <text class='feedback_txt'>{{item.fbtxt}}</text>
+            </view>
+            <view class='time'>
+              <text class='feedback_time'>{{item.fbtime}}</text>
+            </view>
+            <!--这是主要的icon层-->
+            <!-- <view class='like_unlike_comment'>
+              <image  data-id="{{item.id}}" class='feedback_like' src="{{item.like?'../../image/like1.png' : '../../image/like0.png'}}" bindtap='likereact' ></image>
+              <image data-id="{{item.id}}" class='feedback_unlike' src="{{item.unlike?'../../image/unlike1.png' : '../../image/unlike0.png' }}" bindtap='unlikereact'></image>
+              <image class='feedback_report' src='../../image/report.png'></image>
+            </view>   -->
+          </view>  
+        </view>
+      </view> 
+    </view>
+    <view class='feedback_button'>
+       <image class='feedback_btn' src='../../image/leavemessage.png' bindtap='show'></image>
+    </view>
+</view>
+
+<!--隐藏发布评论-->
+<view class='input_report' hidden="{{flag}}">
+  <view class='white_jump'>
+    <view class='txt'>
+<textarea class='input_txt' bindinput="bindinput" placeholder='{{message}}' minlength="{{min}}" maxlength="{{max}}"></textarea>
+      <!-- <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text> -->
+      <!--<text class="hint">{{texts}}</text>-->
+    </view>
+    <view class='commit_btn'>
+      <button class='commit' bindtap='hide'>匿名建议</button>
+    </view>
+  </view>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <view class='for_back'>
+      <image class='forback_pic' src='{{item}}' bindtap='hide'></image>
+     </view>
+  </block>
+</view>
+

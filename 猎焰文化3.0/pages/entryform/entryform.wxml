@@ -1,0 +1,38 @@
+<!--pages/entryform/entryform.wxml-->
+<!--每次报名都会填一张报名表-->
+<view class='entryform'>
+  <view class='form'>
+    
+    <text class='form_txt'>姓名</text>
+    <input type="text" placeholder='必填' value="{{name}}" bindblur='name'></input>
+    
+   
+    <text class='form_txt'>电话</text>
+    <input type="text" placeholder='必填' value="{{tel}}" bindblur='tel'></input>
+    
+   
+    <text class='form_txt'>身份证</text>
+    <input type="text" placeholder='必填' value="{{id_card}}" bindblur='id_card'></input>
+    
+   
+    <text class='form_txt'>地址</text>
+    <input type="text" placeholder='必填' value="{{address}}" bindblur='address'></input>
+    
+    
+     <text class='form_txt'>qq</text>
+    <input type="text" placeholder='选填' value="{{qq}}" bindblur='qq'></input>
+    
+    
+    <text class='form_txt'>微信</text>
+    <input type="text" placeholder='选填' value="{{weixin}}" bindblur='weixin'></input>
+    
+    
+    <text class='form_txt'>意向教练</text>
+    <input type="text" placeholder='选填' value="{{teacher}}" bindblur='teacher'></input>
+    
+     <button class='put_btn' type='primary' bindtap='apply' > 
+      提交
+    </button>
+  </view>
+
+</view>

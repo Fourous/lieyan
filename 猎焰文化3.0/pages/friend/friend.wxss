@@ -1,0 +1,219 @@
+/* pages/friend/friend.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.input_button{
+  color: white;
+  text-align: center;
+  background: #b8cafa;
+}
+/*这里是隐藏的提交层*/
+.input_comment {
+  z-index: 2222;
+  position:fixed;
+  top:0;
+  background:rgba(245,245,245,0.8);
+  width:100%;
+  height:100%;
+}
+.jump_white {
+  margin: 0 auto;
+  background-color: white;
+  margin-top:150rpx;
+  width: 500rpx;
+  height:500rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.input_txt {
+  font-size: 15px;
+  position: fixed;
+}
+.input_btn {
+  position: fixed;
+  font-size: 15px;
+  margin-top: 400rpx;
+  margin-left: 140rpx;
+ 
+}
+.back_img {
+  position: fixed;
+  top: 80rpx;
+  right: 80rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+/*广告*/
+
+.ad{
+  /* margin-top: 10rpx; */
+  width: 100%;
+}
+.container {
+  position:relative;
+  width: 100%;
+  height: 300rpx;
+  overflow: hidden;
+  border-bottom: 20rpx #eee solid;
+}
+
+.swiper_adv {
+  height: 100%;
+  width: 100%;
+  
+  border-radius: 10rpx;
+}
+
+swiper {
+  height: 100%;
+  width: 100%;
+  border-bottom: 10rpx solid rgb(245,245,245)
+}
+.title_txt{
+  color: white;
+ 
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+/*学员说说*/
+.stu_all {
+  width: 100%;
+  height: 100%;
+  /*margin-top: rpx; */
+    }
+
+.stu_word {
+  position: absolute;
+  width: 100%;
+  height: 300rpx;
+}
+
+.stu_item {
+  border-bottom: 12rpx solid rgba(245, 245, 245,0);
+  background: rgba(245, 245, 245,0.1);
+}
+.card {
+ width: 100%;
+ /* padding-left: 20rpx;
+ padding-right: 20rpx; */
+/*background: #fbf9fe;
+ box-shadow: 4px 1px 3px #888888;
+ border-radius: 3%;*/
+ border-bottom: 20rpx #eee solid;
+}
+.stu_txt {
+  font-size: 13px;
+}
+.stu_word_txt {
+  display: block;
+  /* font-weight: 600; */
+  width: 100%;
+  /* margin: 0px auto; */
+  line-height: 14pt;
+  text-indent: 1em;
+  /* padding-top: 25rpx; */
+  /* margin-top: 15rpx; */
+}
+.stu_time {
+  display: block;
+  font-size: 8px;
+  padding-left: 20rpx;
+  /* vertical-align: bottom; */
+}
+.pic_right, .pic_left{
+  float: left;
+}
+.like_unlike_comment{
+  height: 50rpx;
+}
+.stu_like {
+  height: 30rpx;
+  width: 30rpx;
+  padding: 9rpx;
+  padding-right: 50rpx;
+  float: right;
+}
+.stu_unlike {
+  height: 30rpx;
+  width: 30rpx;
+  padding: 18rpx;
+}
+.stu_report {
+  height: 30rpx;
+  width: 30rpx;
+  padding: 18rpx;
+}
+.stu_btn {
+  position: fixed;
+  width: 70rpx;
+  height: 70rpx;
+  bottom: 100rpx;
+  right: 40rpx;
+}
+.pic_intro{
+  height: 100rpx;
+  width: 90%;
+  padding-top: 25rpx;
+  padding-left: 25rpx;
+}
+.stu_pic{
+  height: 75rpx;
+  width:75rpx;
+  text-align: center;
+  border-radius: 50%;
+  /* margin-top: 8rpx;
+  padding-left: 3%; */
+  vertical-align: top;
+}
+
+.stu_name{
+  font-size: 12px;
+  padding-left: 20rpx;
+  /* padding-top: 3rpx; */
+  vertical-align: top;
+}
+.time{
+  font-size: 12rpx;
+
+}
+.stu_photo{
+  height:253rpx;
+  width: 30%;
+  padding-left: 3%;
+  margin-top: 20rpx;
+  margin-bottom: 8rpx;
+}
+.page{
+  height: 100%;
+  width: 100%;
+ 
+}
+.comment{
+   /* margin-left: 25rpx; */
+   font-size: 10px;
+   padding-left: 33rpx;
+   margin-bottom: 10rpx;
+
+}
+.liuyan{
+  height: 40rpx;
+  width: 80%;
+  margin-left: 5%;
+  display: inline-block;
+  border: 1rpx #eee solid;
+  font-size: 12px;
+  line-height: 40rpx;
+}
+.nickname{
+  color: #0066cc;
+  font-size: 10px;
+}
+.more{
+  /* margin-left: 25rpx; */
+  padding-left: 33rpx;
+  margin-bottom: 10rpx;
+  color: #0066cc;
+  font-size: 10px;
+}

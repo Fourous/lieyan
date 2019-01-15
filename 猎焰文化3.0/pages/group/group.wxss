@@ -1,0 +1,41 @@
+/* pages/group/group.wxss */
+.group{
+   position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.group_txt {
+  font-size: 13px;
+  width:80%;
+  height:350rpx;
+  border:2rpx solid #f9c4c2;
+  margin-top: 30%;
+  margin-left: 10%;
+  padding-left: 5rpx;
+  text-align: center;
+}
+.group_button {
+    margin-top: 30%;
+ margin-left: 25%;
+  width: 50%;
+  bottom: 0;
+}
+.group_signup{
+  background-color: #d0dffe;
+  box-shadow: 2px 2px 2px 2px #9ab2f0;
+  color: white
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1111;
+}
+ .word1{
+   font-size: 17px;
+   color: #262128;
+   font-style: Microsoft JhengHei UI;
+  padding-left: 50px;
+  margin-top: 5px;
+  font-weight: 600
+ }

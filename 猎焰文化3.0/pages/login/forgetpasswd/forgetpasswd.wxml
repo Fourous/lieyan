@@ -1,0 +1,32 @@
+<view class='pic'>
+  <image src='../../image/background.png' style='opacity: 0.8; height:100%; width:100%;'></image>
+</view>
+<view class='map'>
+  <view class='container'>
+    <view>
+      <!-- <text>请输入您的注册手机号：</text> -->
+      <input class='inputText' placeholder='请输入手机号' bindinput='phonenumInput' maxlength='11' />
+      <text type="primary" class="{{is_show?'show':'hide'}} btn" bindtap="clickVerify" disabled='{{disable}}'>获取验证码</text>
+      <text type="primary" class="{{is_show?'hide':'show'}} btn" disabled='true'>重新发送{{last_time}}秒</text>
+    </view>
+
+    <!-- <view class='button'>
+    <button type="primary" class="{{is_show?'show':'hide'}}" bindtap="clickVerify" disabled='{{disable}}'>获取验证码</button>
+    <button type="primary" class="{{is_show?'hide':'show'}}" disabled='true'>重新发送{{last_time}}秒</button>
+  </view>  -->
+
+    <view>
+      <!-- <text>请输入验证码：</text> -->
+      <input class='inputTextP' placeholder='请输入验证码' bindinput='ideInput' />
+    </view>
+
+    <view>
+      <!-- <text>请设置您的密码：</text> -->
+      <input class='inputTextP bottom' placeholder='请输入密码（6~16位）' bindinput='pswInput' />
+    </view>
+
+    <view>
+      <button class='register' type='primary' disabled='' bindtap='judge'>确定更改</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/formpay/formpay.wxml-->
+<!-- 这个界面是反馈，让用户确认单子是否填好，填好则这个页面吊起支付接口 -->
+<view class='info'>
+  <view class='inf'>姓名：{{name}}</view>
+  <view class='inf'>电话: {{tel}}</view>
+  <view class='inf'>省份证：{{idcard}}</view>
+  <view class='inf'>地址: {{address}}</view>
+  <view class='inf'>QQ: {{qq}}</view>
+  <view class='inf'>微信：{{wechat}}</view>
+  <view class='inf'>教练：{{teacher}}</view>
+  <view class='inf'>报名类型：{{car}}</view>
+ <!-- <view class="inf"  > 
+    <view class="section" >
+      <picker  value="{{index}}" range="{{casArray}}" bindchange="bindCasPickerChange">
+        <view class='picker'>
+         报名类型（自选）：{{casArray[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>-->
+    
+</view>
+ <view class='sub'>
+    <button bindtap='submit' type='primary' class='sub1' >确认订单</button>
+  </view>
+
+
+

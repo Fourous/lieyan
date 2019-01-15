@@ -1,0 +1,44 @@
+<!--pages/morecomment/morecomment.wxml-->
+<view>
+  <view class='friend_main'>
+    <view class='pic_intro'>
+      <view class='pic_right'>
+        <image class='stu_pic' src='{{friend.avatarurl}}'></image>
+      </view>
+      <view class='pic_left'>
+        <view class='stu_name'>{{friend.nickname}}</view>
+        <view class='stu_time'>{{friend.time}}</view>
+      </view>
+    </view> 
+    <view class='stu_word_txt'>
+      <text class='stu_txt'>{{friend.mess}}</text>
+    </view>
+    <view class='stu_photoa'>
+      <image class='stu_photo' src='{{friend.image1}}' mode='aspectFill'></image>
+      <image class='stu_photo' src='{{friend.image2}}' mode='aspectFill'></image>
+      <image class='stu_photo' src='{{friend.image3}}' mode='aspectFill'></image>
+    </view>
+    <view class='like_unlike_comment'>
+      <image class='stu_like' mode='aspectFill' src='{{friend.like?"../image/like1.png":"../image/like0.png"}}' data-id='{{friend.circleid}}' bindtap='likereact'></image>
+    </view>
+  </view>
+  <view class='friend_comment' wx:for='{{friend.comment}}'>
+    <view class='pic_intro'>
+      <view class='pic_right'>
+        <image class='stu_pic' src='{{item.avatarurl}}'></image>
+      </view>
+      <view class='pic_left'>
+        <view class='stu_name'>{{item.nickname}}</view>
+        <view class='stu_time'>{{item.commentime}}</view>
+      </view>
+    </view>
+    <view class='stu_word_txt'>
+      <text class='stu_txt'>{{item.mess}}</text>
+    </view>
+  </view>
+  <view class='space'></view>
+  <view class='liuyan'>
+    <input type='text' placeholder='欢迎评论~' bindblur='liuyan' value='{{textdata}}' data-id='{{friend.circleid}}'></input>
+    <button class='btn' type="primary" bindtap='fabiao' data-id='{{friend.circleid}}'>发表</button>
+  </view>
+</view>

@@ -1,0 +1,74 @@
+<!--pages/studycar/study.wxml-->
+<view class='teacher_all'>
+  <!--这里是静态测试设置view-->
+  <view class='teacher_one'>
+    <view class="teacher-item">
+      <!-- 这里是左边的头像以及教练名称 -->
+      <view class='pic_intro'>
+        <image class='teacher_pic' src='{{teachers.avatar}}'></image>
+        <text class='item_name'>{{teachers.tname}}\n</text>
+      </view>
+      <!-- 右边的简介以及图标 -->
+      <view class='right'>
+        <view class='forintroduce'>
+          <text class='item_introduce'>{{teachers.introduce}}\n</text>
+        </view>
+        <view class='like_unlike_comment'>
+          <image class='order_teacher' src='../image/order.png' bindtap='order_teacher'></image>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <!--以下是评论界面-->
+  <view class='comment_all'>
+    <view class='comment_one'>
+      <view class='commentonec' wx:for="{{comments}}" wx:key="comment">
+        <view class="comment-item" data-id="{{item.commentid}}">
+          <view class='commentonec'>
+            <view class='pic_name_time'>
+
+              <view class='user_image'>
+                <image class='user_pic' src='{{item.avatar}}'></image>
+              </view>
+
+              <view class='user_name'>
+                <text class='user_name' text-align: left>{{item.nickname}}</text>
+              </view>
+
+              <view class='comment_time'>
+                <text class='comment_time' text-align: left>{{item.cotime}}</text>
+              </view>
+            </view>
+            <view class='forcomment'>
+              <text class='comment_txt'>{{item.comment}}\n</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='feedback_button'>
+    <image class='feedback_btn' src='../image/leavemessage.png' bindtap='show'></image>
+  </view>
+
+</view>
+
+<!--隐藏的评论按钮-->
+<view class='input_comment' hidden="{{flag}}">
+  <view class='jump_white'>
+    <view class='input_txt'>
+      <textarea class='input_meesage' bindinput='bindinput' placeholder='请在这里发布评论'></textarea>
+    </view>
+    <view class='input_btn'>
+      <button class='input_button' bindtap='input_button' >发布评论</button>
+    </view>
+  </view>
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <view class='back'>
+      <image class='back_img' src='{{item}}' bindtap='hide'></image>
+    </view>
+  </block>
+</view>

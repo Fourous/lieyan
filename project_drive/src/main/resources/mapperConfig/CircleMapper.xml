@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.CircleMapper">
+
+    <select id="circleall" resultType="com.lieyan.Entity.Circle">
+        SELECT  *
+        FROM circle
+        limit #{limit},5
+    </select>
+
+    <!--通过发表说说的id找到-->
+    <select id="circlebyid" resultType="com.lieyan.Entity.Circle">
+        SELECT  *
+        FROM circle
+        WHERE circleid= #{circleid}
+    </select>
+    <!--查看自己的说说内容-->
+    <select id="circlebyopenid" resultType="com.lieyan.Entity.Circle">
+        SELECT  *
+        FROM circle
+        WHERE openid= #{openid}
+    </select>
+
+    <!--发表说说，发表人，发表的内容-->
+    <insert id="circleinsert"  useGeneratedKeys="true" keyProperty="circleid" parameterType="com.lieyan.Entity.Circle">
+        INSERT INTO
+        circle (openid, mess)
+        VALUES (#{openid},#{mess})
+    </insert>
+
+
+    <update id="circleimage" parameterType="com.lieyan.Entity.Circle">
+        UPDATE circle
+        SET image1=#{image1} ,image2=#{image2},image3=#{image3}
+        WHERE circleid=#{circleid}
+    </update>
+
+    <update id="circlelike" parameterType="com.lieyan.Entity.Circle">
+        UPDATE circle
+        SET like=#{like}
+        WHERE circleid=#{circleid}
+    </update>
+
+    <update id="circleunlike" parameterType="com.lieyan.Entity.Circle">
+        UPDATE circle
+        SET like=#{like}
+        WHERE circleid=#{circleid}
+    </update>
+
+<!--这是传入的cicleid进行删除操作，这里的因为返回会有一个删除的id-->
+    <delete id="circledeletebyid">
+        DELETE FROM
+        circle
+        WHERE circleid = #{circleid}
+    </delete>
+
+
+
+</mapper>

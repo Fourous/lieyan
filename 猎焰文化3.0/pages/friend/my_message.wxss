@@ -1,0 +1,91 @@
+
+ .sub{
+   bottom: 0px;
+   position: absolute;
+   width: 100%;
+ }
+
+ 
+.text{
+  font-size: 12px;
+  padding: 10rpx;
+}
+ 
+
+.img-box{
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    margin-top:60rpx;
+    margin-bottom: 30rpx;
+
+ 
+
+}
+
+.img{
+
+    width: 100px;
+
+    height: 100px;
+
+   
+
+    position: relative;
+
+}
+
+.img image{
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+.delete-btn{
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 30px;
+
+    font-size: 12px;
+
+    /* color: #fff; */
+
+    background: rgba(0,0,0,.5);
+
+    text-align: center;
+
+    line-height: 30px;
+
+}
+
+.upload-img-btn{
+
+    width: 100px;
+
+    height: 100px;
+
+    margin-left: 10rpx;
+
+    text-align: center;
+
+    line-height: 100px;
+
+    border: 1px solid #ccc;
+
+}

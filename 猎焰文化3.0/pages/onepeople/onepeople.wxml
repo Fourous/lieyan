@@ -1,0 +1,23 @@
+<!--pages/onepeople/onepeople.wxml-->
+<view class='onepeople' >
+  <image src='../image/f_bgp.jpg' class='bg'></image>
+  
+
+  <view class='onepeople_txt'>
+      <text class='word1'>
+      “一对一学车”，享受VIP教学!
+      </text>
+      <text class='word1'>
+      超长训练时长，教练全程指导!
+      </text>
+      <text class='word1'>
+       挂科险保证，通过率百分百!
+      </text>
+  </view>
+
+  <view class='onepeople_button' bindtap='Toentryform' >
+    <button class='onepeople_signup'>
+      立即报名参加
+    </button>
+  </view>
+</view>

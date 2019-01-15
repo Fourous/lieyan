@@ -1,0 +1,11 @@
+<!--pages/advertise/advertise.wxml-->
+<view class='bg'>
+  <view class='bg_pic'>
+    <image class='pic' src='{{image}}' mode="aspectFill"></image>
+  </view>
+  <view class='main'>
+    <view class='title'><text style='text-decoration:underline;'>{{title}}</text></view>
+    <view class='time'>{{time}}</view>
+    <view class='content'>{{content}}</view>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+<!--上方轮播图片广告宣传-->
+  <view class='swiper_adv'>
+    <swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image class='swiper_img' style='width:100%;height=100%;' src="{{item}}" bindtap='showad' data-id='{{index+2}}'>
+          </image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+ </view>
+  <!--三种套餐选择-->
+
+ <view class='apply'>
+
+   <!--<view class='home_picback'>
+  <image class='pic_back' src='../image/f_bgp.jpg'></image>
+  </view>-->
+  
+    <view class='team_people_img'>
+      <image class='group' bindtap='to_group' src='../image/threepage.png'></image>
+    </view>
+    <view class='one_people_img'>
+      <image class='one_people' bindtap='to_one_people' src='../image/twopage.png'> </image>
+    </view>
+
+    <view class='four_people_img'>
+     <image class='four_people' bindtap='to_four_people' src='../image/onepage.png'></image>
+    </view>
+
+
+
+</view>
+

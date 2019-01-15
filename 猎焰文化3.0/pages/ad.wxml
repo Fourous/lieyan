@@ -1,0 +1,7 @@
+<!--pages/ad.wxml-->
+<view class='photo'>
+  <image src='../image/1.jpg'></image>
+</view>
+<view class='word'>
+  <textarea>帮助学生实现自己的价值</textarea>
+</view>

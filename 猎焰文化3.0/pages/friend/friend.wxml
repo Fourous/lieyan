@@ -1,0 +1,79 @@
+<view>
+
+  <view class='ad'>
+    <view class='container'>
+      <!--上方轮播图片广告宣传-->
+      <view class='swiper_adv'>
+        <swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' circular='true'>
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image class='swiper_img' style='width:100%;height=auto;' data-id='{{index+6}}' src="{{item}}" bindtap='showad' mode="widthFix">
+              </image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+  <!--学员说说-->
+  <view class='stu_all'>
+    <view class='stu_word'>
+      <view wx:for="{{friend}}">
+        <view class='stu_item' data-id="{{item.circleid}}">
+          <view class='card'>
+            <!--这是主要的文字层-->
+            <view class='pic_intro'>
+              <view class='pic_right'>
+                <image class='stu_pic' src="{{item.avatarurl}}"></image>
+              </view>
+              <view class='pic_left'>
+                <text class='stu_name'>{{item.nickname}}</text>
+                <text class='stu_time'>{{item.time}}</text>
+              </view>
+              <!-- <view class='time'>
+                <text class='stu_time'>{{item.time}}</text>
+              </view> -->
+            </view>
+            <view class='stu_word_txt' wx:if="{{item.mess!=0}}">
+              <text class='stu_txt'>{{item.mess}}</text>
+            </view>
+            <view class='stu_photoa' wx:if="{{item.image1!=null |item.image2!=null|item.image2!=null}}">
+              <image class='stu_photo' src="{{item.image1}}" mode="aspectFill"></image>
+              <image class='stu_photo' src="{{item.image2}}" mode="aspectFill"></image>
+              <image class='stu_photo' src="{{item.image3}}" mode="aspectFill"></image>
+            </view>
+
+            <!-- <view class='time'>
+                <text class='stu_time'>{{item.time}}</text>
+              </view> -->
+            <!--这是主要的icon层-->
+            <view class='like_unlike_comment'>
+              <image data-id="{{item.circleid}}" data-i='{{index}}' class='stu_like' src="{{item.like?'../image/like1.png' : '../image/like0.png'}}" bindtap='likereact' mode="aspectFill"></image>
+            </view>
+            <view class='comment' wx:for="{{item.comment}}" wx:for-item="citem">
+              <text class='nickname'>{{citem.nickname}}:</text>
+              <text>{{citem.comment}}</text>
+            </view>
+            <view wx:if="{{item.comment.length== 3}}" class='more' bindtap='tomore' data-id='{{item.circleid}}'>
+              <text>更多</text>
+            </view>
+            <view>
+              <input class='liuyan' type="text" name="liuyantext" placeholder='留个言吧~' bindblur='liuyan' data-i='{{index}}' data-id="{{item.circleid}}" value='{{textdata}}'></input>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <!--隐藏的评论按钮-->
+    <view class='stu_button'>
+      <image class='stu_btn' src='../image/leavemessage.png' bindtap='to_message'></image>
+    </view>
+
+  </view>
+</view>

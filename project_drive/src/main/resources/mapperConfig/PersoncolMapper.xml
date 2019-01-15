@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.PersoncolMapper">
+    <!--这里是传入tid 和openid初始化时候的-->
+    <select id="perorigin" resultType="com.lieyan.Entity.Personcol">
+        SELECT  *
+        FROM person_coach_col
+        WHERE tid= #{tid} AND openid=#{openid}
+    </select>
+    <!--这里插入的过程-->
+    <insert id="perinsert" parameterType="com.lieyan.Entity.Personcol">
+        INSERT INTO
+        person_coach_col (tid, openid,islike,unlike)
+        VALUES (#{tid},#{openid},#{islike},#{unlike})
+    </insert>
+
+    <update id="perupdate"  parameterType="com.lieyan.Entity.Personcol">
+        UPDATE person_coach_col
+        SET islike=#{islike} , unlike=#{unlike}
+        WHERE tid = #{tid} AND openid=#{openid}
+    </update>
+</mapper>

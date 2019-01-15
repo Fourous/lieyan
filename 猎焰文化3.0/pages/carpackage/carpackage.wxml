@@ -1,0 +1,22 @@
+<!--pages/carpackage/carpackage.wxml-->
+<!-- <text>这是报名详情页</text> -->
+<view class='all'>
+<!-- <view class='background'>
+<image class='back' src='{{bgpic}}'></image>
+</view> -->
+
+<view class='threepack'>
+<view class='one_people_img'>
+      <image class='one_people' bindtap='to_one_people' src='../image/a1.png'> </image>
+    </view>
+
+    <view class='four_people_img'>
+     <image class='four_people' bindtap='to_four_people' src='../image/a2.png'></image>
+    </view>
+
+    <view class='team_people_img'>
+      <image class='group' bindtap='to_group' src='../image/a3.png'></image>
+    </view>
+
+</view>
+</view>

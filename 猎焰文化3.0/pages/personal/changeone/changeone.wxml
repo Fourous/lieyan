@@ -1,0 +1,17 @@
+<!--pages/changuserone/changuserone.wxml-->
+<view class='pagep'>
+
+<view class='chcontain'>
+
+<view class='chtxt'>
+<input  class='textarea' auto-focus='true' value='{{message}}' maxlength='30' bindinput='getmes'></input>
+</view>
+
+</view>
+
+<view class='chbtn'>
+<button class='btn' bindtap='save'>保 存</button>
+</view>
+
+
+</view>

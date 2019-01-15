@@ -1,0 +1,62 @@
+/* pages/mycir/mycir.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.cir{
+  width: 100%;
+  border-bottom: 20rpx #eee solid;
+}
+.title{
+  height: 100rpx;
+  width: 100%;
+  padding-top: 25rpx;
+  padding-left: 25rpx;
+}
+.my_pic, .my_nameandtime{
+  float: left;
+}
+.pic{
+  height: 75rpx;
+  width: 75rpx;
+  border-radius: 50%;
+  vertical-align: top; 
+}
+.name{
+  font-size: 12px;
+  padding-left: 20rpx;
+  vertical-align: top;
+}
+.time{
+  display: block;
+  font-size: 8px;
+  padding-left: 20rpx;
+}
+.delete{
+  font-size: 12px;
+  vertical-align: top;
+  float: right;
+  margin-right: 30px;
+  color: #0066cc;
+}
+.main{
+  width: 100%;
+}
+.content_txt{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 14pt;
+  text-indent: 1em;
+  font-size: 13px;
+}
+.content_pic{
+  width: 100%;
+}
+.ccpic{
+  height: 230rpx;
+  width: 30%;
+  padding-left: 3%;
+  margin-top: 15rpx;
+  margin-bottom: 8rpx;
+}

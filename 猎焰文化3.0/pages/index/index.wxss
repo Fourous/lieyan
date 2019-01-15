@@ -1,0 +1,53 @@
+/**index.wxss**/
+page{
+   height: 100%;
+   width: 100%;
+}
+.index{
+   height: 90%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+.second {
+  height: 20%;
+  width: 100%;
+}
+
+.pic{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wel_txt{
+   text-align: center;
+   height: 100rpx;
+   line-height: 100rpx;
+   color: gray;
+}
+.butop {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.wel_btn{
+   width: 150rpx;
+   /* margin: 50rpx auto; */
+   background: black;
+   color: white;
+   font-size: 10px;
+   margin-right: 10px;
+   opacity: 0.6
+}
+.picview {
+width: 100%;
+height: 9%;
+border-top: solid 0.2rpx #eee;
+text-align: center;
+}
+.picim{
+width: 40%;
+height: 100%;
+}
+

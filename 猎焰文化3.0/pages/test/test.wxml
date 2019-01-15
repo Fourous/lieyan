@@ -1,0 +1,11 @@
+<!--pages/test/test.wxml-->
+<button bindtap='houduanButton1'>点击发起请求</button>
+<view wx:for="{{list}}">
+    姓名：{{item.areaName}}
+  </view>
+<input type="text" class="houduanTab_input" placeholder="请输入你要查询的内容" bindinput='houduanTab_input'></input>
+  <button bindtap='houduanButton2'>查询</button>
+  <view wx:if="{{message!=''}}">
+    {{message}}
+  </view>
+  

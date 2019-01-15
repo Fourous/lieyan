@@ -1,0 +1,80 @@
+/* pages/home/home.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  padding: 0;
+}
+
+.swiper_adv {
+  height: 100%;
+  width: 100%;
+}
+
+swiper {
+  height: 100%;
+  width: 100%;
+  border-bottom: 10rpx solid rgb(245,245,245)
+}
+.apply {
+  width: 100%;
+  height: 60%;
+  position: fixed;
+  top: 450rpx;
+  text-align: center;
+  
+}
+.home_picback {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1111;
+}
+.pic_back {
+  height: 100%;
+  width: 100%;
+}
+
+.one_people_img {
+  width: 100%;
+  height: 200rpx;
+  /* margin-bottom: 10rpx; */
+  /* margin-top: 40rpx; */
+
+}
+.four_people_img {
+  width: 100%;
+  height:200rpx;
+  /* margin-bottom: 10rpx; */
+  
+
+}
+.team_people_img {
+ width: 100%;
+  height:200rpx;
+ /* margin-bottom: 10rpx; */
+}
+
+.four_people {
+  margin: 0px auto;
+  width: 90%;
+height: 100%;
+ /* box-shadow: 10px 10px 5px #888888; */
+}
+.one_people {
+ margin: 0px auto;
+  width: 90%;
+height: 100%;
+ /* box-shadow: 10px 10px 5px #888888; */
+}
+.group {
+  margin: 0px auto;
+  width: 90%;
+height: 100%;
+ /* box-shadow: 10px 10px 5px #888888; */
+}

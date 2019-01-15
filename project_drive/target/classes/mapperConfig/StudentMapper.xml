@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.StudentMapper">
+
+    <select id="queryArea" resultType="com.lieyan.Entity.Student">
+        SELECT  *
+        FROM datastu
+        ORDER BY priority
+        DESC
+    </select>
+
+
+<!--数据库查找id 返回-->
+    <select id="queryAreaById" resultType="com.lieyan.Entity.Student">
+        SELECT  *
+        FROM datastu
+        WHERE id = #{id}
+    </select>
+
+    <insert id="insertArea" useGeneratedKeys="true" keyProperty="id"
+            keyColumn="id" parameterType="com.lieyan.Entity.Student">
+        INSERT INTO
+        datastu (area_name, priority, create_time, last_edit_time)
+        VALUES (#{areaName},#{priority},#{createTime},#{lastEditTime})
+    </insert>
+
+    <update id="updateArea" parameterType="com.lieyan.Entity.Student">
+        UPDATE datastu
+        <set>
+            <if test="areaName != null">area_name = #{areaName}</if>
+            <if test="priority != null">, priority = #{priority}</if>
+            <if test="lastEditTime != null">, last_edit_time = #{lastEditTime}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteAreaById">
+        DELETE FROM
+        datastu
+        WHERE id = #{id}
+    </delete>
+
+</mapper>

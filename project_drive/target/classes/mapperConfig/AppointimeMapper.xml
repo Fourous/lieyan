@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.AppointimeMapper">
+    <!--
+    数据库的版本不支持open-id,只能下划线
+    -->
+    <!--返回所有教练信息，在教练首页那里需要加载这些数据-->
+    <select id="appointall" resultType="com.lieyan.Entity.Appointime">
+        SELECT  *
+        FROM appointime
+    </select>
+
+    <select id="appointbyid" resultType="com.lieyan.Entity.Appointime">
+        SELECT  *
+        FROM appointime
+        WHERE appointid= #{appointid}
+    </select>
+
+    <select id="appointbytid" resultType="com.lieyan.Entity.Appointime">
+        SELECT  *
+        FROM appointime
+        WHERE tid= #{tid}
+    </select>
+    <select id="appofindappid" resultType="com.lieyan.Entity.Appointime">
+        SELECT  *
+        FROM appointime
+        WHERE tid=#{tid} AND week=#{week} AND classnum=#{classnum}
+    </select>
+    <!--这里是通过教练的id和week的来确定一天之内的时间段-->
+    <select id="appointoneday" resultType="com.lieyan.Entity.Appointime">
+        SELECT  *
+        FROM appointime
+        WHERE tid= #{tid} AND week=#{week}
+    </select>
+    <update id="appointweeksta" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET state=#{state}
+        WHERE week &lt; #{week}
+    </update>
+<!--这里是将大于置为可用-->
+    <update id="appointweekstasta" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET state=#{state}
+        WHERE week &gt;= #{week}
+    </update>
+    <update id="appointtimesta" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET state=#{state}
+        WHERE week=#{week} AND classnum &lt;= #{classnum}
+    </update>
+    <update id="appointtimestasta" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET state=#{state}
+        WHERE week=#{week} AND classnum &gt; #{classnum}
+    </update>
+
+
+<!--这里改变人数-->
+    <update id="appointchanum" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET personum=#{personum}
+        WHERE appointid=#{appointid}
+    </update>
+    <!--这里改变能否预约状态-->
+    <update id="appointchasta" parameterType="com.lieyan.Entity.Appointime">
+        UPDATE appointime
+        SET state=#{state}
+        WHERE appointid=#{appointid}
+    </update>
+<!--这里只是插入初始部分的数据，一个绑定教练的tid,一个是人物，-->
+    <!--<insert id="appointinsert" parameterType="com.lieyan.Entity.Appointime">-->
+        <!--INSERT INTO-->
+        <!--appointime (tid, openid)-->
+        <!--VALUES (#{tid},#{openid})-->
+    <!--</insert>-->
+
+
+
+
+    <!--<delete id="userformdelete">-->
+        <!--DELETE FROM-->
+        <!--appointime-->
+        <!--WHERE fname = #{fname}-->
+    <!--</delete>-->
+
+
+
+</mapper>

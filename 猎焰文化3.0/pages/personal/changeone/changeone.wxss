@@ -1,0 +1,41 @@
+/* pages/changuserone/changuserone.wxss */
+.pagep {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: whitesmoke;
+  }
+.chcontain{
+  background-color: white;
+  height: 60rpx;
+  width: 95%;
+  margin:30px auto;
+}
+.chtxt {
+  font-size: 13px;
+  line-height: 60rpx;
+  margin-left: 13rpx;
+  height: 60rpx;
+  width: 100%;
+}
+.textarea {
+  height: 60rpx;
+  width: 100%;
+  line-height: 60rpx;
+}
+.chbtn{
+  margin-top: 100rpx;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+}
+.btn{
+  width: 80%;
+  text-align: center;
+  height: 70rpx;
+  background-color: #FF4040;
+  font-size: 13px;
+  color: white;
+  line-height: 70rpx;
+  border-radius: 0px;
+}

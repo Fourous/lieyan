@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.CirclecommentMapper">
+    <!--
+    数据库的版本不支持open-id,只能下划线
+    -->
+    <!--通过发表说说的id找到-->
+
+    <select id="circlecommentbycircleid" resultType="com.lieyan.Entity.Circlecomment">
+        SELECT  *
+        FROM circlecomment
+        WHERE circleid= #{circleid}
+    </select>
+<!--//初次加载的,三条数据-->
+    <select id="circlecommentthree" resultType="com.lieyan.Entity.Circlecomment">
+        SELECT  *
+        FROM circlecomment
+        WHERE circleid= #{circleid}
+        ORDER BY commentid
+        DESC
+        LIMIT 3
+    </select>
+
+    <select id="circommentmore" resultType="com.lieyan.Entity.Circlecomment">
+        SELECT  *
+        FROM circlecomment
+        WHERE circleid= #{circleid}
+        LIMIT #{limit},5
+    </select>
+
+    <!--发表说说，发表人，发表的内容-->
+    <insert id="circlecommentinsert" parameterType="com.lieyan.Entity.Circlecomment">
+        INSERT INTO
+        circlecomment (circleid, openid,comment)
+        VALUES (#{circleid},#{openid},#{comment})
+    </insert>
+
+    <!--这是传入的cicleid进行删除操作，这里的因为返回会有一个删除的id-->
+    <delete id="circlecommentdeletebyid">
+        DELETE FROM
+        circlecomment
+        WHERE commentid=#{commentid}
+    </delete>
+
+
+
+</mapper>

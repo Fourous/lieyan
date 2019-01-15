@@ -1,0 +1,106 @@
+<view class='userinfobackclass'>
+  <image class='userinfoback'src='../../image/userinfoback.png'></image>
+</view>
+<view class='userform'>
+  <view class='userinfo'> 
+  <text class='changenickname' bindtap='changenickname'>修改昵称</text>
+    <view class='leftuserinfo'>
+      <view class='pic_teacher'>
+        <image class='useravatar' src="{{userInfo.avatarUrl}}" bindtap='usersetup'></image>
+      </view> 
+      <view class='nick_vip'>
+        <text class='userinfo_nickname' bindtap='usersetup'>{{userdata.nickName}} </text>
+        <image class='is_vip' src='../../image/vip1.png'></image>
+      </view> 
+    </view>
+    
+    <view class='issign'>
+       <text class='userinfo_nickname'>{{if_apply}}</text>
+    </view>
+    <view class='balance_integral_coupon'>
+      <view class='data_n' bindtap='tobindteacher'>
+        <text class='balance' >教练</text>
+        <text>{{teacher}}</text>
+      </view>
+      <view class='data_n'>
+        <text class='balance' bindtap='Tobalance'>余额</text>
+        <text> {{userdata.moneybalance}}</text>
+      </view>
+      <view class='data_n'>
+        <text class='balance' bindtap='Tointegral'>积分</text>
+        <text> {{userdata.integralnum}}</text>
+      </view>
+      <view class='data_n'>
+        <text class='balance' bindtap='Tocoupon'>优惠券</text>
+        <text > {{userdata.couponnum}}</text>
+      </view>
+    </view>    
+ </view>
+
+    <!--这里是下方的一系列的功能，包括商城转盘等功能-->
+
+<view class='other_'>
+  <view class='change'>
+    <view class='_img' style='vertical-align:top;'>
+      <image src='../../image/chteacher.png'class='picandicon' ></image>
+    </view>
+    <view class='_txt' style='vertical-align:top;' bindtap='TOchteacher'>更换教练</view>
+  </view>
+
+  <view class='change'>
+    <view class='_img' style='vertical-align:top;'>
+      <image src='../../image/affair.png' class='picandicon'></image>
+    </view>
+    <view class='_txt' style='vertical-align:top;' bindtap='Toaffair'>我的动态</view>
+    </view>
+
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/shopping.png' class='picandicon' ></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Tostore'>我的商城</view>
+    </view>
+ 
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/fun.png' class='picandicon'></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Tofun'>多多乐园</view>
+    </view>
+
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/round.png' class='picandicon' ></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Toround'>幸运大转盘</view>
+    </view>
+    
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/feedback.png' class='picandicon'></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Tofeedback'>反馈建议</view>
+    </view>
+
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/custom.png' class='picandicon'></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Tocustom'>我的客服</view>
+    </view>
+
+      <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/chteacher.png' class='picandicon' ></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Toteacherorder'>我是教练</view>
+    </view> 
+
+    <view class='change'>
+      <view class='_img' style='vertical-align:top;'>
+        <image src='../../image/back.png' class='picandicon' ></image>
+      </view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Toback'>退出登录</view>
+    </view>
+  </view>
+</view>

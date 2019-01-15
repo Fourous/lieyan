@@ -1,0 +1,180 @@
+/* pages/teacherdetail/teacherdetail.wxss */
+.teacher_one {
+  position: fixed;
+  z-index: 1111;
+  top: 0px;
+  border-bottom: 20rpx solid rgba(245, 245, 245,1); 
+  background: rgba(255, 255, 255,1);
+  background-color: rgba(255, 255, 255,1);
+  opacity: 1;
+  width: 100%;
+  height: 250rpx;
+}
+.right {
+  float: right;
+  width: 69%;
+  height: 249rpx;
+}
+.feedback_btn {
+  position: fixed;
+  width: 70rpx;
+  height: 70rpx;
+  bottom: 100rpx;
+  right: 40rpx;
+}
+.teacher-item {
+  /* padding:20rpx 40rpx; */
+  height: 249rpx;
+}
+.teacher_pic {
+  width: 150rpx;
+  height: 150rpx;
+}
+.item_name {
+  position: relative;
+  font-family:'黑体';
+   font-size: 15px;
+   margin-bottom: 10rpx;
+   display: block;
+}
+.pic_intro{
+  /* position: absolute; */
+  text-align: center;
+  width: 30%;
+  float: left;
+}
+.item_introduce {
+  font-family: '宋体';
+   line-height: 15px;
+    font-size: 13px;
+}
+.forintroduce {
+width: 100%;
+height: 70%;
+}
+.teacher_like {
+  width: 30rpx;
+  height: 30rpx;
+   padding:10rpx 40rpx;
+}
+.teacher_unlike {
+   width: 30rpx;
+   height: 30rpx;
+    padding:10rpx 40rpx;
+}
+.teacher_comment {
+   width: 30rpx;
+   height: 30rpx;
+   padding:10rpx 40rpx;
+}
+.order_teacher {
+  width: 100%;
+  height: 100%;
+}
+.like_unlike_comment {
+ height: 120rpx;
+ width: 120rpx;
+ position: fixed;
+ z-index: 111;
+ right: 50rpx;
+ top:195rpx;
+}
+/*评论界面的css
+
+*/
+.comment_all {
+  width: 90%;
+  margin-top: 300rpx;
+}
+.comment_one {
+  position: absolute;
+  width: 100%;
+  
+}
+.comment-item {
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  border-bottom: solid 5rpx  rgb(245, 245, 245);
+}
+.pic_name_time {
+  width: 300rpx;
+  height: 70rpx;
+
+}
+.user_pic {
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+}
+.user_image {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+}
+.user_name {
+  width: 500rpx;
+  height: 30rpx;
+  margin-bottom: 10rpx;
+  margin-left: 30rpx;
+  font-size: 10px;
+  font-weight: bold;
+}
+.commentonec {
+  width: 100%;
+}
+.comment_time {
+  width: 300rpx;
+  height: 20rpx;
+  font-weight:300; 
+  color: gray;
+  margin-left: 30rpx;
+  font-size: 8px;
+}
+.forcomment{
+  font-size: 13px;
+}
+
+/*这里是隐藏的提交层*/
+.input_comment {
+  z-index: 2222;
+  position:fixed;
+  top:0;
+  background:rgba(245,245,245,0.8);
+  width:100%;
+  height:100%;
+}
+.jump_white {
+  margin: 0 auto;
+  background-color: white;
+  margin-top:150rpx;
+  width: 500rpx;
+  height:600rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.input_txt {
+  width: 480rpx;
+  height: 580rpx;
+}
+.input_btn {
+  position: fixed;
+  width: 30%;
+  font-size: 15px;
+  right: 250rpx;
+  bottom: 550rpx;
+}
+
+.input_button {
+  background: orangered;
+  color: white;
+  font-size: 10px;
+}
+.back_img {
+  position: fixed;
+  top: 80rpx;
+  right: 80rpx;
+  height: 30rpx;
+  width: 30rpx;
+}

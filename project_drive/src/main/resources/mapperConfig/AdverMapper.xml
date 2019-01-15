@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.AdverMapper">
+    <!--
+    数据库的版本不支持open-id,只能下划线
+    -->
+
+    <!--通过教练的id找到教练-->
+    <select id="adverbyid" resultType="com.lieyan.Entity.Adver">
+        SELECT  *
+        FROM advertise
+        WHERE adverid= #{adverid}
+    </select>
+
+
+
+
+</mapper>

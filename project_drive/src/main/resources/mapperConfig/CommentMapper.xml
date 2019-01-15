@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.CommentMapper">
+
+
+    <!--通过tid找到对应记录，返回所有记录-->
+    <select id="commentbyid" resultType="com.lieyan.Entity.Comment">
+        SELECT  *
+        FROM comment
+        WHERE tid= #{tid}
+    </select>
+<!--这读取like和unlike的初始值的,读取的时候，都是按照-->
+    <select id="likeorigin" resultType="com.lieyan.Entity.Comment">
+        SELECT  islike
+        FROM comment
+        WHERE tid= #{tid} AND openid=#{openid}
+    </select>
+
+    <select id="unlikeorigin" resultType="com.lieyan.Entity.Comment">
+        SELECT  *
+        FROM comment
+        WHERE tid= #{tid} AND openid=#{openid}
+    </select>
+    <!--发表评论-->
+    <insert id="commentinsert" parameterType="com.lieyan.Entity.Comment">
+        INSERT INTO
+        comment (tid,openid,comment)
+        VALUES (#{tid},#{openid},#{comment})
+    </insert>
+
+    <!--<insert id="userinsert"   parameterType="com.lieyan.Entity.User">-->
+        <!--INSERT INTO-->
+        <!--user (openid, nickName, gender,language,city,province,country,avatarUrl,bindteacher,Issign,signitem,moneybalance,Integralnum,couponnum)-->
+        <!--VALUES (#{openid},#{nickName},#{gender},#{language},#{city},#{province},#{country},#{avatarUrl},0,0,0,0,0,0)-->
+    <!--</insert>-->
+
+    <!--<update id="userupdate" parameterType="com.lieyan.Entity.User">-->
+        <!--UPDATE user-->
+
+        <!--&lt;!&ndash;这里预留，教练可能只能绑定一次&ndash;&gt;-->
+        <!--&lt;!&ndash;<set>-->
+            <!--<if test="bindteacher= null">bindteacher = #{bindteacher}</if>-->
+        <!--</set>&ndash;&gt;-->
+        <!--WHERE openid = #{openid}-->
+    <!--</update>-->
+
+
+    <!--&lt;!&ndash;通过id找到相应的数据记录，并且删除他,这里接口几乎用不到，不过可能以后用户-->
+    <!--出现问题，可以通过删除再添加的操作来更新-->
+    <!--&ndash;&gt;-->
+    <!--<delete id="userdelete">-->
+        <!--DELETE FROM-->
+        <!--user-->
+        <!--WHERE openid = #{openid}-->
+    <!--</delete>-->
+    <!--&lt;!&ndash;查询open-id是否存在&ndash;&gt;-->
+    <!--&lt;!&ndash;    测试open-id&ndash;&gt;-->
+    <!--<select id="useropenid" resultType="com.lieyan.Entity.User">-->
+        <!--SELECT  openid-->
+        <!--from user-->
+    <!--</select>-->
+
+
+
+</mapper>

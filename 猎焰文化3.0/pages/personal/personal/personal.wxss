@@ -1,0 +1,157 @@
+/* pages/personal/personal/personal.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.changenickname{
+  /* position: absolute; */
+  font-size: 13px;
+  float: right;
+  margin-right: 0px;
+  color: #eee;
+  font-weight: bolder;
+}
+.userinfobackclass {
+  top: 0px;
+  position: fixed;
+  z-index: -1111;
+  height: 365rpx;
+  width: 100%;
+
+}
+.userinfoback {
+  height: 100%;
+  width: 100%;
+}
+.userform {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.userinfo {
+  height: 250rpx;
+  padding: 30rpx 0rpx 20rpx 30rpx;
+}
+
+/*下面三行是居中操作，重点的三段*/
+.balance_integral_coupon {
+  position: relative;
+  height: 85rpx;
+ /* background-color: #73d2fe;*/
+  text-align: left;
+  margin-top: 28%;
+  /* margin-bottom: 20%; */
+  width: 90%;
+  margin-left: 3%;
+}
+
+.data_n {
+ width:25%;
+display: inline-block;
+font-size: 12px;
+font-weight: 600;
+color: white;
+padding-top: 3rpx;
+text-align: center
+}
+
+.balance {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 2px;
+  padding-right: 2rpx;
+  font-size: 12px;
+}
+
+.useravatar{
+  height: 150rpx;
+  width:150rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.userinfo_nickname{
+   color: blanchedalmond;
+   font-size: 15px;
+}
+.is_vip{
+  height: 30rpx;
+  width:30rpx;
+}
+.pic_teacher {
+  position: absolute;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  width: 150rpx;
+}
+.teacher_ {
+  font-size: 14px;
+ 
+  text-align: left;
+  font-weight: 500
+}
+.is_teacher {
+  font-size: 13px;
+  margin-left: 8rpx;
+  text-align: right;
+  font-weight: 500
+}
+.nick_vip {
+  position: relative;
+  margin-left: 200rpx;
+  width: auto;
+}
+.leftuserinfo{
+  float: left;
+  width: 80%;
+}
+.issign {
+  float: right;
+  width: 20%;
+}
+.is_conclude {
+  height: 30rpx;
+  font-size: 15px;
+  top: 0px;
+}
+.other_ {
+  width: 100%;
+  height: 100%;
+  padding-top: 3rpx;
+  background-color: #eee;
+  margin-top: 20rpx;
+}
+.change {
+  width: 100%;
+  height: 65rpx;
+  background-color: white;
+  margin-top: 9rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 15rpx;
+  /*box-shadow: 5px 5px 5px #888888;
+  border-bottom: 5rpx solid rgb(190 ,190, 190);*/
+}
+.picandicon {
+  height: 50rpx;
+  width: 50rpx;
+  text-align: center;
+  position: absolute;
+  padding-right: 20rpx;
+  margin-right: 100rpx;
+  padding-top: 2%;
+}
+._txt {
+  font-size: 15px;
+  position: relative;
+  margin-left: 50px;
+  padding-left: 30rpx;
+  padding-top: 3%;
+  font-weight: 50
+
+}
+
+
+
+

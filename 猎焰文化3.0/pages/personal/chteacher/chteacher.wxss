@@ -1,0 +1,33 @@
+/* pages/personal/chteacher/chteacher.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+.change_teacher {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.input_txt {
+  font-size: 15px;
+   width: 90%;
+   margin: 10px auto;
+  height: 70%;
+ /* box-shadow:2px 2px 2px 2px #ccc;*/
+  border-radius: 10rpx;
+  border: 1px solid #ccc;
+}
+.submit_btn {
+  position: absolute;
+  margin-top: 40rpx;
+  width: 100%;
+  height: 300rpx;
+}
+.btn {
+  width:50%;
+  margin: 0px auto;
+  background-color:#9ab2f0;
+  background:#9ab2f0;
+  color: white;
+}

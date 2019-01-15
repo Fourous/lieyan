@@ -1,0 +1,28 @@
+<!--pages/group/group.wxml-->
+<view class='group'>
+<image src='../image/f_bgp.jpg' class='bg'></image>
+  <view class='group_txt'>
+       <text class='word1'>
+      “室友、基友、同学、朋友”一起报名享优惠!
+      </text>
+      <text class='word1'>
+      同过窗，同过房，现在还可以同个车!
+      </text>
+      <text class='word1'>
+      你们不是塑料情!
+      </text>
+
+  </view>
+
+<view class='group_button' bindtap='Toentryform'>
+  <button class='group_signup'>
+立即报名参加
+</button>
+
+</view>
+
+</view>
+
+
+
+

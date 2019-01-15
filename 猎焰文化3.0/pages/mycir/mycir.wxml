@@ -1,0 +1,28 @@
+<view>
+  <view class='cir' wx:for="{{cir}}" data-id='{{item.circleid}}'>
+    <!-- 头部 -->
+    <view class='title'>
+      <view class='my_pic'>
+        <image class='pic' src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      <view class='my_nameandtime'>
+        <text class='name'>{{userInfo.nickName}}</text>
+        <text class='time'>{{item.time}}</text>
+      </view>
+      <view class='delete' data-id='{{item.circleid}}'>
+        删除
+      </view>
+    </view>
+    <!-- 内容 -->
+    <view class='main'>
+      <view class='content_txt'>
+        <text>{{item.mess}}</text>
+      </view>
+      <view class='content_pic'>
+        <image class='ccpic' mode='aspectFill' src='{{item.image1}}'></image>
+        <image class='ccpic' mode='aspectFill' src='{{item.image2}}'></image>
+        <image class='ccpic' mode='aspectFill' src='{{item.image3}}'></image>
+      </view>
+    </view>
+  </view>
+</view>

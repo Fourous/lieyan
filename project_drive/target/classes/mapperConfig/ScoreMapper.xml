@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.ScoreMapper">
+
+<!--返回所有记录-->
+    <select id="queryscore" resultType="com.lieyan.Entity.Score">
+        SELECT  *
+        FROM test
+        ORDER BY ID
+        DESC
+    </select>
+
+<!--通过id找到对应记录，返回实体-->
+    <select id="querybyid" resultType="com.lieyan.Entity.Score">
+        SELECT  *
+        FROM test
+        WHERE ID= #{id}
+    </select>
+
+<!--插入操作这里注意插入操作，是inser，很容易搞错-->
+    <insert  useGeneratedKeys="true" keyProperty="id"
+            keyColumn="ID"  id="insertScore" parameterType="com.lieyan.Entity.Score">
+        INSERT INTO
+        test (AGE, NAME, SCORE_SUM,SCORE_AVG)
+        VALUES (#{age},#{name},#{scoresum},#{scoreage})
+    </insert>
+
+<update id="updateScore" parameterType="com.lieyan.Entity.Score">
+    UPDATE test
+    <set>
+        <if test="AGE != null">AGE = #{age}</if>
+        <if test="NAME != null">NAME = #{name}</if>
+        <if test="SCORE_SUM != null">SCORE_SUM = #{score_sum}</if>
+        <if test="SCORE_AVG != null">SCORE_AVG = #{score_avg}</if>
+    </set>
+    WHERE id = #{id}
+
+
+</update>
+
+
+<!--通过id找到相应的数据记录，并且删除他-->
+<delete id="deleteScoreById">
+DELETE FROM
+test
+WHERE id = #{id}
+</delete>
+
+
+
+
+
+</mapper>

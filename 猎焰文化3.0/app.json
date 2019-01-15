@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/studycar/study",
+    "pages/friend/friend",
+    "pages/onepeople/onepeople",
+    "pages/fourpeople/fourpeople",
+    "pages/group/group",
+    "pages/entryform/entryform",
+    "pages/teacherdetail/teacherdetail",
+    "pages/orderteacher/orderteacher",
+    "pages/personal/personal/personal",
+    "pages/personal/chteacher/chteacher",
+    "pages/personal/feedback/feedback",
+    "pages/personal/myaffair/myaffair",
+    "pages/personal/myround/myround",
+    "pages/login/firstlogin/firstlogin",
+    "pages/login/register/register",
+    "pages/login/forgetpasswd/forgetpasswd",
+    "pages/login/certification/certification",
+    "pages/test/test",
+    "pages/directlogin/directlogin",
+    "pages/formpay/formpay",
+    "pages/friend/my_message",
+    "pages/ad",
+    "pages/advertise/advertise",
+    "pages/mycir/mycir",
+    "pages/morecomment/morecomment",
+    "pages/bindteacher/bindteacher",
+    "pages/carpackage/carpackage",
+    "pages/mytable/mytable",
+    "pages/studycardetail/studycardetail",
+    "pages/cardetailone/cardetailone",
+    "pages/teacherindex/teacherlogin/teacherlogin",
+    "pages/teacherindex/teachertable/teachertable",
+    "pages/personal/changeone/changeone"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学车管家",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "报名",
+        "iconPath": "pages/image/home0.png",
+        "selectedIconPath": "pages/image/home1.png"
+      },
+      {
+        "pagePath": "pages/studycar/study",
+        "text": "学车",
+        "iconPath": "pages/image/studycar0.png",
+        "selectedIconPath": "pages/image/studycar1.png"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "考友圈",
+        "iconPath": "pages/image/friend0.png",
+        "selectedIconPath": "pages/image/friend1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal/personal",
+        "text": "个人中心",
+        "iconPath": "pages/image/personal0.png",
+        "selectedIconPath": "pages/image/personal1.png"
+      }
+    ]
+  }
+}

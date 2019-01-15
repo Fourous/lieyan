@@ -1,0 +1,107 @@
+/* pages/morecomment/morecomment.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.friend_main{
+  width: 100%;
+  border-bottom: 20rpx #eee solid;
+}
+.pic_intro{
+  width: 90%;
+  height: 85rpx;
+  padding-left: 25rpx;
+  padding-top: 25rpx;
+}
+.pic_right, .pic_left{
+  float: left;
+}
+.stu_pic{
+  height: 75rpx;
+  width: 75rpx;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.stu_name{
+  font-size: 12px;
+  padding-left: 20rpx;
+  vertical-align: top;
+}
+.stu_time{
+  display: block;
+  font-size: 8px;
+  padding-left: 20rpx;
+}
+.stu_word_txt{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 14pt;
+  text-indent: 1em;
+  margin-bottom: 25rpx;
+}
+.stu_txt{
+  font-size: 13px;
+}
+.stu_photoa{
+  width: 100%;
+}
+.stu_photo{
+  height: 253rpx;
+  width: 30%;
+  padding-left: 3%;
+  margin-top: 20rpx;
+  margin-bottom: 8rpx;
+}
+.like_unlike_comment{
+  height: 50rpx;
+  width: 100%;
+}
+.stu_like{
+  height: 30rpx;
+  width: 30rpx;
+  padding: 9rpx;
+  padding-right: 50rpx;
+  float: right;
+}
+.friend_comment{
+  width: 100%;
+  border-bottom: 1rpx #eee solid;
+}
+.space{
+  height: 100rpx;
+  width: 100%;
+}
+.liuyan{
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  z-index: 2222;
+  background: white;
+  bottom:0px;
+}
+.liuyan input{
+  width: 75%;
+  background: white;
+  height: 80rpx;
+  /* margin-top: 7rpx; */
+  border: 1rpx #eee solid;
+  /* margin-left: 3%; */
+  font-size: 15px;
+}
+.btn{
+  width: 25%;
+  float: right;
+  height: 80rpx;
+  /* background: green; */
+  border-radius: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: fixed;
+  z-index:222222;
+  font-size: 15px;
+  text-align: center;
+  line-height: 80rpx;
+  /* background-color: #4876FF	; */
+}

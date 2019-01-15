@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<!--首页的注册界面，-->
+<view class="index">
+  <image class="pic" src="{{image}}" bindtap='toad' data-id='1' mode = "aspectFill"></image>
+ </view>
+      <view class='butop'>
+      <button class='wel_btn' bindtap='toindex' >{{i}}跳过广告</button>
+      </view>
+  <!-- <view class='second'> -->
+  <view  class='picview'>
+  <image class='picim' src='../image/iconmsg.png' mode = "aspectFill"></image>
+  <!-- </view> -->
+
+  
+ 
+  </view>
+  
+

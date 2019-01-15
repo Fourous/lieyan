@@ -1,0 +1,27 @@
+<!--pages/fourpeople/fourpeople.wxml-->
+
+<view class='fourpeople'>
+ <image src='../image/f_bgp.jpg' class='bg'></image>
+  <view class='fourpeople_txt'>
+       <text class='word1'>
+      “四人行，必有你师”
+      </text>
+      <text class='word1'>
+      每台车四个人轮流训练，相互学习指导!
+      </text>
+      <text class='word1'>
+      学车互相八卦吹牛，训练不寂寞!
+      </text>
+
+  </view>
+
+<view class='fourpeople_button' bindtap='Toentryform'>
+  <button class='fourpeople_signup'>
+立即报名参加
+</button>
+
+</view>
+
+</view>
+
+

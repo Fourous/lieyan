@@ -1,0 +1,55 @@
+/* pages/studycar/study.wxss */
+.teacher-item {
+  padding:20rpx 40rpx;
+  border-bottom: 20rpx solid rgb(245, 245, 245); 
+  height: 100px;
+}
+.teacher_pic {
+  width: 150rpx;
+  height: 150rpx;
+}
+.item_name {
+  position: relative;
+  font-family:'黑体';
+   font-size: 15px;
+   margin-bottom: 10rpx;
+}
+.pic_intro{
+  position: absolute;
+  text-align: center;
+  width: 160rpx;
+
+}
+.item_introduce {
+  font-family: '宋体';
+   line-height: 15px;
+    font-size: 13px;
+}
+.forintroduce {
+  position: relative;
+  float: right;
+  margin-left: 175rpx;
+  
+
+}
+.teacher_like {
+  width: 30rpx;
+  height: 30rpx;
+   padding:10rpx 40rpx;
+}
+.teacher_unlike {
+   width: 30rpx;
+   height: 30rpx;
+    padding:10rpx 40rpx;
+}
+.teacher_comment {
+   width: 30rpx;
+   height: 30rpx;
+    padding:10rpx 40rpx;
+}
+.like_unlike_comment {
+  text-align: right;
+  margin-top: 85px;
+  
+}
+

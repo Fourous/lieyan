@@ -1,0 +1,47 @@
+/* pages/teacherindex/teacherlogin/teacherlogin.wxss */
+.all{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  margin-top: 200rpx;
+}
+.bg_pic{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -111;
+}
+.pic{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -111;
+  opacity: 0.5;
+}
+.inputname{
+  width: 100%;
+}
+.name{
+width: 65%;
+border-bottom: solid 2rpx gray;
+margin-left: 100rpx;
+font-size: 15px;
+
+}
+.inputpass{
+width: 100%;
+}
+.passwd{
+width: 65%;
+border-bottom: solid 2rpx gray;
+margin-left: 100rpx;
+font-size: 15px;
+}
+.login{
+  width:60%;
+  height: 80rpx; 
+  margin-top: 100rpx;
+  margin-left: 100rpx;
+  font-size: 17px;
+  line-height: 80rpx;
+}

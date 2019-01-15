@@ -1,0 +1,11 @@
+<!--pages/personal/chteacher/chteacher.wxml-->
+<view class='change_teacher'>
+    <textarea class='input_txt' maxlength='500' placeholder='在此输入您更换老师的理由' bindinput='rea_input'></textarea>
+<view class='submit_btn'>
+<!-- <picker bindchange='bindsexch' value="{{sex}}" range='{{array}}'> -->
+ <button class='btn' bindtap='hand_in'>提交申请</button>
+<!-- </picker> -->
+ 
+</view>
+  
+</view>

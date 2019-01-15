@@ -1,0 +1,23 @@
+<!--pages/studycar/study.wxml-->
+<view id='teacher_all'>
+<!--这里是静态测试设置view-->
+  <view class='teacher_one'>
+    <view wx:for="{{coach}}" wx:key="teacher">
+      <view class="teacher-item"   data-id="{{item.tid}}">
+        <view bindtap='To_teacher_detail' data-id="{{item.tid}}" >
+          <view class='pic_intro'>
+            <image class='teacher_pic' src='{{item.avatar}}' mode = "aspectFill"></image>
+            <text class='item_name'>{{item.tname}}\n</text>
+          </view>
+          <view class='forintroduce'>
+            <text class='item_introduce'>{{item.introduce}}\n</text>
+          </view>
+        </view>
+        <view class='like_unlike_comment' >
+          <image  data-id="{{item.tid}}" class='teacher_like' src="{{item.like?'../image/like0.png' : '../image/like1.png'}}" bindtap='likereact' ></image>
+          <image class='teacher_comment' src='../image/comment.png' bindtap='To_teacher_detail'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

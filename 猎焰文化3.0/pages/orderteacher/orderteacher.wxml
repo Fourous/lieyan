@@ -1,0 +1,23 @@
+<!--pages/orderteacher/orderteacher.wxml-->
+<view>
+  <!-- <view class='bg_pic'>
+    <image class='pic' mode='aspectFill' src='{{bgpic}}'></image>
+  </view> -->
+  <view class='main'>
+    <view class='main_time'>
+      <view class='item'>学车管家</view>
+      <view class='item'>08:00-09:50</view>
+      <view class='item'>10:00-11:50</view>
+      <view class='item'>15:00-16:30</view>
+      <view class='item'>16:40-18:00</view>
+    </view>
+<!-- 这里是yysta代表时候被预约，tsta代表能否预约 -->
+    <view class='main_class' wx:for='{{classsigns}}' wx:for-item='weekL' wx:for-index="weekI">
+      <view class='item'>{{week[weekI]}}</view>
+      <view class='class_c item {{item.userstate?"red":""}} {{item.state?"eee":""}}' wx:for='{{weekL.classsigns}}' wx:for-index='classI' data-weekI='{{weekI}}' data-classI='{{classI}}' bindtap='{{item.state?"":"yuyue"}}'>
+        <text hidden='{{item.userstate}}'>剩余{{item.num}}预约</text>
+        <text hidden='{{!item.userstate}}'>预约成功</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/teacherindex/teacherlogin/teacherlogin.wxml-->
+<!-- 这里是教练的登录页面 -->
+<view class='bg_pic'>
+    <image class='pic' mode='aspectFill' src='{{bgpic}}'></image>
+  </view>
+
+<view class='all'>
+<form bindsubmit='searchBox'>
+<input type='text' class='name'name='username' placeholder='输入工号'></input>
+<input type='text' class='passwd' name='pwd' placeholder='输入密码'></input>
+<button class='login' type='primary' form-type='submit'>登录</button>
+</form>
+</view>
