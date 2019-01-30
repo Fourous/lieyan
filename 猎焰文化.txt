@@ -1,0 +1,10 @@
+132.232.31.14
+Wgm4JGAA5m
+appid:wx595a023609bf66e7
+appsecrete:94b74b779c0188923b62a81ad4c6b228
+http://lieyanwenhua.com
+数据库root:lieyan
+商户支付管理:Lieyanwenhua123+
+秘钥:Lie13yanw89huaBjKlszhe393Jlszhek
+修改秘钥密码:Lieyanwenhua123+
+           

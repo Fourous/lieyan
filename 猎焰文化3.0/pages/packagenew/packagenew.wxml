@@ -1,0 +1,26 @@
+<!--pages/packagenew/packagenew.wxml-->
+
+<view class='all'>
+
+<view class='item' >
+<view class='instruct' bindtap='packagenew1'>
+<text class='text'>报名套餐一：急速学车，45天拿证立返1000现金</text>
+</view>
+</view>
+
+
+<view class='item' >
+<view class='instruct' bindtap='packagenew2'>
+<text class='text'>报名套餐二：报名学车获1000元话费</text>
+</view>
+</view>
+
+
+<view class='item'>
+<view class='instruct' bindtap='packagenew3'>
+<text class='text'>报名套餐三：组团报名</text>
+</view>
+</view>
+
+
+</view>

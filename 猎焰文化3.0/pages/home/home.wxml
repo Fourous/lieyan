@@ -23,6 +23,7 @@
     <view class='team_people_img'>
       <image class='group' bindtap='to_group' src='../image/threepage.png'></image>
     </view>
+
     <view class='one_people_img'>
       <image class='one_people' bindtap='to_one_people' src='../image/twopage.png'> </image>
     </view>
@@ -31,6 +32,12 @@
      <image class='four_people' bindtap='to_four_people' src='../image/onepage.png'></image>
     </view>
 
+    <view class='four_people_img'>
+     <image class='four_people' bindtap='groupcom' src='../image/onepage.png'></image>
+    </view>
+
+
+  
 
 
 </view>

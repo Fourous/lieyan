@@ -1,0 +1,33 @@
+/* pages/packagenew/packagenew.wxss */
+
+.page{
+  height: 100%;
+  width: 100%;
+}
+
+.all{
+  height: 80%;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.item{
+  width: 90%;
+  height: 200rpx;
+  background-color: #00FFFF;
+  margin: 0px auto;
+  margin-top: 80rpx;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.instruct{
+  height: 100%;
+  width: 100%;
+}
+
+.text{
+font-size: 13px;
+line-height: 200rpx;
+font-weight: bold;
+}

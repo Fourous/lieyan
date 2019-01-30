@@ -1,0 +1,15 @@
+<!--pages/packagenewstruct/packagenewstruct.wxml-->
+<view class='all'>
+
+<view class='txtview'>
+<text class='text'>{{content}}</text>
+</view>
+
+<view class='btnview'>
+<button class='btn'>立即报名</button>
+</view>
+
+
+
+
+</view>

@@ -35,7 +35,10 @@
     "pages/cardetailone/cardetailone",
     "pages/teacherindex/teacherlogin/teacherlogin",
     "pages/teacherindex/teachertable/teachertable",
-    "pages/personal/changeone/changeone"
+    "pages/personal/changeone/changeone",
+    "pages/packagenew",
+    "pages/packagenew/packagenew",
+    "pages/packagenewstruct/packagenewstruct"
   ],
   "window": {
     "backgroundTextStyle": "dark",
