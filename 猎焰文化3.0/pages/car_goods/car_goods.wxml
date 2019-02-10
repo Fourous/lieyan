@@ -1,0 +1,107 @@
+<view class="detail-box">
+
+    <view class="detail-list">
+        <scroll-view scroll-y="true" style="height: 100%;">
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{pic_url}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+            <view class="detail-name">
+                <ul>
+                <view class='onecl'>
+                    <li class="name">{{detailgood.name}}</li>
+                    <li class="price">￥ {{detailgood.price1}}</li>
+                </view>
+                    <view class='whiteline'>
+                    <text class='txt'>简介:</text>
+                    </view>
+                    <view class='introducepack'>
+                    <text class='packtxt'>这里是产品简介</text>
+                    </view>
+
+                   <view class='picdetail'>
+                   <text class='picdetailtxt'>商品简介</text>
+                      <view class='pic1img'>
+                    <image class='pic1' src="../image/teacher1.png"></image>
+                   </view>
+                
+                   </view>
+
+                </ul>
+            </view>
+            <view class='hot-container'>
+
+</view>
+            </scroll-view>
+    </view>
+ <view class="detail-footer">
+    <view class="detail-1">
+    <text class='moneytxt'>￥</text>
+   
+    </view>
+    <view class="detail-2"> <text class='moneynum'>{{money}}</text></view>
+   
+    <view class="detail-3">
+     <contact-button class="contactbtn"></contact-button>
+    <text>客服</text>
+    </view>
+    <view class="detail-4"><text bindtap='purchase'>立即购买</text></view>
+ </view>
+
+ <!-- 这里是默认隐藏的界面，用于填写用户信息 -->
+ <view class='submitperson' hidden ="{{hideif}}" >
+
+  <view class='subtop'>
+  <view class='image'>
+  <image src='../image/teacher1.png' class='image-co'></image>
+  </view>
+
+  <view class='someintro'>
+  <text class='tamp'>返现1000优惠预订</text>
+  <text class='price'>￥ 288</text>
+  </view>
+
+  <view class='cancel'>
+  <image class='cancel_image' src='../image/forback.png' bindtap='cancelthis'></image>
+  </view>
+
+ </view>
+  <!-- 表单填写 -->
+  <view class='formwrite'>
+
+  <view class='formpack'>
+  <text class='formtxt'>姓名</text>
+  <input type="text" placeholder='必填' value="{{name}}" bindblur='name'></input>
+  </view>
+
+  <view class='formpack'>
+  <text class='formtxt'>手机号</text>
+  <input type="text" placeholder='必填' value="{{tel}}" bindblur='tel'></input>
+  </view>
+
+  <view class='formpack'>
+  <text class='formtxt'>地址</text>
+  <input type="text" placeholder='必填' value="{{address}}" bindblur='address'></input>
+  </view>
+
+  <view class='formpack'>
+  <text class='formtxt'>qq</text>
+  <input type="text" placeholder='必填' value="{{qq}}" bindblur='qq'></input>
+  </view>
+
+  
+  </view>
+ 
+ <view class='nextbtn' bindtap='nexttap'>
+ <text class='nextx'>下一步</text>
+ </view>
+
+
+ </view>
+</view>

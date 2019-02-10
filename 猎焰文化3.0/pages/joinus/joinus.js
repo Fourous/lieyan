@@ -1,4 +1,4 @@
-// pages/packagenew/packagenew.js
+// pages/joinus/joinus.js
 Page({
 
   /**
@@ -63,24 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  packagenew1:function(){
+  formsubmit:function(){
     wx.navigateTo({
-      url: '../car_goods/car_goods?id='+1,
+      url: '../formsubmit/formsubmit',
     })
-  },
-
-  packagenew2: function () {
-    wx.navigateTo({
-      url: '../car_goods/car_goods?id='+2,
-    })
-  },
-
-  packagenew3: function () {
-    wx.navigateTo({
-      url: '../packagenewstruct/packagenewstruct?index='+3,
-    })
-  },
-
-  
+  }
 })

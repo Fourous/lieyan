@@ -1,0 +1,35 @@
+<!--pages/joinus/joinus.wxml-->
+<!-- 这里是上面这一块 -->
+<view class='up_pack'>
+<view class='button'>
+<text class='btntext'>成为校园创业合伙人</text>
+</view>
+
+<view class='detail'>
+<text class='detailtxt'>
+如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
+</text>
+</view>
+
+<view class='submitview'>
+<button class='submit' bindtap='formsubmit'>提交申请</button>
+</view>
+
+</view>
+
+
+<view class='down_pack'>
+<view class='button'>
+<text class='btntext'>日常实习兼职</text>
+</view>
+
+<view class='detail'>
+<text class='detailtxt'>
+如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
+</text>
+</view>
+
+<view class='submitview'>
+<button class='submit' bindtap='formsubmit'>提交申请</button>
+</view>
+</view>

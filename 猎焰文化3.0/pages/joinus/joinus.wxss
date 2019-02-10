@@ -1,0 +1,48 @@
+/* pages/joinus/joinus.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.up_pack{
+  height: 49%;
+  width: 100%;
+}
+.down_pack{
+  height: 49%;
+  width: 100%;
+}
+.button{
+  height: 110px;
+  width: 80%;
+  text-align: center;
+  margin: 0px auto;
+  background-color:#09ADF9;
+  border-radius: 6%;
+}
+.btntext{
+  font-size: 20px;
+  line-height: 110px;
+}
+.detail{
+  height: 200rpx;
+  width: 80%;
+  margin:0px auto;
+}
+.detailtxt{
+  font-size: 13px;
+}
+.submitview{
+  height: 200rpx;
+  width: 100%;
+}
+.submit{
+  float: right;
+  height: 85rpx;
+  width: 200rpx;
+  margin-right: 30rpx;
+  font-size: 15px;
+  line-height: 85rpx;
+  margin-top: 35rpx;
+  border-radius: 8%;
+  background-color: #ff9900;
+}

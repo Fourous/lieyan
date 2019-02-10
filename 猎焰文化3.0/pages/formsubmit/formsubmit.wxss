@@ -1,0 +1,40 @@
+/* pages/entryform/entryform.wxss */
+.form {
+  font-size: 15px;
+  margin-bottom: 45px;
+}
+.form_txt {
+  font-size: 15px;
+  width: 13%;
+  height: 60px;
+  flex-grow: 1;  
+  margin-left: 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500
+  
+}
+.form input {
+  height: 40px;
+  width: 80%;
+  margin-bottom: 10px;
+  line-height: 50px;
+  font-size: 0.7rem;
+    color: #ccc;
+    flex-grow: 3;
+    border: 1px solid #ccc; 
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.15rem #aaa;
+   
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.put_btn{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 30px;
+  height: 45px; 
+
+}

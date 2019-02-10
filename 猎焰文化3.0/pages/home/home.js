@@ -56,13 +56,15 @@ Page({
   },
   to_group:function(){
     wx.navigateTo({
-      url: '../carpackage/carpackage',
+      // url: '../carpackage/carpackage',
+      url: '../packagenew/packagenew',
     })
 
   },
+  // 这里是指向加入我们得入口
   groupcom: function () {
     wx.navigateTo({
-      url: '../packagenew/packagenew',
+      url: '../joinus/joinus',
     })
   },
   /**
@@ -98,7 +100,7 @@ Page({
           })
         }
       })
-    }
+    } 
     
   },
 

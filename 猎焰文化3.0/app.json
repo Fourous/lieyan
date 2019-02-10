@@ -38,7 +38,10 @@
     "pages/personal/changeone/changeone",
     "pages/packagenew",
     "pages/packagenew/packagenew",
-    "pages/packagenewstruct/packagenewstruct"
+    "pages/packagenewstruct/packagenewstruct",
+    "pages/joinus/joinus",
+    "pages/formsubmit/formsubmit",
+    "pages/car_goods/car_goods"
   ],
   "window": {
     "backgroundTextStyle": "dark",
