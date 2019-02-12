@@ -12,4 +12,11 @@ public interface AddressService {
      * @return
      */
     List<Address> addresslist();
+
+    /**
+     *
+     * @param id
+     * @return
+     */
+    Address addressbyid(Integer id);
 }

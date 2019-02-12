@@ -16,4 +16,8 @@ public class AddressServicempl implements AddressService {
     public List<Address> addresslist() {
         return addressMapper.addresslist();
     }
+
+    public Address addressbyid(Integer id){
+        return addressMapper.addressbyid(id);
+    }
 }

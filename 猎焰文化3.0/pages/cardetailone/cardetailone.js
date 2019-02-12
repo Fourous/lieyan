@@ -40,7 +40,7 @@ Page({
             iconPath: '../image/location.png',
             position: {
               left: 20,
-              top: res.windowHeight - 80,
+              top: res.windowHeight-150,
               width: 50,
               height: 50
             },
@@ -91,6 +91,8 @@ Page({
     that.setData({
       carid:options.id
     })
+
+    
     wx.request({
       url: 'https://www.lieyanwenhua.com/cardetailbyid',
       method: 'POST',
@@ -189,5 +191,8 @@ Page({
     that.setData({
       mapsta:false
     })
+  },
+  godes:function(){
+
   }
 })

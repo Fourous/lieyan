@@ -2,19 +2,32 @@
 <view id='teacher_all'>
 <!--这里是静态测试设置view-->
   <view class='teacher_one'>
+
+
     <view wx:for="{{cardetail}}" wx:key="cardetail">
-      <view class="teacher-item"   data-id="{{item.id}}" bindtap='To_cardetail_detail'>
+      <view class="teacher-item" >
         <!-- <view bindtap='To_cardetail_detail' data-id="{{item.id}}" > -->
           <view class='pic_intro'>
-            <image class='teacher_pic' src='{{item.intropic}}' mode = "aspectFill"></image>
+          <view class='teacher_image'>
+           <image class='teacher_pic' src='{{item.intropic}}' mode = "aspectFill"></image>
+          </view>
+            <!-- 训练场名称 -->
             <view class='intro'>
  <text class='item_introduce'>{{item.introduce}}\n</text>
+ <text class='item_introducepos'>{{item.introduce}}\n</text>
             </view>
-            
+            <!-- 训练场位置简介 -->
+            <!-- <view class='intropos'>
+ <text class='item_introducepos'>{{item.introduce}}\n</text>
+            </view> -->
+            <view class='buttonpos'>
+            <button class='btnpos'  data-id="{{item.id}}" bindtap='To_cardetail_detail'>位置</button>
+            </view>
           </view>
         </view>
       </view>
-    <!-- </view> -->
+
+
   </view>
 </view>
 

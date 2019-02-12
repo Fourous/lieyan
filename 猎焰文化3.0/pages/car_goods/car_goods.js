@@ -6,6 +6,7 @@ Page({
       "../image/teacher1.png",
       "../image/teacher1.png",
     ],
+    detailgood:[],
     indicatorDots: true,
     autoplay: true,
     interval: 3000,
@@ -21,6 +22,23 @@ Page({
     var id = options.id;
     var that = this;
     console.log("taocan"+id);
+    wx.request({
+      url: 'https://www.lieyanwenhua.com/packageid',
+      data: {
+        packid:id
+      },
+      method: 'POST',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      success: (res) => {
+        console.log(res.data);
+        that.setData({
+          detailgood:res.data
+        })
+        console.log(that.data.detailgood);
+      }
+    })
   },
 
   onReady: function () {
@@ -50,6 +68,26 @@ Page({
       hideif:true
     })
   },
+  name: function (e) {
+    this.setData({
+      name: e.detail.value
+    })
+  },
+  tel: function (e) {
+    this.setData({
+      tel: e.detail.value
+    })
+  },
+  address: function (e) {
+    this.setData({
+      address: e.detail.value
+    })
+  },
+  qq: function (e) {
+    this.setData({
+      qq: e.detail.value
+    })
+  },
   nexttap:function(){
     var that = this
     console.log(this.data.name + this.data.tel + this.data.address + this.data.qq)
@@ -67,6 +105,6 @@ Page({
     }
 
   }
-  }
+  
 
 })

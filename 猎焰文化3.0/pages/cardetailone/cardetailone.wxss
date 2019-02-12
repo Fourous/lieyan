@@ -1,16 +1,15 @@
 /* pages/cardetailone/cardetailone.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
 .all{
   width: 100%;
   height: 100%;
 }
 .mapview {
   width: 100%;
-  height: 300rpx;
-}
-.mapview.active {
-  width: 100%;
-  height: 95%;
-  position: fixed;
+  height: 90%;
   z-index: 111;
 }
 
@@ -19,12 +18,31 @@
   height: 100%;
   z-index: 1;
 }
+.maptext{
+  width: 90%;
+  margin-left: 15rpx;
+  height: 100%;
+}
 
+.maptxt{
+  font-size: 16px;
+  font-weight: bold;
+   font-family: '宋体';
+}
 .downview {
   width: 100%;
   height: 60rpx;
   text-align: center;
   background: #eee;
+}
+.gobutton{
+width: 140rpx;
+text-align: center;
+}
+.gopic{
+height: 80rpx;
+width: 80rpx;
+margin-top: 35rpx;
 }
 .downbutton{
   width: 50rpx;
@@ -46,12 +64,13 @@
   line-height: 60rpx;
 }
 .mapintro {
-  height: 65rpx;
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  height: 150rpx;
   width: 100%;
-  text-align: left;
-  font-size: 11px;
-  border-bottom: 5rpx solid #ccc;
-  padding-top: 20rpx;
+  z-index: 111;
+  background-color: white;
 }
 .title{
   margin-top: 20rpx;

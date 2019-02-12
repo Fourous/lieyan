@@ -16,11 +16,17 @@ import java.util.Map;
 public class AddressController {
     @Autowired
     private AddressService addressService;
+
     @PostMapping("addresslist")
     public Map<String,Object> addresslist(){
         Map<String,Object> map=new HashMap<>();
         List<Address> list=addressService.addresslist();
         map.put("data",list);
         return map;
+    }
+
+    @PostMapping("addressbyid")
+    public Address addressbyid(Integer id){
+        return addressService.addressbyid(id);
     }
 }

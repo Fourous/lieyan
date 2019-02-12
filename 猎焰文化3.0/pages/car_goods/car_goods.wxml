@@ -15,14 +15,14 @@
             <view class="detail-name">
                 <ul>
                 <view class='onecl'>
-                    <li class="name">{{detailgood.name}}</li>
-                    <li class="price">￥ {{detailgood.price1}}</li>
+                    <li class="name">{{detailgood.packname}}</li>
+                    <li class="price">￥ {{detailgood.price}}</li>
                 </view>
                     <view class='whiteline'>
                     <text class='txt'>简介:</text>
                     </view>
                     <view class='introducepack'>
-                    <text class='packtxt'>这里是产品简介</text>
+                    <text class='packtxt'>{{detailgood.packdetail}}</text>
                     </view>
 
                    <view class='picdetail'>
@@ -41,11 +41,10 @@
             </scroll-view>
     </view>
  <view class="detail-footer">
-    <view class="detail-1">
+    <!-- <view class="detail-1">
     <text class='moneytxt'>￥</text>
-   
     </view>
-    <view class="detail-2"> <text class='moneynum'>{{money}}</text></view>
+    <view class="detail-2"> <text class='moneynum'>{{money}}</text></view> -->
    
     <view class="detail-3">
      <contact-button class="contactbtn"></contact-button>
@@ -64,7 +63,7 @@
 
   <view class='someintro'>
   <text class='tamp'>返现1000优惠预订</text>
-  <text class='price'>￥ 288</text>
+  <text class='price'>￥ {{detailgood.price}}</text>
   </view>
 
   <view class='cancel'>

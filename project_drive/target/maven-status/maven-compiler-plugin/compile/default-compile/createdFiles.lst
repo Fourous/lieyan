@@ -3,6 +3,7 @@ com\lieyan\mapper\UserappointMapper.class
 com\lieyan\Entity\Changeteacher.class
 com\lieyan\Entity\Score.class
 com\lieyan\Entity\Circlecomment.class
+com\lieyan\Service\PackdetailServicempl.class
 com\lieyan\mapper\CoachMapper.class
 com\lieyan\Service\ScoreService.class
 com\lieyan\Entity\Classsign.class
@@ -32,9 +33,11 @@ com\lieyan\Entity\Circleone.class
 com\lieyan\Service\AddressService.class
 com\lieyan\Service\CirclecolServicempl.class
 com\lieyan\Service\UserappointService.class
+com\lieyan\Service\PackdetailService.class
 com\lieyan\controller\FeedbackController.class
 com\lieyan\Entity\User.class
 com\lieyan\controller\CoachController.class
+com\lieyan\Entity\Packdetail.class
 com\lieyan\Service\StudentService.class
 com\lieyan\mapper\AdverMapper.class
 com\lieyan\mapper\UserMapper.class
@@ -73,6 +76,8 @@ com\lieyan\App.class
 com\lieyan\Service\Convertime.class
 com\lieyan\Entity\Cardetail.class
 com\lieyan\mapper\CommentMapper.class
+com\lieyan\mapper\PackdetailMapper.class
+com\lieyan\controller\PackdetailController.class
 com\lieyan\Entity\Circle.class
 com\lieyan\mapper\AppointimeMapper.class
 com\lieyan\Service\CirclecommentServicempl.class

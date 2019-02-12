@@ -17,10 +17,12 @@ F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\CirclecommentSer
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\mapper\AdverMapper.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\WxPayConfig.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Commentmore.java
+F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\PackdetailService.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\mapper\CardetailMapper.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Coach.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Form.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\UserService.java
+F:\github\lieyan\project_drive\src\main\java\com\lieyan\controller\PackdetailController.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\PersoncolServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\ChangeteacherServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Adver.java
@@ -60,6 +62,7 @@ F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\CircleServicempl
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\configuration\DataSourceConfiguration.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\StudentServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\AppointimeServicempl.java
+F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Packdetail.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\ScoreService.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\mapper\CircleMapper.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\AdverServicempl.java
@@ -73,6 +76,7 @@ F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Classsign.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\CirclecommentServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Feedback.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\App.java
+F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\PackdetailServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\PersoncolService.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\controller\AdverController.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Appointime.java
@@ -102,5 +106,6 @@ F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\CircleService.ja
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Circle.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Service\UserServicempl.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\controller\UserController.java
+F:\github\lieyan\project_drive\src\main\java\com\lieyan\mapper\PackdetailMapper.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Userappoint.java
 F:\github\lieyan\project_drive\src\main\java\com\lieyan\Entity\Weeksign.java

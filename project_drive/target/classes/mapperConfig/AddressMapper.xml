@@ -11,10 +11,10 @@
     </select>
 
     <!--通过教练的id找到教练-->
-    <select id="userformquerybyid" resultType="com.lieyan.Entity.Address">
+    <select id="addressbyid" resultType="com.lieyan.Entity.Address">
         SELECT  *
-        FROM form
-        WHERE fname= #{fname}
+        FROM address
+        WHERE id= #{id}
 
     </select>
 

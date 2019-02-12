@@ -1,20 +1,40 @@
 <!--pages/cardetailone/cardetailone.wxml-->
 <!-- <text>{{cardetail.introduce}}</text> -->
 <view class='all'>
-<view class='mapview {{mapsta?"active":""}}' >
+<view class='mapview'>
 <map id="Map" class="Map" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" bindregionchange="bindregionchange" polyline="{{polyline}}" markers="{{markers}}" controls="{{controls}}" bindcontroltap="bindcontroltap" bindregionchange="bindregionchange" show-location>
   </map>
 </view>
-<view class='downview' hidden='{{mapsta}}' bindtap='downtab'>
-<image class='downbutton' src='../image/down.png' ></image>
-</view>
+
 <view class='mapintro'>
+
+<view class='maptext'>
 <text class='maptxt'>{{cardetail.address}}</text>
 </view>
-<view class='title'>
-<text class='titletxt'>训练场介绍</text>
+<view class='gobutton'>
+<image class='gopic' src='../image/up.png' bindtap='godes'></image>
 </view>
-<view class='detailintro'>
+
+</view>
+
+
+</view>
+
+
+<!-- <view class='downview' hidden='{{mapsta}}' bindtap='downtab'>
+<image class='downbutton' src='../image/down.png' ></image>
+</view> -->
+
+
+<!-- <view hidden='{{!mapsta}}' class='upview' bindtap='uptab'>
+<image class='upbutton' src='../image/up.png'></image>
+</view> -->
+
+
+<!-- <view class='title'>
+<text class='titletxt'>训练场介绍</text>
+</view> -->
+<!-- <view class='detailintro'>
 
 <view class='pic1'>
 <image class='image1' src='{{cardetail.image1}}' mode="aspectFill"></image>
@@ -41,8 +61,6 @@
 <view class='txt1'> 
 <text class='text1'>{{cardetail.introducedetail4}}</text>
 </view>
-</view>
-<view hidden='{{!mapsta}}' class='upview' bindtap='uptab'>
-<image class='upbutton' src='../image/up.png'></image>
-</view>
-</view>
+</view> -->
+
+
