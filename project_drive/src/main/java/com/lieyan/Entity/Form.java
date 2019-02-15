@@ -3,6 +3,7 @@ package com.lieyan.Entity;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 public class Form {
+    private Integer fid;
     private String fname;
     private String ftel;
     private String fidcard;
@@ -10,6 +11,14 @@ public class Form {
     private String fqq;
     private String fwechat;
     private String fteacher;
+    public void setFid(Integer fid) {
+        this.fid = fid;
+    }
+
+    public Integer getFid() {
+        return fid;
+    }
+
     public void setFname(String fname) {
         this.fname = fname;
     }

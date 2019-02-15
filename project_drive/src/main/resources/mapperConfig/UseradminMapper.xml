@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.UseradminMapper">
+    <!--这里有添加管理员操作，删除管理员，通过用户名验证管理员操作-->
+
+    <!--列举所有管理员-->
+    <select id="useradminquery"  resultType="com.lieyan.Entity.Userappoint">
+        SELECT  *
+        FROM userlogin
+    </select>
+
+    <!--通过管理员得id列举-->
+    <select id="useradminbyid"  resultType="com.lieyan.Entity.Userappoint">
+        SELECT  *
+        FROM userlogin
+        WHERE userid=#{userid}
+    </select>
+
+    <!--通过管理员得name-->
+    <select id="useradminbyname"  resultType="com.lieyan.Entity.Userappoint">
+        SELECT  *
+        FROM userlogin
+        WHERE username=#{username}
+    </select>
+
+    <!--添加管理员-->
+    <insert id="useradmininsert"  >
+        INSERT INTO
+        userlogin (username, userpasswd)
+        VALUES (#{username},#{userpasswd})
+    </insert>
+
+
+    <delete id="useradmindelete">
+        DELETE FROM
+        userlogin
+        WHERE userid = #{userid}
+    </delete>
+
+
+</mapper>

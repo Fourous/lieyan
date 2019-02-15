@@ -38,7 +38,11 @@ public class FormController {
         formdetail.put("formdetail",formService.userforminsert(form));
         return formdetail;
     }
-
+        //这里是绑定教练操作
+    @PostMapping("userformupdate")
+    public boolean userformupdate(Integer fid,String fteacher){
+        return formService.userformupdate(fid,fteacher);
+    }
 
 
 }

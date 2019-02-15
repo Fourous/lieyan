@@ -37,4 +37,10 @@ public class FormServicempl implements FormService {
         }
     }
 
+    public boolean userformupdate(Integer fid,String fteacher){
+        if(formMapper.userformupdate(fid,fteacher)>0){
+            return true;
+        }else return false;
+    }
+
 }

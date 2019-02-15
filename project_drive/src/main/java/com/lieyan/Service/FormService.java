@@ -19,4 +19,12 @@ public interface FormService {
      * @return
      */
     boolean userforminsert(Form form);
+
+    /**
+     *
+     * @param fid
+     * @param fteacher
+     * @return
+     */
+    boolean userformupdate(Integer fid,String fteacher);
 }
