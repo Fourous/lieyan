@@ -28,7 +28,7 @@
                    <view class='picdetail'>
                    <text class='picdetailtxt'>商品简介</text>
                       <view class='pic1img'>
-                    <image class='pic1' src="../image/teacher1.png"></image>
+                    <image class='pic1' src="../image/carpack1.jpg"></image>
                    </view>
                 
                    </view>
@@ -58,7 +58,7 @@
 
   <view class='subtop'>
   <view class='image'>
-  <image src='../image/teacher1.png' class='image-co'></image>
+  <image src='../image/carpack1.jpg' class='image-co'></image>
   </view>
 
   <view class='someintro'>

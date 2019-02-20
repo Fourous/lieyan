@@ -65,7 +65,7 @@
       <view class='_img' style='vertical-align:top;'>
         <image src='../../image/fun.png' class='picandicon'></image>
       </view>
-      <view class='_txt' style='vertical-align:top;' bindtap='Tofun'>多多乐园</view>
+      <view class='_txt' style='vertical-align:top;' bindtap='Tofun'>我的组团</view>
     </view>
 
     <view class='change'>

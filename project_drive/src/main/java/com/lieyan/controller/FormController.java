@@ -38,6 +38,13 @@ public class FormController {
         formdetail.put("formdetail",formService.userforminsert(form));
         return formdetail;
     }
+//    获取主键id
+    @PostMapping("formgetid")
+    public Integer formgetid(@RequestBody Form form){
+        formService.userforminsert(form);
+        return form.getFid();
+    }
+
         //这里是绑定教练操作
     @PostMapping("userformupdate")
     public boolean userformupdate(Integer fid,String fteacher){

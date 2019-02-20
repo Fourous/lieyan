@@ -21,6 +21,26 @@ public interface FormMapper {
      */
     int userforminsert(Form form);
 
-
+    /**
+     *
+     * @param fid
+     * @param fteacher
+     * @return
+     */
     int userformupdate(@Param("fid") Integer fid,@Param("fteacher") String fteacher);
+
+    /**
+     *
+     * @param fid
+     * @return
+     */
+    int userformdelete(Integer fid);
+
+    /**
+     *
+     * @param fid
+     */
+    Form userformquerybyid(Integer fid);
+
+
 }

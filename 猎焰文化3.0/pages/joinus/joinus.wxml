@@ -4,8 +4,8 @@
 <view class='button'>
 <text class='btntext'>成为校园创业合伙人</text>
 </view>
-
 <view class='detail'>
+<image class='detailimage' src='../image/regis.png'></image>
 <text class='detailtxt'>
 如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
 </text>
@@ -24,6 +24,7 @@
 </view>
 
 <view class='detail'>
+<image class='detailimage' src='../image/regis.png'></image>
 <text class='detailtxt'>
 如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
 </text>

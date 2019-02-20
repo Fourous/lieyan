@@ -27,4 +27,20 @@ public interface FormService {
      * @return
      */
     boolean userformupdate(Integer fid,String fteacher);
+
+    /**
+     *
+     * @param fid
+     * @return
+     */
+    boolean userformdelete(Integer fid);
+
+    /**
+     *
+     * @param fid
+     * @return
+     */
+    Form userformquerybyid(Integer fid);
+
+
 }

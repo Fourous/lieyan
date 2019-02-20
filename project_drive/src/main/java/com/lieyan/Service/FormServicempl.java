@@ -43,4 +43,14 @@ public class FormServicempl implements FormService {
         }else return false;
     }
 
+    public boolean userformdelete(Integer fid){
+        if(formMapper.userformdelete(fid)>0){
+            return true;
+        }else return false;
+    }
+
+    public  Form userformquerybyid(Integer fid){
+        return formMapper.userformquerybyid(fid);
+    }
+
 }

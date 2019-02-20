@@ -5,7 +5,7 @@
   <view class='inf'>电话: {{tel}}</view>
   <view class='inf'>地址: {{address}}</view>
   <view class='inf'>QQ: {{qq}}</view>
-  <view class='inf'>报名类型：{{car}}</view>
+  <view class='inf'>报名类型：{{packname}}</view>
     
 </view>
  <view class='sub'>

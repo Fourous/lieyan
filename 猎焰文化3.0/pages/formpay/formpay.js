@@ -11,8 +11,7 @@ Page({
     tel: null,
     address: null,
     qq: null,
-    wechat: null,
-    teacher: null,
+    packname:null,
     car:null,
     casArray: ['一对一学车', '四人学车', '团购'],
   },
@@ -25,13 +24,10 @@ Page({
     that.setData({
       name: options.name,
       tel: options.tel,
-      idcard: options.idcard,
       address: options.address,
       qq: options.qq,
-      wechat: options.wechat,
-      teacher: options.teacher,
-      car: app.globalData.car
-      
+      packname:options.packname,
+      car: options.car
     })
   },
 
@@ -89,11 +85,9 @@ Page({
       data: {
         'fname': that.data.name,
         'ftel': that.data.tel,
-        'fidcard': that.data.idcard,
         'faddress': that.data.address,
         'fqq': that.data.qq,
-        'fwechat': that.data.wechat,
-        'fteacher': that.data.teacher,
+        'fpack':that.data.car
       },
       header: {
         'content-type': 'application/json'
@@ -119,7 +113,7 @@ Page({
                     url: 'https://www.lieyanwenhua.com/wxPay',
                     data: {
                       'openid': res.data.openid,
-                      'body': "taocanyi",
+                      'body': that.data.name,
                       'money': 1
                     },
                     method: 'POST',
@@ -145,13 +139,11 @@ Page({
                             duration: 2000
                           });
                           wx.navigateBack({
-                            url: '../entryform/entryform',
+                            delta: 3
                           });
                           wx.showToast({
                             title: '报名成功',
                           })
-                          
-
                         },
                         fail: function (error) {
                           // fail   

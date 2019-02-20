@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lieyan.mapper.TeamformMapper">
+    <!--
+    数据库的版本不支持open-id,只能下划线
+    -->
+    <!--返回所有教练信息，在教练首页那里需要加载这些数据-->
+    <select id="teamformquery" resultType="com.lieyan.Entity.Teamform">
+        SELECT  *
+        FROM teamform
+    </select>
+
+    <!--通过教练的id找到教练-->
+    <select id="teamformquerybyteamid" resultType="com.lieyan.Entity.Teamform">
+        SELECT  *
+        FROM teamform
+        WHERE teamid= #{teamid}
+    </select>
+
+    <select id="teamformquerybyopenid" resultType="com.lieyan.Entity.Teamform">
+        SELECT  *
+        FROM teamform
+        WHERE openid= #{openid}
+    </select>
+    <!--插入操作这里注意插入操作，是insert，很容易搞错-->
+    <!--
+    这里用于每次用户微信登录的时候，都会将用户的信息传输到服务器里面,但是只是传输用户
+    微信官方数据，其余的数据通过其他insert插入
+    -->
+    <insert id="teamforminsert" parameterType="com.lieyan.Entity.Teamform">
+        INSERT INTO
+        teamform (teamid,teamname,openid,formid)
+        VALUES (#{teamid},#{teamname},#{openid},#{formid})
+    </insert>
+
+    <!--这里进行绑定教练操作-->
+    <update id="teamformpush" parameterType="com.lieyan.Entity.Teamform">
+        UPDATE teamform
+        SET push = 1
+        WHERE teamid=#{teamid}
+    </update>
+
+    <update id="teamformchangename" parameterType="com.lieyan.Entity.Teamform">
+        UPDATE teamform
+        SET teamname=#{teamname}
+        WHERE tid=#{tid}
+    </update>
+
+    <!--通过id找到相应的数据记录，并且删除他,这里接口几乎用不到，不过可能以后用户
+    出现问题，可以通过删除再添加的操作来更新
+    -->
+    <delete id="userformdelete">
+        DELETE FROM
+        teamform
+        WHERE fname = #{fname}
+    </delete>
+
+
+
+</mapper>

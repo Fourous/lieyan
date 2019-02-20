@@ -17,7 +17,7 @@ page{
   text-align: center;
   margin: 0px auto;
   background-color:#09ADF9;
-  border-radius: 6%;
+  border-radius: 4%;
 }
 .btntext{
   font-size: 20px;
@@ -27,22 +27,31 @@ page{
   height: 200rpx;
   width: 80%;
   margin:0px auto;
+  display: flex;
+}
+.detailimage{
+  justify-content: flex-start;
+  height: 85rpx;
+  width: 305rpx;
+  margin-top: 35rpx;
 }
 .detailtxt{
   font-size: 13px;
+  margin-left: 25rpx;
 }
 .submitview{
   height: 200rpx;
   width: 100%;
+
 }
 .submit{
-  float: right;
+  /* float: right; */
   height: 85rpx;
-  width: 200rpx;
-  margin-right: 30rpx;
+  width: 80%;
+  /* margin-right: 30rpx; */
   font-size: 15px;
   line-height: 85rpx;
   margin-top: 35rpx;
-  border-radius: 8%;
+  border-radius: -10%;
   background-color: #ff9900;
 }

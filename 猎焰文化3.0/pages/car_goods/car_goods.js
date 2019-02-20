@@ -2,9 +2,8 @@ var app = getApp()
 Page({
   data: {
     pic_url:[
-      "../image/teacher1.png",
-      "../image/teacher1.png",
-      "../image/teacher1.png",
+      "../image/carpack2.jpg",
+      "../image/carpack1.jpg",
     ],
     detailgood:[],
     indicatorDots: true,
@@ -15,13 +14,17 @@ Page({
     name:'',
     tel:'',
     address:'',
-    qq:''
+    qq:'',
+    id:''
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
     var id = options.id;
     var that = this;
     console.log("taocan"+id);
+    that.setData({
+      id:options.id
+    })
     wx.request({
       url: 'https://www.lieyanwenhua.com/packageid',
       data: {
@@ -99,7 +102,7 @@ Page({
     }
     else {
       wx.navigateTo({
-        url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq,
+        url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.detailgood.packname,
       })
 
     }

@@ -11,6 +11,16 @@ public class Form {
     private String fqq;
     private String fwechat;
     private String fteacher;
+    private String fpack;
+
+    public void setFpack(String fpack) {
+        this.fpack = fpack;
+    }
+
+    public String getFpack() {
+        return fpack;
+    }
+
     public void setFid(Integer fid) {
         this.fid = fid;
     }

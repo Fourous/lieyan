@@ -41,7 +41,7 @@
     <delete id="userformdelete">
         DELETE FROM
         form
-        WHERE fname = #{fname}
+        WHERE fid = #{fid}
     </delete>
 
 

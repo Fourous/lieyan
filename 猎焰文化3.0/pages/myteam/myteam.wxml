@@ -1,0 +1,14 @@
+<!--pages/myteam/myteam.wxml-->
+<block wx:if="{{list==0}}">
+<view class='background'>
+<view class='sometip'>
+<text class='txt'>还没有任何组团哦</text>
+<button class='findteam' bindtap='findteam'>立即发起组团</button> 
+</view>
+
+</view>
+</block>
+
+<block wx:if="{{list==1}}">
+<text class='text'>这是测试</text>
+</block>

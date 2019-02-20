@@ -183,27 +183,8 @@ Page({
     })
   },
   Tofun:function(){
-    wx.showToast({
-      title: '敬请期待！',
-      icon: 'loading'
-    })
-
-    wx.navigateToMiniProgram({
-
-      appId: '',
-
-      path: 'pages/index/index?id=123',
-
-      extraData: {},
-
-      envVersion: 'develop',
-
-      success(res) {
-
-        // 打开成功
-
-      }
-
+    wx.navigateTo({
+      url: '../../myteam/myteam',
     })
   },
   Tocustom:function(){

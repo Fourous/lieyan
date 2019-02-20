@@ -4,21 +4,21 @@
 
 <view class='item' >
 <view class='instruct' bindtap='packagenew1'>
-<text class='text'>报名套餐一：急速学车，45天拿证立返1000现金</text>
+<image class='packpng' src='../image/packpng1.png'></image>
 </view>
 </view>
 
 
 <view class='item' >
 <view class='instruct' bindtap='packagenew2'>
-<text class='text'>报名套餐二：报名学车获1000元话费</text>
+<image class='packpng' src='../image/packpng2.png'></image>
 </view>
 </view>
 
 
 <view class='item'>
 <view class='instruct' bindtap='packagenew3'>
-<text class='text'>报名套餐三：组团报名</text>
+<image class='packpng' src='../image/packpng3.png'></image>
 </view>
 </view>
 

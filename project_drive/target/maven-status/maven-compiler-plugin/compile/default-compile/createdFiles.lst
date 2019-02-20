@@ -1,5 +1,6 @@
 com\lieyan\Entity\Appointime.class
 com\lieyan\mapper\UserappointMapper.class
+com\lieyan\Service\UseradminService.class
 com\lieyan\Entity\Changeteacher.class
 com\lieyan\Entity\Score.class
 com\lieyan\Entity\Circlecomment.class
@@ -8,6 +9,7 @@ com\lieyan\mapper\CoachMapper.class
 com\lieyan\Service\ScoreService.class
 com\lieyan\Entity\Classsign.class
 com\lieyan\mapper\CirclecommentMapper.class
+com\lieyan\mapper\UseradminMapper.class
 com\lieyan\controller\index.class
 com\lieyan\Service\ChangeteacherServicempl.class
 com\lieyan\Service\HttpUtil.class
@@ -29,6 +31,7 @@ com\lieyan\Service\CardetailService.class
 com\lieyan\Service\PayUtil.class
 com\lieyan\Service\ScoreServicempl.class
 com\lieyan\Service\UserService.class
+com\lieyan\controller\FormcorpController.class
 com\lieyan\Entity\Circleone.class
 com\lieyan\Service\AddressService.class
 com\lieyan\Service\CirclecolServicempl.class
@@ -45,12 +48,15 @@ com\lieyan\Service\UserServicempl.class
 com\lieyan\mapper\FeedbackMapper.class
 com\lieyan\controller\TeacherLoginController.class
 com\lieyan\Entity\Commentone.class
+com\lieyan\mapper\TeamformMapper.class
 com\lieyan\Service\AdverServicempl.class
 com\lieyan\controller\PersoncolController.class
+com\lieyan\Entity\Useradmin.class
 com\lieyan\Service\TeacherLoginServicempl.class
 com\lieyan\Entity\CoachComone.class
 com\lieyan\Service\CommentServicempl.class
 com\lieyan\Entity\Adver.class
+com\lieyan\Service\TeamformService.class
 com\lieyan\mapper\TeacherLoginMapper.class
 com\lieyan\Service\FormServicempl.class
 com\lieyan\Service\CoachService.class
@@ -61,10 +67,12 @@ com\lieyan\Entity\Feedback.class
 com\lieyan\mapper\ScoreMapper.class
 com\lieyan\mapper\CircleMapper.class
 com\lieyan\controller\CircleController.class
+com\lieyan\Service\TeamformServicempl.class
 com\lieyan\Service\CircleService.class
 com\lieyan\mapper\AddressMapper.class
 com\lieyan\Service\PersoncolService.class
 com\lieyan\Entity\Userappoint.class
+com\lieyan\Entity\Formcorp.class
 com\lieyan\controller\ChangeteacherController.class
 com\lieyan\controller\CardetailController.class
 com\lieyan\controller\AddressController.class
@@ -75,8 +83,10 @@ com\lieyan\mapper\FormMapper.class
 com\lieyan\App.class
 com\lieyan\Service\Convertime.class
 com\lieyan\Entity\Cardetail.class
+com\lieyan\Service\FormcorpServicempl.class
 com\lieyan\mapper\CommentMapper.class
 com\lieyan\mapper\PackdetailMapper.class
+com\lieyan\Service\FormcorpService.class
 com\lieyan\controller\PackdetailController.class
 com\lieyan\Entity\Circle.class
 com\lieyan\mapper\AppointimeMapper.class
@@ -85,11 +95,14 @@ com\lieyan\controller\AdverController.class
 com\lieyan\Service\ChangeteacherService.class
 com\lieyan\Service\OpenIdUtil.class
 com\lieyan\Service\FeedbackServicempl.class
+com\lieyan\controller\UseradminController.class
+com\lieyan\controller\TeamformController.class
 com\lieyan\Entity\Address.class
 com\lieyan\Entity\Weeksign.class
 com\lieyan\Service\StringUtils.class
 com\lieyan\Service\WxPayConfig.class
 com\lieyan\Entity\Student.class
+com\lieyan\Service\UseradminServicempl.class
 com\lieyan\Service\PersoncolServicempl.class
 com\lieyan\Service\CirclecommentService.class
 com\lieyan\Service\CommentService.class
@@ -98,6 +111,8 @@ com\lieyan\mapper\CardetailMapper.class
 com\lieyan\Service\AdverService.class
 com\lieyan\Entity\Circlecol.class
 com\lieyan\controller\UserController.class
+com\lieyan\Entity\Teamform.class
+com\lieyan\mapper\FormcorpMapper.class
 com\lieyan\controller\FormController.class
 com\lieyan\Service\FeedbackService.class
 com\lieyan\Service\CoachServicempl.class

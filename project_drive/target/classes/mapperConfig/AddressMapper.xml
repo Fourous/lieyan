@@ -15,7 +15,6 @@
         SELECT  *
         FROM address
         WHERE id= #{id}
-
     </select>
 
     <!--插入操作这里注意插入操作，是insert，很容易搞错-->
@@ -42,7 +41,7 @@
     <delete id="userformdelete">
         DELETE FROM
         form
-        WHERE fname = #{fname}
+        WHERE fid = #{fid}
     </delete>
 
 

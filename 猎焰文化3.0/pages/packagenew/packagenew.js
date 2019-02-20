@@ -78,7 +78,7 @@ Page({
 
   packagenew3: function () {
     wx.navigateTo({
-      url: '../packagenewstruct/packagenewstruct?index='+3,
+      url: '../carteam/carteam?id='+3,
     })
   },
 

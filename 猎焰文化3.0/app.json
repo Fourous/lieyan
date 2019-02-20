@@ -41,7 +41,10 @@
     "pages/packagenewstruct/packagenewstruct",
     "pages/joinus/joinus",
     "pages/formsubmit/formsubmit",
-    "pages/car_goods/car_goods"
+    "pages/car_goods/car_goods",
+    "pages/carteam/carteam",
+    "pages/teampay/teampay",
+    "pages/myteam/myteam"
   ],
   "window": {
     "backgroundTextStyle": "dark",

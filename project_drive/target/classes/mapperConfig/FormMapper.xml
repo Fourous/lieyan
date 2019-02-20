@@ -14,25 +14,30 @@
     <select id="userformquerybyid" resultType="com.lieyan.Entity.Form">
         SELECT  *
         FROM form
-        WHERE fname= #{fname}
-
+        WHERE fid= #{fid}
     </select>
+
+
 
     <!--插入操作这里注意插入操作，是insert，很容易搞错-->
     <!--
     这里用于每次用户微信登录的时候，都会将用户的信息传输到服务器里面,但是只是传输用户
     微信官方数据，其余的数据通过其他insert插入
     -->
-    <insert id="userforminsert" parameterType="com.lieyan.Entity.Form">
+    <insert id="userforminsert" useGeneratedKeys="true" keyColumn="fid" keyProperty="fid" parameterType="com.lieyan.Entity.Form">
         INSERT INTO
-        form (fname, ftel, fidcard,faddress,fqq,fwechat,fteacher)
-        VALUES (#{fname},#{ftel},#{fidcard},#{faddress},#{fqq},#{fwechat},#{fteacher})
+        form (fname, ftel, fidcard,faddress,fqq,fwechat,fteacher,fpack)
+        VALUES (#{fname},#{ftel},#{fidcard},#{faddress},#{fqq},#{fwechat},#{fteacher},#{fpack})
+        <selectKey resultType="int" keyProperty="fid" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
     </insert>
 
-
+<!--这里进行绑定教练操作-->
     <update id="userformupdate" parameterType="com.lieyan.Entity.Form">
         UPDATE form
-        WHERE fname = #{fname}
+        SET fteacher=#{fteacher}
+        WHERE fid=#{fid}
     </update>
 
 

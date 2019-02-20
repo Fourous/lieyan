@@ -1,0 +1,30 @@
+/* pages/myteam/myteam.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.background{
+  /* height: 100%;
+  width: 100%;
+  background-color: #eee; */
+}
+.sometip{
+  /* margin-top: 400rpx; */
+  text-align: center;
+}
+.txt{
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 100rpx;
+}
+.findteam{
+height: 100rpx;
+width: 357rpx;
+background-color: #ff9900;
+color: white;
+line-height: 100rpx;
+font-size: 13px;
+margin: 0px auto;
+margin-top: 50rpx;
+}
+
