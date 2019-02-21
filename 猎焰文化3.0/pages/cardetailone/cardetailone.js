@@ -12,6 +12,7 @@ Page({
     longitude: 0,
     markers: null,
     mapsta:false,
+    userInfo:""
   },
 
   /**
@@ -119,7 +120,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var that = this
+  
   },
 
   /**

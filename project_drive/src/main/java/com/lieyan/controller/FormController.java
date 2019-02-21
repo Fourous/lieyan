@@ -51,5 +51,9 @@ public class FormController {
         return formService.userformupdate(fid,fteacher);
     }
 
+    @PostMapping("formgetform")
+    public Form formgetform (Integer fid){
+        return formService.userformquerybyid(fid);
+    }
 
 }

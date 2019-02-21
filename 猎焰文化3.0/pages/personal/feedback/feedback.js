@@ -16,7 +16,8 @@ Page({
     flag: true,
     feedbacks:null,
     value:"",
-    len:0
+    len:0,
+    userInfo:""
   },
    //字数限制  
   bindinput: function (e) {
@@ -57,6 +58,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var that = this
   
   },
 

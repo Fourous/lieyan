@@ -1,7 +1,9 @@
 package com.lieyan.controller;
 
 import com.lieyan.Entity.Coach;
+import com.lieyan.Entity.User;
 import com.lieyan.Service.CoachService;
+import com.lieyan.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +21,8 @@ import java.util.Map;
 public class CoachController {
     @Autowired
     private CoachService coachService;
-
+    @Autowired
+    private UserService userService;
     @PostMapping("coachall")
     public Map<String ,Object> coachall(){
          Map<String ,Object> map =new HashMap<>();
@@ -100,6 +103,13 @@ public class CoachController {
     public Integer like_original(Integer tid,Integer openid){
 
         return 1;
+     }
+
+     @PostMapping("getmyteacher")
+    public Coach getmyteacher(String openid){
+         User user=new User();
+         user = userService.useropenid(openid);
+         return coachService.coachone(user.getBindteacher());
      }
 
 }

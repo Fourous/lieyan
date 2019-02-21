@@ -141,6 +141,7 @@ Page({
     //     }]
     //   }]
     classsigns: null,
+    userInfo:""
   },
 
   /**
@@ -186,7 +187,7 @@ Page({
     // var timestamp = Date.parse(new Date());
     // console.log(timestamp);
     // console.log(that.data.tid);
-
+   
     wx.request({
       url: 'https://www.lieyanwenhua.com/userappointmap',
       method: 'POST',

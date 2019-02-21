@@ -1,13 +1,7 @@
 /* pages/teacherdetail/teacherdetail.wxss */
 .teacher_one {
-  position: fixed;
-  z-index: 1111;
-  top: 0px;
-  border-bottom: 20rpx solid rgba(245, 245, 245,1); 
+  border-bottom: 5rpx solid #ccc; 
   background: rgba(255, 255, 255,1);
-  background-color: rgba(255, 255, 255,1);
-  opacity: 1;
-  width: 100%;
   height: 250rpx;
 }
 .right {
@@ -76,8 +70,8 @@ height: 70%;
  width: 120rpx;
  position: fixed;
  z-index: 111;
- right: 50rpx;
- top:195rpx;
+ right: 85rpx;
+ top:350rpx;
 }
 /*评论界面的css
 
@@ -177,4 +171,51 @@ height: 70%;
   right: 80rpx;
   height: 30rpx;
   width: 30rpx;
+}
+.tip{
+  /* float: left; */
+  width: 200rpx;
+  font-size: 14px;
+  border-radius: 10%;
+  background-color: yellow;
+  margin-left: 15px;
+  margin-bottom: 60rpx;
+  margin-top: 30rpx;
+}
+.myserver{
+  height: 500rpx;
+  display: flex;
+  width: 100%;
+}
+.pic{
+float: left;
+width: 49%;
+}
+.btn{
+float: right;
+width: 49%;
+}
+.avatar{
+height: 45%;
+width: 80%;
+margin-left: 15rpx;
+}
+.tel{
+width: 70%;
+height: 90rpx;
+background-color: #09ADF9;
+color: white;
+}
+.pro{
+width: 70%;
+height: 90rpx;
+margin-top: 50rpx;
+color: white;
+background-color: #ff9900;
+}
+.flag{
+  font-size: 20px;
+  margin-left: 200rpx;
+  line-height: 250rpx;
+  font-weight: bold;
 }

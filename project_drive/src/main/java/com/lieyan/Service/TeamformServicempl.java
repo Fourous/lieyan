@@ -11,18 +11,24 @@ import java.util.List;
 public class TeamformServicempl implements TeamformService {
     @Autowired
     private TeamformMapper teamformMapper;
+    @Autowired
     private TeamformService teamformService;
 
     public Integer teamforminsert(String teamid, String teamname, String openid,  Integer formid){
 //        这里判断是不是加入其他战队
+        System.out.println("aaa");
         if(teamformService.teamformquerybyopenid(openid)!=null){
+            System.out.println("bbb");
             System.out.println(teamformService.teamformquerybyopenid(openid));
+            System.out.println("ccc");
             return 1;//这里加入了其他战队
         }
         else if(teamformquerybyteamid(teamid).size()>=4){
+            System.out.println("ddd");
             return 2;//这里是参与人数超了
         }
         else if(teamformMapper.teamforminsert(teamid,teamname,openid,formid)<=0){
+            System.out.println("eee");
             return 3;
         }
         else return 4;

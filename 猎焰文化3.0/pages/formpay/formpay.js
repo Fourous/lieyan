@@ -14,6 +14,7 @@ Page({
     packname:null,
     car:null,
     casArray: ['一对一学车', '四人学车', '团购'],
+    userInfo:""
   },
 
   /**
@@ -35,6 +36,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var that = this
+   
   },
 
   /**

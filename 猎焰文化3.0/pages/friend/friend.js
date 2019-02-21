@@ -7,6 +7,7 @@ Page({
    */
   data: {
     'inform': '一对一学车”，享受VIP教学！',
+    userInfo:"",
     flag: 'true',
     imgUrls: [],
     circleid: 5,
@@ -97,7 +98,8 @@ Page({
    */
   onReady: function() {
 
-
+    var that = this
+   
 
   },
 

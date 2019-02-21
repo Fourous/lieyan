@@ -12,6 +12,7 @@ Page({
     address: '',
     qq: '',
     weixin: '',
+    userInfo:""
   },
   show: function () {
     this.setData({ flag: false })
@@ -68,7 +69,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var that = this
+   
   },
 
   /**

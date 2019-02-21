@@ -28,3 +28,39 @@ margin: 0px auto;
 margin-top: 50rpx;
 }
 
+.namelist{
+  width: 80%;
+  margin: 0px auto;
+  /* height: 300rpx; */
+}
+.name{
+  font-size: 14px;
+}
+.invite{
+  height: 110rpx;
+  width: 100%;
+}
+.invitebtn{
+  height: 110rpx;
+  width: 40%;
+  border-radius: -10%;
+  line-height: 110rpx;
+  font-size: 17px;
+  color: white;
+  background-color: #ff9900;
+}
+.title{
+  position: absolute;
+  top: 0px;
+  height: 30rpx;
+  width: 100%;
+  text-align: center;
+}
+.tit{
+  font-size: 20px;
+  font-weight: bold;
+}
+.list{
+  margin-top: 50rpx;
+}
+

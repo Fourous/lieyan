@@ -8,6 +8,7 @@ Page({
     imgUrls: [
       '../image/forback.png',
     ],
+    Customer_call: '15207167639',
     tid:null,
     time:"2018.9.8",
     message: "在这发表您的评论",
@@ -15,73 +16,22 @@ Page({
     teachers: null,
     comments: null,
     valuemsg:null,
-    openid:null
+    openid:null,
+    userInfo:"",
+    bindis:0
   },
-  show: function () {
-    this.setData({ flag: false })
-  },
-  hide: function () {
-    this.setData({ flag: true })
-  },
+  // show: function () {
+  //   this.setData({ flag: false })
+  // },
+  // hide: function () {
+  //   this.setData({ flag: true })
+  // },
   
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.tid)
-    var that=this
-    that.setData({
-      tid:options.tid
-    })
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/coach_comment',
-      header: { "Content-Type": "application/x-www-form-urlencoded" },
-      method: 'POST',
-      data: {
-        tid: that.data.tid
-      },
-      success: function(res){
-        console.log(res)
-        var comments= res.data.comment_user;
-        that.setData({
-          comments: comments
-        })
-      }
-    })
-  },
-  commentcome: function () {
-    var that = this;
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/coach_comment',
-      method: 'POST',
-      data: {
-        "tid": that.data.tid
-      },
-      header: {
-        'content-type': 'application/x-www-form-urlencoded'
-      },
-      success: function (res) {
-        console.log(res.data);
-        that.setData({
-          comments: res.data.comment_user
-        })
-      },
-      fail: function (res) {
-        console.log(res);
-      }
-    })
-  },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+    // console.log(options.tid)
     var that=this
     wx.getStorage({
       key: 'openid',
@@ -91,31 +41,93 @@ Page({
         that.setData({
           openid: res.data
         })
-        console.log(that.data.openid)
       },
     })
+    // that.setData({
+    //   tid:options.tid
+    // })
+  //   wx.request({
+  //     url: 'https://www.lieyanwenhua.com/coach_comment',
+  //     header: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     method: 'POST',
+  //     data: {
+  //       tid: that.data.tid
+  //     },
+  //     success: function(res){
+  //       console.log(res)
+  //       var comments= res.data.comment_user;
+  //       that.setData({
+  //         comments: comments
+  //       })
+  //     }
+  //   })
+  // },
+  // commentcome: function () {
+  //   var that = this;
+  //   wx.request({
+  //     url: 'https://www.lieyanwenhua.com/coach_comment',
+  //     method: 'POST',
+  //     data: {
+  //       "tid": that.data.tid
+  //     },
+  //     header: {
+  //       'content-type': 'application/x-www-form-urlencoded'
+  //     },
+  //     success: function (res) {
+  //       console.log(res.data);
+  //       that.setData({
+  //         comments: res.data.comment_user
+  //       })
+  //     },
+  //     fail: function (res) {
+  //       console.log(res);
+  //     }
+  //   })
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    var that = this
+    console.log(that.data.openid)
+    //这里每次显示的时候，通过openID请求所有数据，包括头像等信息
     wx.request({
-      url: 'https://www.lieyanwenhua.com/coach_single',
+      url: 'https://www.lieyanwenhua.com/getmyteacher',
       method: 'POST',
       data: {
-        "tid": that.data.tid
+        "openid": that.data.openid
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded'
       },
       success: function (res) {
         console.log(res.data);
-        that.setData({
-          teachers:res.data.coach
-        })
-        console.log(that.data.teachers)
-
+        if(res.data==""){
+          that.setData({
+            bindis:0
+          })
+        }
+        else {
+          that.setData({
+            bindis:1,
+            teachers: res.data
+          })
+        }
+        
       },
       fail: function (res) {
         console.log(res);
       }
     })
-that.commentcome();
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    var that=this
+// that.commentcome();
       // 在这里通过openid请求评论人物的头像和昵称信息
     // wx.request({
     //   url: 'https://www.lieyanwenhua.com/userqueryByid',
@@ -238,6 +250,21 @@ that.commentcome();
     }
     //这里是发布评论的地方，发布评论最好是在此重拉一次评论数据
  
+  },
+  telp:function(){
+    wx.makePhoneCall({
+      phoneNumber: this.data.Customer_call,
+      success: function () {
+        wx.showToast({
+          title: '成功拨打该电话',
+        })
+      }
+    })
+  },
+  problem:function(){
+wx.navigateTo({
+  url: '../problems/problems',
+})
   }
 })
 

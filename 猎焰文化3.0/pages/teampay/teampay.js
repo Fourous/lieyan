@@ -13,6 +13,8 @@ Page({
     qq: null,
     packname: null,
     car: null,
+    teamname:null,
+    openid:"",
     casArray: ['一对一学车', '四人学车', '团购'],
   },
 
@@ -27,7 +29,8 @@ Page({
       address: options.address,
       qq: options.qq,
       packname: options.packname,
-      car: options.car
+      car: options.car,
+      teamname: options.teamname
     })
   },
 
@@ -35,6 +38,18 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+        console.log(res)
+        console.log(res.data)
+        that.setData({
+          openid: res.data
+        })
+        console.log(that.data.openid)
+      },
+    })
   },
 
   /**
@@ -81,22 +96,28 @@ Page({
   submit: function () {
     var that = this
     // 这里不一样，需要进行填充抱团处理
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/forminsert',
-      data: {
-        'fname': that.data.name,
-        'ftel': that.data.tel,
-        'faddress': that.data.address,
-        'fqq': that.data.qq,
-        'fpack': that.data.car
-      },
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'POST',
-      success: function (res) {
-        if (res.data.formdetail == true) {
+
+
+    // wx.request({
+    //   url: 'https://www.lieyanwenhua.com/forminsert',
+      // data: {
+      //   'fname': that.data.name,
+      //   'ftel': that.data.tel,
+      //   'faddress': that.data.address,
+      //   'fqq': that.data.qq,
+      //   'fpack': that.data.car
+      // },
+      // header: {
+      //   'content-type': 'application/json'
+      // },
+      // method: 'POST',
+      // success: function (res) {
+        // if (res.data.formdetail == true) {
           //填写表单成功则吊起支付，吊支付成功之后才可以提示报名成功
+
+          // *****
+
+
           wx.login({
             success: function (res) {
               wx.request({
@@ -151,8 +172,39 @@ Page({
                           console.log("支付失败")
                           console.log(error)
                         },
+
+
+                      
                         complete: function () {
-                          // complete   
+                          wx.request({
+                            url: 'https://www.lieyanwenhua.com/teamcreate',
+                            data: {
+                              "openid": that.data.openid,
+                              "teamname": that.data.teamname,
+                              "fname": that.data.name,
+                              "address": that.data.address,
+                              "ftel": that.data.tel,
+                              "fpack": 3
+                            },
+                            method: 'POST',
+                            header: {
+                              "Content-Type": "application/x-www-form-urlencoded"
+                            },
+                            success: (res) => {
+                              console.log(res.data);
+                              that.setData({
+                                flag: res.data
+                              })
+                              console.log(that.data.flag);
+                            }
+                          })
+                        wx.showToast({
+                          title: '创建战队成功',
+                          duration:2000
+                        })
+                          
+                          // complete
+  
                           console.log("pay complete")
                         }
                       });
@@ -161,22 +213,27 @@ Page({
                 },
                 fail: function () {
                   console.log('请求openID失败');
+                  wx.showToast({
+                    title: '请求服务器失败',
+                    duration:2000
+                  })
                 }
               })
             }
           })
 
-        }
+        // }
 
-      },
-      fail: function (res) {
-        wx.showToast({
-          title: '报名失败',
-        })
-      }
-
-    })
+      // },
+      // fail: function (res) {
+      //   wx.showToast({
+      //     title: '报名失败',
+      //   })
+      // }
+  
+    // })
   },
+
   bindCasPickerChange: function (e) {
     console.log('乔丹选的是', this.data.casArray[e.detail.value])
 

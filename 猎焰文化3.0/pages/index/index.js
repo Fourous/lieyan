@@ -10,6 +10,7 @@ Page({
   data: {
     image: null,
     i:5,
+    userInfo:""
   },
 
   toindex: function () {
@@ -39,7 +40,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    var that = this
+   
 
   },
   run:function(){

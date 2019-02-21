@@ -10,7 +10,8 @@ Page({
     Customer_call:'15207167639',
     openid:'',
     teacher:"",
-    nickname:""
+    nickname:"",
+    userInfo:""
   },
 
   /**
@@ -38,7 +39,8 @@ Page({
         })
         console.log(that.data.openid)
       },
-    })
+    });
+
     
    
    
@@ -47,7 +49,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+      var that=this
+   
 
   },
 

@@ -1,7 +1,9 @@
 <!--pages/studycar/study.wxml-->
 <view class='teacher_all'>
   <!--这里是静态测试设置view-->
+  <button class='tip'>我的教练</button>
   <view class='teacher_one'>
+<block wx:if="{{bindis==1}}">
     <view class="teacher-item">
       <!-- 这里是左边的头像以及教练名称 -->
       <view class='pic_intro'>
@@ -19,10 +21,29 @@
       </view>
 
     </view>
+</block> 
+
+<block wx:if="{{bindis==0}}">
+<text class='flag'>暂未绑定教练</text>
+</block>
+
+    <button class='tip'>我的客服</button>
+    <view class='myserver'>
+
+    <view class='pic'>
+    <image class='avatar' src='{{teachers.avatar}}'></image>
+    </view>
+
+    <view class='btn'>
+    <button class='tel' bindtap='telp'>电话咨询</button>
+    <button class='pro' bindtap='problem'>常见问题</button>
+    </view>
+
+    </view>
   </view>
 
   <!--以下是评论界面-->
-  <view class='comment_all'>
+  <!-- <view class='comment_all'>
     <view class='comment_one'>
       <view class='commentonec' wx:for="{{comments}}" wx:key="comment">
         <view class="comment-item" data-id="{{item.commentid}}">
@@ -53,11 +74,15 @@
   <view class='feedback_button'>
     <image class='feedback_btn' src='../image/leavemessage.png' bindtap='show'></image>
   </view>
+-->
+</view> 
 
-</view>
+
+
+
 
 <!--隐藏的评论按钮-->
-<view class='input_comment' hidden="{{flag}}">
+<!-- <view class='input_comment' hidden="{{flag}}">
   <view class='jump_white'>
     <view class='input_txt'>
       <textarea class='input_meesage' bindinput='bindinput' placeholder='请在这里发布评论'></textarea>
@@ -71,4 +96,4 @@
       <image class='back_img' src='{{item}}' bindtap='hide'></image>
     </view>
   </block>
-</view>
+</view> -->

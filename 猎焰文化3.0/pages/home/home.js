@@ -11,6 +11,7 @@ Page({
       // "../image/top3.png",
       // "../image/top4.png",
     ],
+    openid:""
   },
   switchTab: function (e) {
     this.setData({
@@ -79,7 +80,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+   
   },
 
   /**
@@ -147,9 +148,9 @@ Page({
     wx.navigateTo({
       url: '../advertise/advertise?id='+ id,
     })
-    wx.showToast({
-      title: '广告位招标！',
-    })
+    // wx.showToast({
+    //   title: '广告位招标！',
+    // })
 
   },
   

@@ -1,6 +1,7 @@
 var app = getApp()
 Page({
   data: {
+    userInfo:"",
     pic_url:[
       "../image/carpack2.jpg",
       "../image/carpack1.jpg",
@@ -15,7 +16,9 @@ Page({
     tel:'',
     address:'',
     qq:'',
-    id:''
+    id:'',
+    openid:"",
+    off:""
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -45,6 +48,28 @@ Page({
   },
 
   onReady: function () {
+    var that = this;
+    wx.getStorage({
+      key: 'userInfo',
+      success: function (res) {
+        console.log("cheng");
+        that.setData({
+          userInfo: res.data
+        })
+        console.log("jia");
+      },
+    });
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+        console.log(res)
+        console.log(res.data)
+        that.setData({
+          openid: res.data
+        })
+        console.log(that.data.openid)
+      },
+    });
 
     // 页面渲染完成
   },
@@ -94,20 +119,45 @@ Page({
   nexttap:function(){
     var that = this
     console.log(this.data.name + this.data.tel + this.data.address + this.data.qq)
-    //首先判断必填项是否为空，为空提示，不为空则继续下一步
-    if (this.data.name == "" | this.data.tel == "" | this.data.address == "" | this.data.qq == "") {
-      wx.showToast({
-        title: '必填项缺失',
-      })
-    }
-    else {
-      wx.navigateTo({
-        url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.detailgood.packname,
-      })
+    wx.request({
+      url: 'https://www.lieyanwenhua.com/teamisoff',
+      data: {
+        openid: that.data.openid
+      },
+      method: 'POST',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      success: (res) => {
+        console.log(res.data);
+        that.setData({
+          off: res.data
+        })
+        console.log(that.data.off);
+      }
+    })
 
-    }
+// 这里判断重复报名
+if(that.data.off){
+  wx.showToast({
+    title: '检测到您已经报团',
+  })
+}
+else{
+  //首先判断必填项是否为空，为空提示，不为空则继续下一步
+  if (this.data.name == "" | this.data.tel == "" | this.data.address == "" | this.data.qq == "") {
+    wx.showToast({
+      title: '必填项缺失',
+    })
+  }
+  else {
+    wx.navigateTo({
+      url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.detailgood.packname,
+    })
 
   }
-  
+
+}
+}
 
 })

@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cardetail:null
+    cardetail:null,
+    userInfo:""
   },
 
   /**
@@ -20,6 +21,8 @@ Page({
    */
   onReady: function () {
     var that = this;
+    // var that = this
+    
     wx.request({
       url: 'https://www.lieyanwenhua.com/cardetailall',
       method: 'POST',

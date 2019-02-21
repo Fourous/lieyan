@@ -6,6 +6,7 @@
 </view>
 
 <view class='info'>
+  <view class='inf'>战队：{{teamname}}</view>
   <view class='inf'>姓名：{{name}}</view>
   <view class='inf'>电话: {{tel}}</view>
   <view class='inf'>地址: {{address}}</view>

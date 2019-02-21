@@ -44,7 +44,9 @@
     "pages/car_goods/car_goods",
     "pages/carteam/carteam",
     "pages/teampay/teampay",
-    "pages/myteam/myteam"
+    "pages/myteam/myteam",
+    "pages/jointeam/jointeam",
+    "pages/problems/problems"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -62,7 +64,7 @@
         "selectedIconPath": "pages/image/home1.png"
       },
       {
-        "pagePath": "pages/studycar/study",
+        "pagePath": "pages/teacherdetail/teacherdetail",
         "text": "学车",
         "iconPath": "pages/image/studycar0.png",
         "selectedIconPath": "pages/image/studycar1.png"
@@ -80,5 +82,10 @@
         "selectedIconPath": "pages/image/personal1.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "猎焰文化展示地图功能"
+    }
   }
 }

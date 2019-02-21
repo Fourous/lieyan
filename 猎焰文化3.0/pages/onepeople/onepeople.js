@@ -11,7 +11,8 @@ Page({
     ],
     message:"  \t您将支付一人学车的费用，这些费用将不予退还，如果您后期将要取得，请咨询客服询问详细情况!",
     flag:true,
-    car:''
+    car:'',
+    userInfo:""
   },
   show: function () {
     this.setData({ flag: false })
@@ -42,6 +43,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    var that = this
   
   },
 

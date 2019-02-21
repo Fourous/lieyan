@@ -5,10 +5,24 @@
 <text class='txt'>还没有任何组团哦</text>
 <button class='findteam' bindtap='findteam'>立即发起组团</button> 
 </view>
-
 </view>
 </block>
 
 <block wx:if="{{list==1}}">
-<text class='text'>这是测试</text>
+<view class='title'>
+<text class='tit'>{{namelist[0].teamname}}</text>
+</view>
+<view class='list'>
+<view class='namelist' wx:for="{{namelist}}" wx:key="nameid">
+<text class='name'>{{item.name}}</text>
+</view>
+</view>
+
+
+<view class='invite'>
+<button class='invitebtn' open-type="share">邀请好友参加</button>
+</view>
+
+
+
 </block>

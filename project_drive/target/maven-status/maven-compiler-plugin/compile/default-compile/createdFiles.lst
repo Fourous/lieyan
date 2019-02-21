@@ -110,6 +110,7 @@ com\lieyan\mapper\StudentMapper.class
 com\lieyan\mapper\CardetailMapper.class
 com\lieyan\Service\AdverService.class
 com\lieyan\Entity\Circlecol.class
+com\lieyan\Entity\Teamreunite.class
 com\lieyan\controller\UserController.class
 com\lieyan\Entity\Teamform.class
 com\lieyan\mapper\FormcorpMapper.class

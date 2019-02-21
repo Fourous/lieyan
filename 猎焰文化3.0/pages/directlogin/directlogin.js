@@ -82,7 +82,8 @@ Page({
     var that = this;
     wx.showToast({
       title: '登录',
-      icon: 'loading'
+      icon: 'loading',
+      duration:3000
     })
     //获取必要的变量
     var userInfo = e.detail.userInfo;
