@@ -2,184 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cadb5e3d-ef4d-40ba-8e0c-7cf002460458" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lieyan/Entity/Teamreunite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../huizhoujiuye/huizhoujiuye" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformServicempl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformServicempl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/CoachController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/CoachController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeamformController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeamformController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Adver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Appointime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Cardetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Changeteacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Circlecol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Circlecomment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Circleone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Classsign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Coach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/CoachComone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Commentmore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Commentone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Feedback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Form.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Formcorp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Packdetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Personcol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/TeacherLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Teamform.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Useradmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Userappoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Entity/Weeksign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AddressServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AdverService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AdverServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AppointimeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/AppointimeServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CardetailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CardetailServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/ChangeteacherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/ChangeteacherServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CheckUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CircleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CircleServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CirclecolService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CirclecolServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CirclecommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CirclecommentServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CoachService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CoachServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/CommentServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/Convertime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FeedbackService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FeedbackServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FormService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FormServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FormcorpService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/FormcorpServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/HttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/IpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/OpenIdUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/PackdetailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/PackdetailServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/PayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/PersoncolService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/PersoncolServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/ScoreService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/ScoreServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/StudentServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/TeacherLoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/TeacherLoginServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/TeamformService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/TeamformServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UserServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UseradminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UseradminServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UserappointService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/UserappointServicempl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/Service/WxPayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/configuration/DataSourceConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/configuration/SessionFactoryConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/configuration/TransactionManagementConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/AddressController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/AdverController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/AppointmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/CardetailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/ChangeteacherController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/CircleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/CoachController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/CommentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/FeedbackController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/FormController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/FormcorpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/PackdetailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/PersoncolController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/TeacherLoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/TeamformController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/UseradminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/controller/index.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/AddressMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/AdverMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/AppointimeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CardetailMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/ChangeteacherMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CircleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CirclecolMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CirclecommentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CoachMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/CommentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/FeedbackMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/FormMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/FormcorpMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/PackdetailMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/PersoncolMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/ScoreMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/StudentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/TeacherLoginMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/TeamformMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/UseradminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lieyan/mapper/UserappointMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_drive-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_drive-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/advertise/advertise.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/advertise/advertise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/advertise/advertise.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/advertise/advertise.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/bindteacher/bindteacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/bindteacher/bindteacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/car_goods/car_goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/car_goods/car_goods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/cardetailone/cardetailone.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/cardetailone/cardetailone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/carpackage/carpackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/carpackage/carpackage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/carteam/carteam.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/carteam/carteam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/directlogin/directlogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/directlogin/directlogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/entryform/entryform.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/entryform/entryform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/formpay/formpay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/formpay/formpay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/formsubmit/formsubmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/formsubmit/formsubmit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/fourpeople/fourpeople.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/fourpeople/fourpeople.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/friend/friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/friend/friend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/group/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/group/group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/joinus/joinus.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/joinus/joinus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/morecomment/morecomment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/morecomment/morecomment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/mycir/mycir.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/mycir/mycir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/mytable/mytable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/mytable/mytable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/home/home.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/home/home.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/myteam/myteam.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/onepeople/onepeople.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/onepeople/onepeople.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/packagenew/packagenew.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/packagenew/packagenew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/packagenewstruct/packagenewstruct.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/packagenewstruct/packagenewstruct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/changeone/changeone.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/changeone/changeone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/chteacher/chteacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/chteacher/chteacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/feedback/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/feedback/feedback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/myaffair/myaffair.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/myaffair/myaffair.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/myround/myround.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/myround/myround.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/personal/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/personal/personal/personal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/studycar/study.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/studycar/study.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/studycardetail/studycardetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/studycardetail/studycardetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/teacherdetail/teacherdetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/teacherdetail/teacherdetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/teacherdetail/teacherdetail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/teacherdetail/teacherdetail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/teampay/teampay.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/teampay/teampay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/teampay/teampay.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/teampay/teampay.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.js" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/../猎焰文化3.0/pages/problems/problems.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -245,11 +73,12 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -288,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeamformController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="1729">
               <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -300,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2800">
-              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="684">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -319,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/CoachController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="31" />
+              <caret line="107" column="31" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -327,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Entity/Teamform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="361">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#253#254#0" expanded="true" />
@@ -357,18 +186,6 @@
                 <element signature="e#609#610#0" expanded="true" />
                 <element signature="e#650#651#0" expanded="true" />
                 <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -386,7 +203,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UseradminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
+            <state relative-caret-position="532">
               <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -414,7 +231,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformServicempl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="532">
               <caret line="33" column="22" selection-start-line="19" selection-start-column="8" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -547,7 +364,7 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="263" />
     <option name="y" value="106" />
     <option name="width" value="1184" />
@@ -561,107 +378,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Entity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mapperConfig" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -778,6 +494,107 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Entity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mapper" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lieyan" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="project_drive" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="project_drive" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mapperConfig" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -870,10 +687,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25053304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -887,9 +703,9 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32838285" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.24200426" side_tool="true" visible="true" weight="0.44328824" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.24253732" side_tool="true" visible="true" weight="0.44328824" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7579957" visible="true" weight="0.44328824" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7574627" visible="true" weight="0.44328824" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.64851487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -947,10 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,9 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1180,9 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1207,10 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1239,39 +1038,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-          <folding>
-            <element signature="e#1716#1717#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UseradminController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeamformController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state relative-caret-position="1729">
+          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeacherLoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/CardetailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Entity/Teamform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="361">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1309,22 +1111,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Entity/Teamform.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeacherLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UseradminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/Service/TeamformServicempl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="532">
           <caret line="33" column="22" selection-start-line="19" selection-start-column="8" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1332,34 +1152,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/TeamformController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="102" column="29" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2800">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/CardetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lieyan/controller/CoachController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
-          <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="31" />
+          <caret line="107" column="31" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="31" />
         </state>
       </provider>
     </entry>

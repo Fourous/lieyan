@@ -121,7 +121,7 @@ Page({
     return {
       title: '邀请加入战队',
       path: 'pages/jointeam/jointeam?teamid='+that.data.namelist[0].teamid,
-      imageUrl:"../image/carpack1.jpg",
+      imageUrl:"../image/invitefr.jpg",
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));

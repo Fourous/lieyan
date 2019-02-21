@@ -33,7 +33,7 @@
     </view>
 
     <view class='four_people_img'>
-     <image class='four_people' bindtap='groupcom' src='../image/onepage.png'></image>
+     <image class='four_people' bindtap='groupcom' src='../image/joinus.png'></image>
     </view>
 
 
