@@ -120,7 +120,7 @@ Page({
     var that = this
     console.log(this.data.name + this.data.tel + this.data.address + this.data.qq)
     wx.request({
-      url: 'https://www.lieyanwenhua.com/teamisoff',
+      url: 'https://www.lieyanwenhua.com/testform',
       data: {
         openid: that.data.openid
       },
@@ -140,7 +140,7 @@ Page({
 // 这里判断重复报名
 if(that.data.off){
   wx.showToast({
-    title: '检测到您已经报团',
+    title: '检测到您已经报名',
   })
 }
 else{

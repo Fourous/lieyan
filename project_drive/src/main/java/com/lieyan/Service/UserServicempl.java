@@ -65,12 +65,18 @@ public class UserServicempl implements UserService{
 //        }
 //    }
 
-public boolean userchangename(String openid,String nickName){
+        public boolean userchangename(String openid,String nickName){
         int set=userMapper.userchangename(openid,nickName);
         if(set>0){return true;
         }
         else {
             return false;
         }
+}
+
+        public boolean userissign(String openid){
+        if(userMapper.userissign(openid)>0){
+            return true;
+        }else return false;
 }
 }

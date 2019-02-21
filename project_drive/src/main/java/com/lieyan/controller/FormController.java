@@ -2,6 +2,7 @@ package com.lieyan.controller;
 
 import com.lieyan.Entity.Form;
 import com.lieyan.Service.FormService;
+import com.lieyan.Service.UserService;
 import javafx.beans.binding.ObjectExpression;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,7 +21,8 @@ import java.util.Map;
 public class FormController {
     @Autowired
     private FormService formService;
-
+    @Autowired
+    private UserService userService;
     //获取所有报名表的信息
     @PostMapping("formget")
     public Map<String,Object> formget(){
@@ -33,11 +35,12 @@ public class FormController {
 
     //提交报名表插入报名信息
     @PostMapping("forminsert")
-    public Map<String,Object> forminsert(@RequestBody Form form){
+    public boolean forminsert(@RequestBody Form form){
         Map<String,Object> formdetail =new HashMap<>();
-        formdetail.put("formdetail",formService.userforminsert(form));
-        return formdetail;
+        userService.userissign(form.getOpenid());
+        return formService.userforminsert(form);
     }
+
 //    获取主键id
     @PostMapping("formgetid")
     public Integer formgetid(@RequestBody Form form){
@@ -54,6 +57,12 @@ public class FormController {
     @PostMapping("formgetform")
     public Form formgetform (Integer fid){
         return formService.userformquerybyid(fid);
+    }
+    @PostMapping("testform")
+    public boolean testform(String openid){
+        if(formService.userformquerybyopenid(openid).size()<=0){
+            return true;
+        }else return false;
     }
 
 }

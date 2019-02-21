@@ -43,4 +43,11 @@ public interface UserMapper {
     int bindteacher(@Param("openid") String openid,@Param("tid") Integer tid);
 
     int userchangename(@Param("openid") String openid,@Param("nickName") String nickName);
+
+    /**
+     *
+     * @param openid
+     * @return
+     */
+    int userissign(String openid);
 }

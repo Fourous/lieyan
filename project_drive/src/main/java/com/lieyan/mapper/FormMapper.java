@@ -42,5 +42,7 @@ public interface FormMapper {
      */
     Form userformquerybyid(Integer fid);
 
+    List<Form> userformquerybyopenid(String openid);
+
 
 }

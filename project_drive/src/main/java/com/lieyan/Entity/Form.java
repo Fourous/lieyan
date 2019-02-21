@@ -12,6 +12,15 @@ public class Form {
     private String fwechat;
     private String fteacher;
     private String fpack;
+    private String openid;
+
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+
+    public String getOpenid() {
+        return openid;
+    }
 
     public void setFpack(String fpack) {
         this.fpack = fpack;

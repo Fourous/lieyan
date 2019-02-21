@@ -68,6 +68,12 @@
         WHERE openid = #{openid}
     </update>
 
+    <update id="userissign" parameterType="com.lieyan.Entity.User">
+        UPDATE user
+        SET Issign=1
+        WHERE openid = #{openid}
+    </update>
+
     <update id="bindteacher" parameterType="com.lieyan.Entity.User">
         UPDATE user
         SET bindteacher=#{bindteacher}

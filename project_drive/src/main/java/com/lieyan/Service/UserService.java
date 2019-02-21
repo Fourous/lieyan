@@ -50,4 +50,11 @@ public interface UserService {
 ////    boolean bindteacher(String openid,Integer tid);
 boolean userchangename(String openid,String nickName);
 
+    /**
+     *
+     * @param openid
+     * @return
+     */
+    boolean userissign(String openid);
+
 }

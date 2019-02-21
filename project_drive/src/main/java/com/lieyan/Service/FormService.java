@@ -42,5 +42,12 @@ public interface FormService {
      */
     Form userformquerybyid(Integer fid);
 
+    /**
+     *
+     * @param openid
+     * @return
+     */
+    List<Form> userformquerybyopenid(String openid);
+
 
 }

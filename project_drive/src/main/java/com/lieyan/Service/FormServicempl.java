@@ -53,4 +53,8 @@ public class FormServicempl implements FormService {
         return formMapper.userformquerybyid(fid);
     }
 
+    public List<Form> userformquerybyopenid(String openid){
+        return formMapper.userformquerybyopenid(openid);
+    }
+
 }

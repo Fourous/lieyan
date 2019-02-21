@@ -37,6 +37,7 @@ public class TeamformController {
        form.setFtel(ftel);
        form.setFaddress(address);
        form.setFpack(fpack);
+       form.setOpenid(openid);
        System.out.println("1");
        formService.userforminsert(form);
         System.out.println("1");
@@ -65,6 +66,7 @@ public class TeamformController {
         form.setFtel(ftel);
         form.setFaddress(address);
         form.setFpack(fpack);
+        form.setOpenid(openid);
         System.out.println("1");
         formService.userforminsert(form);
         System.out.println("1");

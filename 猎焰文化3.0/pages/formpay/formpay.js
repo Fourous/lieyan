@@ -14,7 +14,9 @@ Page({
     packname:null,
     car:null,
     casArray: ['一对一学车', '四人学车', '团购'],
-    userInfo:""
+    userInfo:"",
+    openid:"",
+    Customer_call: '15207167639',
   },
 
   /**
@@ -83,21 +85,6 @@ Page({
   },
   submit: function () {
     var that = this
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/forminsert',
-      data: {
-        'fname': that.data.name,
-        'ftel': that.data.tel,
-        'faddress': that.data.address,
-        'fqq': that.data.qq,
-        'fpack':that.data.car
-      },
-      header: {
-        'content-type': 'application/json'
-      },
-      method: 'POST',
-      success: function (res) {
-        if (res.data.formdetail == true) {
           //填写表单成功则吊起支付，吊支付成功之后才可以提示报名成功
           wx.login({
             success: function (res) {
@@ -112,6 +99,9 @@ Page({
                 },
                 success: function (res) {
                   console.log(res.data.openid);
+                  that.setData({
+                    openid:res.data.openid
+                  })
                   wx.request({
                     url: 'https://www.lieyanwenhua.com/wxPay',
                     data: {
@@ -135,23 +125,68 @@ Page({
                         paySign: res.data.paySign,
                         success: function (event) {
                           // success   
-                          console.log(event);
-                          wx.showToast({
-                            title: '支付成功',
-                            icon: 'success',
-                            duration: 2000
-                          });
+                          wx.request({
+                            url: 'https://www.lieyanwenhua.com/forminsert',
+                            data: {
+                              'fname': that.data.name,
+                              'ftel': that.data.tel,
+                              'faddress': that.data.address,
+                              'fqq': that.data.qq,
+                              'fpack': that.data.car,
+                              'openid':that.data.openid
+                            },
+                            header: {
+                              'content-type': 'application/json'
+                            },
+                            method: 'POST',
+                            success: function (res) {
+                              if(res.data==true){
+                                wx.showToast({
+                                  title: '报名成功',
+                                  icon: 'success',
+                                  duration: 2000
+                                });
+                              }else{
+                                wx.showModal({
+                                  title: '错误',
+                                  content: '报名失败请联系客服',
+                                  success: function (res) {
+                                    if (res.confirm) {
+                                      console.log('用户点击确定')
+                                      wx.makePhoneCall({
+                                        phoneNumber: that.data.Customer_call,
+                                        success: function () {
+                                          wx.showToast({
+                                            title: '成功拨打该电话',
+                                          })
+                                        }
+                                      })
+                                    } else {
+                                      console.log('用户点击取消')
+                                    }
+
+                                  }
+                                })
+                              }
+                            },
+                            fail: function (res) {
+                              wx.showToast({
+                                title: '报名失败',
+                              })
+                            }
+
+                          })
+                          
                           wx.navigateBack({
                             delta: 3
                           });
-                          wx.showToast({
-                            title: '报名成功',
-                          })
                         },
                         fail: function (error) {
                           // fail   
                           console.log("支付失败")
-                          console.log(error)
+                          wx.showToast({
+                            title: '支付失败',
+                          })
                         },
                         complete: function () {
                           // complete   
@@ -163,30 +198,20 @@ Page({
                 },
                 fail: function () {
                   console.log('请求openID失败');
+                  wx.showToast({
+                    title: '稍后再试',
+                  })
                 }
               })
             }
-          })
-
-        }
-
-      },
-      fail: function (res) {
-        wx.showToast({
-          title: '报名失败',
-        })
-      }
-
-    })
+          })   
   },
   bindCasPickerChange: function (e) {
     console.log('乔丹选的是', this.data.casArray[e.detail.value])
- 
     this.setData({
       index: e.detail.value,
       body: this.data.casArray[e.detail.value]
     })
-
   },
 
 
