@@ -35,7 +35,6 @@ Page({
    */
   onReady: function () {
     var that = this
-  
     wx.request({
       url: 'https://www.lieyanwenhua.com/listteam',
       method: 'POST',
@@ -120,15 +119,25 @@ Page({
     }
     return {
       title: '邀请加入战队',
-      path: 'pages/jointeam/jointeam?teamid='+that.data.namelist[0].teamid,
+      path: 'pages/jointeamdes/jointeamdes?teamid='+that.data.namelist[0].teamid,
       imageUrl:"../image/invitefr.jpg",
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
+        wx.showToast({
+          title: '转发成功',
+          duration:2000,
+        })
+        wx.navigateBack({
+          delta:1
+        })
       },
       fail: function (res) {
         // 转发失败
         console.log("转发失败:" + JSON.stringify(res));
+        wx.showToast({
+          title: '服务器宕机',
+        })
       }
     }
 

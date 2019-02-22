@@ -1,0 +1,56 @@
+<view class="detail-box">
+
+    <view class="detail-list">
+        <scroll-view scroll-y="true" style="height: 100%;">
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+  <block wx:for-items="{{pic_url}}" wx:key="index">
+    <swiper-item >
+      <image class="slide-image" src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+            <view class="detail-name">
+                <ul>
+                <view class='onecl'>
+                    <li class="name">{{detailgood.packname}}</li>
+                    <li class="price">￥ {{detailgood.price}}</li>
+                </view>
+                    <view class='whiteline'>
+                    <text class='txt'>简介:</text>
+                    </view>
+                    <view class='introducepack'>
+                    <text class='packtxt'>{{detailgood.packdetail}}</text>
+                    </view>
+
+                   <view class='picdetail'>
+                   <text class='picdetailtxt'>商品简介</text>
+                      <view class='pic1img'>
+                    <image class='pic1' src="../image/carpack1.jpg"></image>
+                   </view>
+                
+                   </view>
+
+                </ul>
+            </view>
+            <view class='hot-container'>
+
+</view>
+            </scroll-view>
+    </view>
+ <view class="detail-footer">
+    <!-- <view class="detail-1">
+    <text class='moneytxt'>￥</text>
+    </view>
+    <view class="detail-2"> <text class='moneynum'>{{money}}</text></view> -->
+   
+    <view class="detail-3">
+     <contact-button class="contactbtn"></contact-button>
+    <text>客服</text>
+    </view>
+    <view class="detail-4"><text bindtap='purchase'>立即参加</text></view>
+ </view>
+
+</view>

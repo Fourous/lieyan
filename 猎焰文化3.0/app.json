@@ -46,7 +46,8 @@
     "pages/teampay/teampay",
     "pages/myteam/myteam",
     "pages/jointeam/jointeam",
-    "pages/problems/problems"
+    "pages/problems/problems",
+    "pages/jointeamdes/jointeamdes"
   ],
   "window": {
     "backgroundTextStyle": "dark",
