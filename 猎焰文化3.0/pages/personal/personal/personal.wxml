@@ -54,12 +54,12 @@
     <view class='_txt' style='vertical-align:top;' bindtap='Toaffair'>我的动态</view>
     </view>
 
-    <view class='change'>
+    <!-- <view class='change'>
       <view class='_img' style='vertical-align:top;'>
         <image src='../../image/shopping.png' class='picandicon' ></image>
       </view>
       <view class='_txt' style='vertical-align:top;' bindtap='Tostore'>我的商城</view>
-    </view>
+    </view> -->
  
     <view class='change'>
       <view class='_img' style='vertical-align:top;'>
@@ -68,12 +68,12 @@
       <view class='_txt' style='vertical-align:top;' bindtap='Tofun'>我的组团</view>
     </view>
 
-    <view class='change'>
+    <!-- <view class='change'>
       <view class='_img' style='vertical-align:top;'>
         <image src='../../image/round.png' class='picandicon' ></image>
       </view>
       <view class='_txt' style='vertical-align:top;' bindtap='Toround'>幸运大转盘</view>
-    </view>
+    </view> -->
     
     <view class='change'>
       <view class='_img' style='vertical-align:top;'>

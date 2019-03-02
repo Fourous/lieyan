@@ -21,3 +21,9 @@
     </view>
   </view>
 </view>
+
+<view class='btn'>
+
+<button class='button' bindtap='change'>更改预约</button>
+
+</view>

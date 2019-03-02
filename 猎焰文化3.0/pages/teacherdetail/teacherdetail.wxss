@@ -1,6 +1,6 @@
 /* pages/teacherdetail/teacherdetail.wxss */
 .teacher_one {
-  border-bottom: 5rpx solid #ccc; 
+  /* border-bottom: 5rpx solid #ccc;  */
   background: rgba(255, 255, 255,1);
   height: 250rpx;
 }
@@ -18,11 +18,13 @@
 }
 .teacher-item {
   /* padding:20rpx 40rpx; */
-  height: 249rpx;
+  /* height: 249rpx; */
+  margin-top: 30rpx;
 }
 .teacher_pic {
   width: 150rpx;
   height: 150rpx;
+  border-radius: 100%;
 }
 .item_name {
   position: relative;
@@ -34,8 +36,7 @@
 .pic_intro{
   /* position: absolute; */
   text-align: center;
-  width: 30%;
-  float: left;
+  /* width: 30% */
 }
 .item_introduce {
   font-family: '宋体';
@@ -174,17 +175,15 @@ height: 70%;
 }
 .tip{
   /* float: left; */
-  width: 200rpx;
-  font-size: 14px;
-  border-radius: 10%;
-  background-color: yellow;
-  margin-left: 15px;
-  margin-bottom: 60rpx;
-  margin-top: 30rpx;
+  width: 100%;
+  font-size:15px;
+  height: 80rpx;
+  border-bottom: solid 2rpx #ccc;
+  line-height: 100rpx;
 }
 .myserver{
   height: 500rpx;
-  display: flex;
+  /* display: flex; */
   width: 100%;
 }
 .pic{
@@ -192,8 +191,9 @@ float: left;
 width: 49%;
 }
 .btn{
-float: right;
-width: 49%;
+/* float: right; */
+width: 100%;
+display: flex;
 }
 .avatar{
 height: 45%;
@@ -201,21 +201,89 @@ width: 80%;
 margin-left: 15rpx;
 }
 .tel{
-width: 70%;
-height: 90rpx;
-background-color: #09ADF9;
+width: 50%;
+/* background-color: #09ADF9; */
 color: white;
+text-align: center;
 }
 .pro{
-width: 70%;
-height: 90rpx;
-margin-top: 50rpx;
+width: 50%;
+/* height: 90rpx; */
+/* margin-top: 50rpx; */
 color: white;
-background-color: #ff9900;
+text-align: center;
+/* background-color: #ff9900; */
 }
 .flag{
   font-size: 20px;
   margin-left: 200rpx;
   line-height: 250rpx;
   font-weight: bold;
+}
+.mytip{
+  font-size: 15px;
+  font-weight: bolder;
+  color: gray;
+  margin-left: 30rpx;
+}
+.telview{
+  width: 80%;
+  /* background-color: #09ADF9; */
+  margin: 0px auto;
+  color: black;
+  font-size: 15px;
+  line-height: 80rpx;
+}
+.proview{
+  width: 80%;
+  /* background-color: #ff9900; */
+  margin: 0px auto;
+  color: black;
+  font-size: 15px;
+  line-height: 80rpx;
+}
+.menu{
+  width: 100%;
+  height: 500rpx;
+}
+.serimage{
+  width: 100%;
+  height: 110rpx;
+  text-align: center;
+}
+.im1{
+width: 110rpx;
+height: 110rpx;
+}
+.righttip{
+  font-size: 15px;
+  font-weight: bolder;
+  color: gray;
+}
+.right{
+  float: right;
+  line-height: 100rpx;
+  height: 80rpx;
+  justify-content: flex-end;
+  margin-left: 220rpx;
+  width: 220rpx;
+}
+.inner{
+  height: 30rpx;
+  width: 30rpx;
+  margin-right: 10px;
+}
+.new1 {
+  width: 90%;
+  margin: 0px auto;
+  border: solid 1rpx black;
+  margin-top: 12rpx;
+  height: 200rpx;
+}
+.new2{
+  width: 90%;
+  margin: 0px auto;
+  border: solid 1rpx black;
+  margin-top: 12rpx;
+  height: 200rpx;
 }

@@ -19,7 +19,7 @@
                     <li class="price">￥ {{detailgood.price}}</li>
                 </view>
                     <view class='whiteline'>
-                    <text class='txt'>简介:</text>
+                    <text class='txt'>活动介绍</text>
                     </view>
                     <view class='introducepack'>
                     <text class='packtxt'>{{detailgood.packdetail}}</text>

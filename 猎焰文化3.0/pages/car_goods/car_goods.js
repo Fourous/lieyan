@@ -6,6 +6,9 @@ Page({
       "../image/carpack2.jpg",
       "../image/carpack1.jpg",
     ],
+    pickurl1:[
+"../image/carpack3.jpg"
+    ],
     detailgood:[],
     indicatorDots: true,
     autoplay: true,
@@ -42,6 +45,11 @@ Page({
         that.setData({
           detailgood:res.data
         })
+        if(res.data.packid==2){
+that.setData({
+  pic_url:that.data.pickurl1
+})
+        }
         console.log(that.data.detailgood);
       }
     })

@@ -1,36 +1,65 @@
 <!--pages/joinus/joinus.wxml-->
 <!-- 这里是上面这一块 -->
+<image class='backgr' src='../image/joinusback.jpg'></image>
 <view class='up_pack'>
+
 <view class='button'>
-<text class='btntext'>成为校园创业合伙人</text>
-</view>
-<view class='detail'>
-<image class='detailimage' src='../image/regis.png'></image>
-<text class='detailtxt'>
-如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
-</text>
-</view>
-
-<view class='submitview'>
-<button class='submit' bindtap='formsubmit'>提交申请</button>
-</view>
-
-</view>
-
-
-<view class='down_pack'>
-<view class='button'>
-<text class='btntext'>日常实习兼职</text>
+<image class='topjoinus' src='../image/joinustop.jpg'></image>
 </view>
 
 <view class='detail'>
-<image class='detailimage' src='../image/regis.png'></image>
-<text class='detailtxt'>
-如果你想要施展自己的才华和能力，在大学赚取第一桶金；如果你想要学习最接地气得商业实践经验，增强就业竞争力；那你就是我们需要得人才
-</text>
+
+<view class='detailtxt'>
+<text class='txt'>如果你想要</text>
+<view  class='txt'>
+<text class='nor'>施展自己的</text>
+<text class='bluetxt'>才华</text>
+<text class='nor'>和</text>
+<text class='bluetxt'>能力</text>
 </view>
 
+
+
+<text  class='txt'>在大学赚取第一桶金</text>
+<text  class='txt'>如果你想要</text>
+<text  class='txt'>学习最接地气的</text>
+<text  class='txt'>
+<text class='bluetxt'>
+商业经验
+</text>
+
+</text>
+<text  class='txt'>增强就业竞争力</text>
+<text  class='txt'>那你就是我们需要的
+<text class='bluetxt'>人才</text>
+
+</text>
+
+
+</view>
+
+</view>
+
+
+<view class='twochoice'>
+<view class='choice'>
+<view class='choice1'>校园创业合伙</view>
+</view>
+<view class='choice'>
+
+<view class='choice2'>日常实习兼职</view>
+</view>
+
+
+
+</view>
+
+
+</view>
+
+
+
+<!-- 最底部的按钮 -->
 <view class='submitview'>
 <button class='submit' bindtap='formsubmit'>提交申请</button>
-</view>
 </view>

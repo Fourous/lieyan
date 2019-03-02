@@ -53,6 +53,9 @@
               </view> -->
             <!--这是主要的icon层-->
             <view class='like_unlike_comment'>
+              
+              <image data-id="{{item.circleid}}" data-i='{{index}}' class='stu_like' src="../image/commentpic.png"  mode="aspectFill"></image>
+              <image data-id="{{item.circleid}}" data-i='{{index}}' class='stu_like' src="../image/goother.png" mode="aspectFill"></image>
               <image data-id="{{item.circleid}}" data-i='{{index}}' class='stu_like' src="{{item.like?'../image/like1.png' : '../image/like0.png'}}" bindtap='likereact' mode="aspectFill"></image>
             </view>
             <view class='comment' wx:for="{{item.comment}}" wx:for-item="citem">
@@ -62,9 +65,11 @@
             <view wx:if="{{item.comment.length== 3}}" class='more' bindtap='tomore' data-id='{{item.circleid}}'>
               <text>更多</text>
             </view>
-            <view>
+            
+            <view class='inputcontrol'>
               <input class='liuyan' type="text" name="liuyantext" placeholder='留个言吧~' bindblur='liuyan' data-i='{{index}}' data-id="{{item.circleid}}" value='{{textdata}}'></input>
             </view>
+
           </view>
 
         </view>

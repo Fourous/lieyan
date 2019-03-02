@@ -2,8 +2,8 @@ var app = getApp()
 Page({
   data: {
     pic_url: [
-      "../image/carpack2.jpg",
-      "../image/carpack1.jpg",
+      "../image/carpack4.jpg",
+      // "../image/carpack1.jpg",
     ],
     detailgood: [],
     indicatorDots: true,

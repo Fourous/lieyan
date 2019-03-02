@@ -11,11 +11,11 @@
     <input type="text" placeholder='必填' value="{{tel}}" bindblur='tel'></input>
     
    
-    <text class='form_txt'>身份证</text>
+    <text class='form_txt'>年级</text>
     <input type="text" placeholder='必填' value="{{id_card}}" bindblur='id_card'></input>
     
    
-    <text class='form_txt'>地址</text>
+    <text class='form_txt'>学校/校区</text>
     <input type="text" placeholder='必填' value="{{address}}" bindblur='address'></input>
     
     

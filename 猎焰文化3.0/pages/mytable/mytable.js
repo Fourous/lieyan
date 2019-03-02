@@ -247,7 +247,62 @@ Page({
   onUnload: function () {
 
   },
-
+change:function(){
+  var that=this
+  wx.request({
+    url: 'https://www.lieyanwenhua.com/userqueryByid',
+    method: 'POST',
+    data: {
+      'openid': that.data.openid
+    },
+    header: {
+      'content-type': 'application/x-www-form-urlencoded'
+    },
+    success: function (res) {
+      console.log(res);
+      // that.setData({
+      //   nickname:res.data.userbyid.nickname
+      // })
+      console.log("打印出来" + res.data.userbyid.nickName);
+      that.setData({
+        nickname: res.data.userbyid.nickName
+      })
+      if (res.data.userbyid.bindteacher == 0) {
+        wx.showToast({
+          title: '暂未绑定教练',
+        })
+      } else {
+        wx.request({
+          url: 'https://www.lieyanwenhua.com/getcoachname',
+          method: 'POST',
+          data: {
+            'tid': res.data.userbyid.bindteacher
+          },
+          header: {
+            'content-type': 'application/x-www-form-urlencoded'
+          },
+          success: function (res) {
+            console.log(res);
+            // that.setData({
+            //   teacher: res.data
+            // })
+            wx.showToast({
+              title: '绑定'+res.data,
+            })
+          },
+          fail: function (res) {
+            console.log(res);
+          }
+        })
+      }
+     
+      console.log(that.data.nickname);
+    },
+    fail: function (res) {
+      console.log(res);
+    }
+  })
+},
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */

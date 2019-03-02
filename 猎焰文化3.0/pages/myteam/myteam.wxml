@@ -3,14 +3,27 @@
 <view class='background'>
 <view class='sometip'>
 <text class='txt'>还没有任何组团哦</text>
-<button class='findteam' bindtap='findteam'>立即发起组团</button> 
+<!-- <button class='findteam' bindtap='findteam'>立即发起组团</button>  -->
 </view>
 </view>
 </block>
 
+
+
 <block wx:if="{{list==1}}">
 <view class='title'>
-<text class='tit'>{{namelist[0].teamname}}</text>
+<!-- <text class='tit'>{{namelist[0].teamname}}</text> -->
+<text class='introtop'>团购活动介绍</text>
+<view class='next'>
+<text class='introduce'>1：报名年龄18-25周岁</text>
+<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>4：报名年龄18-25周岁</text>
+<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+</view>
+
+
 </view>
 <view class='list'>
 <view class='namelist' wx:for="{{namelist}}" wx:key="nameid">
@@ -21,6 +34,7 @@
 
 <view class='invite'>
 <button class='invitebtn' open-type="share">邀请好友参加</button>
+<button class='choosebtn' open-type="share">开始学车</button>
 </view>
 
 

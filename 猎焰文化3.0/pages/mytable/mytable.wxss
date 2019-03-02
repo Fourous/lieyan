@@ -42,3 +42,21 @@ page{
 .eee{
   background-color: #eee;
 }
+
+.btn{
+  position: fixed;
+  bottom: 90rpx;
+  width: 100%;
+  height: 100rpx;
+  z-index: 111;
+}
+.button{
+  width: 200rpx;
+  height: 70rpx;
+  background-color: orange;
+  color: white;
+  line-height: 70rpx;
+  border-radius: -10rpx;
+  font-size: 13px;
+  margin-right: 50rpx;
+}

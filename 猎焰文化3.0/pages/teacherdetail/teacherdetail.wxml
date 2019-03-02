@@ -1,7 +1,13 @@
 <!--pages/studycar/study.wxml-->
 <view class='teacher_all'>
   <!--这里是静态测试设置view-->
-  <button class='tip'>我的教练</button>
+  <view class='tip'>
+  <text class='mytip'>我的教练</text>
+  <view class='right'>
+  <text class='righttip'>全部教练</text>
+  <image class='inner' src='../image/inner.png'></image>
+  </view>
+  </view>
   <view class='teacher_one'>
 <block wx:if="{{bindis==1}}">
     <view class="teacher-item">
@@ -11,70 +17,66 @@
         <text class='item_name'>{{teachers.tname}}\n</text>
       </view>
       <!-- 右边的简介以及图标 -->
-      <view class='right'>
+      <!-- <view class='right'>
         <view class='forintroduce'>
           <text class='item_introduce'>{{teachers.introduce}}\n</text>
         </view>
         <view class='like_unlike_comment'>
           <image class='order_teacher' src='../image/order.png' bindtap='order_teacher'></image>
         </view>
-      </view>
-
+      </view> -->
     </view>
 </block> 
-
+ </view>
 <block wx:if="{{bindis==0}}">
 <text class='flag'>暂未绑定教练</text>
 </block>
 
-    <button class='tip'>我的客服</button>
+
+
+     <view class='tip'>
+  <text class='mytip'>我的客服</text>
+   <view class='right'>
+  <text  class='righttip'>全部资讯</text>
+  <image class='inner' src='../image/inner.png'></image>
+  </view>
+  </view>
+
     <view class='myserver'>
 
-    <view class='pic'>
-    <image class='avatar' src='{{teachers.avatar}}'></image>
-    </view>
+<view class='menu'>
+<view class='new1'>
+
+</view>
+<view class='new2'>
+
+</view>
+</view>
+
 
     <view class='btn'>
-    <button class='tel' bindtap='telp'>电话咨询</button>
-    <button class='pro' bindtap='problem'>常见问题</button>
+   
+  
+    <view  class='tel' bindtap='telp'>
+    <view class='serimage'>
+<image class='im1' src='../image/telima.png'></image>
+</view> 
+    <view class='telview'>电话咨询</view>
+    </view>
+
+    <view  class='pro' bindtap='problem'>
+    <view class='serimage'>
+<image class='im1' src='../image/prop.png'></image>
+</view> 
+     <view class='proview'>常见问题</view>
+    </view>
+    
+   
     </view>
 
     </view>
-  </view>
+ 
 
-  <!--以下是评论界面-->
-  <!-- <view class='comment_all'>
-    <view class='comment_one'>
-      <view class='commentonec' wx:for="{{comments}}" wx:key="comment">
-        <view class="comment-item" data-id="{{item.commentid}}">
-          <view class='commentonec'>
-            <view class='pic_name_time'>
-
-              <view class='user_image'>
-                <image class='user_pic' src='{{item.avatar}}'></image>
-              </view>
-
-              <view class='user_name'>
-                <text class='user_name' text-align: left>{{item.nickname}}</text>
-              </view>
-
-              <view class='comment_time'>
-                <text class='comment_time' text-align: left>{{item.cotime}}</text>
-              </view>
-            </view>
-            <view class='forcomment'>
-              <text class='comment_txt'>{{item.comment}}\n</text>
-            </view>
-          </view>
-
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class='feedback_button'>
-    <image class='feedback_btn' src='../image/leavemessage.png' bindtap='show'></image>
-  </view>
--->
 </view> 
 
 

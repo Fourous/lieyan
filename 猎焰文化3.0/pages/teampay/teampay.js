@@ -154,18 +154,32 @@ Page({
                         paySign: res.data.paySign,
                         success: function (event) {
                           // success   
-                          console.log(event);
-                          wx.showToast({
-                            title: '支付成功',
-                            icon: 'success',
-                            duration: 2000
-                          });
-                          wx.navigateBack({
-                            delta: 3
-                          });
-                          wx.showToast({
-                            title: '报名成功',
+                          // console.log(event);
+                          // wx.showToast({
+                          //   title: '支付成功',
+                          //   icon: 'success',
+                          //   duration: 2000
+                          // });
+                          wx.showModal({
+                            title: '猎焰提示您',
+                            content: '请到个人中心-我的组团中查看',
+                            success(res) {
+                              if (res.confirm) {
+                                wx.navigateBack({
+                                  delta: 3
+                                });
+                              } else if (res.cancel) {
+                                wx.navigateBack({
+                                  delta: 3
+                                });
+                              }
+                            }
                           })
+                         
+                          // wx.showToast({
+                          //   title: '报名成功',
+                          // })
+                         
                         },
                         fail: function (error) {
                           // fail   

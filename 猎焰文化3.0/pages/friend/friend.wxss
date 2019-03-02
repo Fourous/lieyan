@@ -53,9 +53,9 @@ page{
 .container {
   position:relative;
   width: 100%;
-  height: 300rpx;
+  height: 350rpx;
   overflow: hidden;
-  border-bottom: 20rpx #eee solid;
+  /* border-bottom: 20rpx #eee solid; */
 }
 
 .swiper_adv {
@@ -127,10 +127,11 @@ swiper {
 }
 .like_unlike_comment{
   height: 50rpx;
+  border-bottom: solid 1rpx #eee;
 }
 .stu_like {
-  height: 30rpx;
-  width: 30rpx;
+  height: 35rpx;
+  width: 35rpx;
   padding: 9rpx;
   padding-right: 50rpx;
   float: right;
@@ -147,10 +148,11 @@ swiper {
 }
 .stu_btn {
   position: fixed;
-  width: 70rpx;
-  height: 70rpx;
-  bottom: 100rpx;
-  right: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  top: 120px;
+  right: 30rpx;
+  z-index: 1111;
 }
 .pic_intro{
   height: 100rpx;
@@ -197,14 +199,21 @@ swiper {
    margin-bottom: 10rpx;
 
 }
+.stu_photoa{
+  /* border-bottom: solid 1rpx #eee; */
+}
+.inputcontrol{
+  text-align: center;
+}
 .liuyan{
   height: 40rpx;
-  width: 80%;
-  margin-left: 5%;
+  width: 95%;
+  /* margin-left: 5%; */
   display: inline-block;
   border: 1rpx #eee solid;
   font-size: 12px;
   line-height: 40rpx;
+  background-color: #eee;
 }
 .nickname{
   color: #0066cc;
