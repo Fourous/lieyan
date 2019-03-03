@@ -1,0 +1,235 @@
+   <view class='foot_item'>
+
+      <scroll-view class='list_tab' scroll-x='true' scroll-left="{{scrollLeft}}">
+         <view class="list_tab_item {{currentTab==0?'active':''}}" data-current="0" bindtap='switchNav'>套餐1</view>
+         <view class="list_tab_item {{currentTab==1?'active':''}}" data-current="1" bindtap='switchNav'>套餐2</view>
+         <view class="list_tab_item {{currentTab==2?'active':''}}" data-current="2" bindtap='switchNav'>套餐3</view>
+      </scroll-view>
+
+
+<view class='mainview'>
+<!-- 这里是套餐1 -->
+<block wx:if="{{currentTab==0}}" >
+
+<view class='introduceall'>
+
+<text class='introtop'>套餐活动介绍</text>
+
+<view class='next'>
+<text class='introduce'>1：报名年龄18-25周岁</text>
+<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>4：报名年龄18-25周岁</text>
+<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+</view>
+
+</view>
+<!--中间的价格和介绍 -->
+<view class='packbetwen'>
+<view class='packpic'>
+<image class='packimage' src='../image/packicon.png'></image>
+</view>
+<view class='packtxt'>
+<view class='packadver'>返现1000优惠1000</view>
+<view class='packprice'>￥ {{goods[currentTab].price}}</view>
+</view>
+
+</view>
+
+<!-- 中间的报名表 -->
+<view class='writeform'>
+<view class='title'>填写报名信息</view>
+
+  
+ <view class='formwrite'>
+
+  <view class='formpack'>
+  <input type="text" placeholder='姓名' value="{{name}}" bindblur='name'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>手机号</text> -->
+  <input type="text" placeholder='手机号' value="{{tel}}" bindblur='tel'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>地址</text> -->
+  <input type="text" placeholder='地址' value="{{address}}" bindblur='address'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>qq</text> -->
+  <input type="text" placeholder='qq' value="{{qq}}" bindblur='qq'></input>
+  </view>
+
+  
+  </view>
+
+<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+
+</view>
+
+
+</block>
+
+
+
+
+<block wx:if="{{currentTab==1}}">
+<!-- 这里是套餐2 -->
+<view class='introduceall'>
+
+<text class='introtop'>套餐活动介绍</text>
+
+<view class='next'>
+<text class='introduce'>1：报名年龄18-25周岁</text>
+<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>4：报名年龄18-25周岁</text>
+<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+</view>
+
+</view>
+<!--中间的价格和介绍 -->
+<view class='packbetwen'>
+<view class='packpic'>
+<image class='packimage' src='../image/packicon.png'></image>
+</view>
+<view class='packtxt'>
+<view class='packadver'>返现1000优惠1000</view>
+<view class='packprice'>￥ {{goods[currentTab].price}}</view>
+</view>
+
+</view>
+
+<!-- 中间的报名表 -->
+<view class='writeform'>
+<view class='title'>填写报名信息</view>
+
+  
+ <view class='formwrite'>
+
+  <view class='formpack'>
+  <input type="text" placeholder='姓名' value="{{name}}" bindblur='name'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>手机号</text> -->
+  <input type="text" placeholder='手机号' value="{{tel}}" bindblur='tel'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>地址</text> -->
+  <input type="text" placeholder='地址' value="{{address}}" bindblur='address'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>qq</text> -->
+  <input type="text" placeholder='qq' value="{{qq}}" bindblur='qq'></input>
+  </view>
+
+  
+  </view>
+
+<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+
+</view>
+</block>
+
+
+
+<block wx:if="{{currentTab==2}}">
+<!-- 这里是套餐3 -->
+<view class='introduceall'>
+
+<text class='introtop'>套餐活动介绍</text>
+
+<view class='next'>
+<text class='introduce'>1：报名年龄18-25周岁</text>
+<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>4：报名年龄18-25周岁</text>
+<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
+<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+</view>
+
+</view>
+<!--中间的价格和介绍 -->
+<view class='packbetwen'>
+<view class='packpic'>
+<image class='packimage' src='../image/packicon.png'></image>
+</view>
+<view class='packtxt'>
+<view class='packadver'>返现1000优惠1000</view>
+<view class='packprice'>￥ {{goods[currentTab].price}}</view>
+</view>
+
+</view>
+
+<!-- 中间的报名表 -->
+<view class='writeform'>
+<view class='title'>填写报名信息</view>
+
+  
+ <view class='formwrite'>
+<view class='formpack'>
+  <input type="text" placeholder='团名' value="{{teamname}}" bindblur='teamname'></input>
+  </view>
+  <view class='formpack'>
+  <input type="text" placeholder='姓名' value="{{name}}" bindblur='name'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>手机号</text> -->
+  <input type="text" placeholder='手机号' value="{{tel}}" bindblur='tel'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>地址</text> -->
+  <input type="text" placeholder='地址' value="{{address}}" bindblur='address'></input>
+  </view>
+
+  <view class='formpack'>
+  <!-- <text class='formtxt'>qq</text> -->
+  <input type="text" placeholder='qq' value="{{qq}}" bindblur='qq'></input>
+  </view>
+
+  
+  </view>
+
+<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+
+</view>
+</block>
+
+
+</view>
+
+
+
+      <!-- tab内容 -->
+      <!-- <swiper class='list_content'  style="height: {{clientHeight?clientHeight+'px':'auto'}}" current='{{currentTab}}' duration='300' interval='1000'  bindchange='switchTab'> -->
+         <!-- 这里是一数列 -->
+         <!-- <swiper-item wx:for="{{goods}}" class='list_content' wx:for-item='goodsItem' wx:for-index='goodsIndex'>
+          <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="scrollbot">
+
+            <block wx:for="{{goodsItem.good}}">
+               <view class='list_item' bindtap='navigateToGood' data-type='{{item.typeid}}' data-id='{{item.id}}'>
+                  <view class='icondown'>
+                  <image class='iconbind' src='../image/down.png' ></image>
+                  </view>
+                  <view class='item_desc'>
+                     <view class='item_title'>{{item.title}}</view>
+                     <view class='item_answer' data-type='{{item.typeid}}' data-id='{{item.id}}' hidden='{{item.flag}}'>{{item.answer}}</view>
+                  </view>
+
+               </view>
+            </block>
+     </scroll-view>
+
+         </swiper-item>
+      </swiper> -->
+
+   </view>

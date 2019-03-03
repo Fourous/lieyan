@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    money:null,
     name: null,
     idcard: null,
     tel: null,
@@ -30,7 +31,8 @@ Page({
       qq: options.qq,
       packname: options.packname,
       car: options.car,
-      teamname: options.teamname
+      teamname: options.teamname,
+      money:options.money
     })
   },
 
@@ -136,13 +138,14 @@ Page({
                     data: {
                       'openid': res.data.openid,
                       'body': that.data.name,
-                      'money': 1
+                      'money': that.data.money*100
                     },
                     method: 'POST',
                     header: {
                       "Content-Type": "application/x-www-form-urlencoded"
                     },
                     success: function (res) {
+                      
                       console.log(res);
                       console.log(res.data.timeStamp)
                       wx.requestPayment({
@@ -160,6 +163,32 @@ Page({
                           //   icon: 'success',
                           //   duration: 2000
                           // });
+                          wx.request({
+                            url: 'https://www.lieyanwenhua.com/teamcreate',
+                            data: {
+                              "openid": that.data.openid,
+                              "teamname": that.data.teamname,
+                              "fname": that.data.name,
+                              "address": that.data.address,
+                              "ftel": that.data.tel,
+                              "fpack": that.data.packname
+                            },
+                            method: 'POST',
+                            header: {
+                              "Content-Type": "application/x-www-form-urlencoded"
+                            },
+                            success: (res) => {
+                              console.log(res.data);
+                              that.setData({
+                                flag: res.data
+                              })
+                              console.log(that.data.flag);
+                            }
+                          })
+                          // wx.showToast({
+                          //   title: '创建战队成功',
+                          //   duration: 2000
+                          // })
                           wx.showModal({
                             title: '猎焰提示您',
                             content: '请到个人中心-我的组团中查看',
@@ -185,37 +214,15 @@ Page({
                           // fail   
                           console.log("支付失败")
                           console.log(error)
+                          wx.showToast({
+                            title: '支付失败',
+                          })
                         },
 
 
                       
                         complete: function () {
-                          wx.request({
-                            url: 'https://www.lieyanwenhua.com/teamcreate',
-                            data: {
-                              "openid": that.data.openid,
-                              "teamname": that.data.teamname,
-                              "fname": that.data.name,
-                              "address": that.data.address,
-                              "ftel": that.data.tel,
-                              "fpack": 3
-                            },
-                            method: 'POST',
-                            header: {
-                              "Content-Type": "application/x-www-form-urlencoded"
-                            },
-                            success: (res) => {
-                              console.log(res.data);
-                              that.setData({
-                                flag: res.data
-                              })
-                              console.log(that.data.flag);
-                            }
-                          })
-                        wx.showToast({
-                          title: '创建战队成功',
-                          duration:2000
-                        })
+                          
                           
                           // complete
   

@@ -29,9 +29,10 @@ margin-top: 50rpx;
 }
 
 .namelist{
-  width: 80%;
+  /* width: 80%; */
   margin: 0px auto;
   /* height: 300rpx; */
+  display: flex;
 }
 .name{
   font-size: 14px;
@@ -92,4 +93,17 @@ margin-top: 50rpx;
   margin-top: 50rpx;
   height: 400rpx;
 }
-
+.listavatar{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+}
+.teamone{
+  height: 200rpx;
+  width: 200rpx;
+  text-align: center;
+}
+.name{
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,313 @@
+page {
+   width: 100%;
+   height: 100%;
+   /* background-color: #C9CACA; */
+}
+
+.container {
+   height: 100%;
+   display: block;
+   padding: 0;
+}
+
+.question_query {
+   display: block;
+   position: fixed;
+   z-index: 1111;
+   left: 75%;
+   margin: 0 auto;
+}
+
+.ques_btn {
+   position: fixed;
+   /* background: url('../../imges/question_btn.png') no-repeat; */
+   z-index: 1111;
+   display: flex;
+   height: 141rpx;
+   line-height: 30px;
+   width: 65rpx;
+}
+
+.swiper_v {
+   height: 27%;
+   width: 100%;
+}
+
+.swiper {
+   height: 100%;
+   width: 100%;
+   border-bottom: 10rpx solid rgb(245, 245, 245);
+}
+
+swiper-item {
+   width: 100%;
+   height: 100%;
+}
+.divide{
+  width:100%;
+  height: 250rpx;
+}
+.divideform{
+  margin: 0px auto;
+  /* border:solid 1rpx black; */
+  width: 95%;
+  height: 235rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  background-color: white;
+}
+.fiveform{
+  height: 175rpx;
+  width: 100%;
+  margin-top: 15rpx;
+}
+.form{
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.formpic{
+width: 100%;
+height: 60%;
+}
+.imagepic{
+width: 100rpx;
+height: 100rpx;
+border-radius: 100%;
+}
+.formtxt{
+width: 100%;
+height: 39%;
+text-align: center;
+}
+.textform{
+font-size: 12px;
+font-weight: bold;
+}
+.ad {
+   font-size: 25rpx;
+   margin: auto 0px;
+   height: 60rpx;
+   border-bottom: 1rpx solid rgb(245, 245, 245);
+}
+
+.ad_txt {
+   float: left;
+   width: 20%;
+   height: 50rpx;
+   line-height: 60rpx;
+   text-align: center;
+   margin-left: 30rpx;
+   font-size: 14px;
+   font-weight: bold;
+}
+.ad_right{
+  font-size: 13px;
+  height: 50rpx;
+  line-height: 60rpx;
+  color: white;
+  background-color: #E7481F;
+  border-radius: 5px;
+}
+.ad_swi {
+   /* font-family: '楷体_gb2312'; */
+   font-family: '汉仪文黑';
+   float: right;
+   width:65%;
+   color: #E7481F;
+   height: 50rpx;
+   line-height: 60rpx;
+}
+
+/* tabNav */
+
+.list_tab {
+   height: 80rpx;
+   width: 100%;
+   box-sizing: border-box;
+   overflow: hidden;
+   line-height: 80rpx;
+   /* background: white; */
+   font-size: 16px;
+   white-space: nowrap;
+   position: block;
+    border-bottom: 2rpx solid #ccc; 
+}
+.foot_item{
+  /* background-color: #C9CACA; */
+  height: 100%;
+}
+.list_tab_item {
+   width: 33%;
+   font-size: 30rpx;
+   padding: 0 25rpx;
+   display: inline-block;
+   /* background-color: #C9CACA; */
+   /* font-weight: bold; */
+   
+}
+
+.list_tab_item.active {
+   /* position: relative; */
+   /* border-bottom: 3rpx solid #FF0000;  */
+   color: #09ADF9;
+}
+
+ .list_tab_item.active:after {
+   content: "";
+   display: block;
+   height: 5rpx;
+   width: 65%;
+   background: #FF0000;
+   position: absolute;
+   bottom: 0;
+   border-radius: 16rpx;
+} 
+
+.list_content {
+   margin: 0 5rpx;
+   border-top: 5rpx solid #C9CACA;
+   background-color: #C9CACA;
+}
+
+.list_item {
+   /* padding: 5rpx 5rpx; */
+   width: 100%;
+   float: left;
+   border: 5rpx solid #C9CACA;
+   background-color: white;
+   display: flex;
+}
+.item_pic image {
+   width: 100%;
+   height: 235rpx;
+   /* margin: 0px auto; */
+   border-top-left-radius: 7%;
+   border-top-right-radius: 7%;
+}
+.item_desc{
+  height: 100%;
+}
+.item_title {
+   padding: 10rpx 0px;
+   font-size: 12px;
+}
+
+.item_price {
+   color: black;
+   font-size: 13px;
+   display: inline-block;
+   margin-right: 10rpx;
+}
+
+.item_VIPprice {
+   color: orangered;
+   font-size: 15px;
+   display: inline-block;
+}
+.icondown{
+  height: 100%;
+  width: 70rpx;
+}
+.iconbind{
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 17rpx;
+}
+.item_answer{
+  padding: 10rpx 0px;
+   font-size: 12px;
+   /* background-color: #eee; */
+}
+
+.introduceall{
+  height: 450rpx;
+  width: 100%;
+  background-color: #eee;
+  /* border: solid 1rpx black; */
+  margin-top: 10rpx;
+}
+.introtop{
+  font-size: 15px;
+  color: #09ADF9;
+  margin-left: 30rpx;
+}
+.next{
+  text-align: left;
+  margin-left: 30rpx;
+}
+.introduce{
+  font-size: 13px;
+  display: block;
+  line-height: 45rpx;
+}
+.packbetwen{
+  display: flex;
+  height: 200rpx;
+  border: solid 1rpx #09ADF9;
+  border-radius: 25rpx;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 25rpx;
+}
+.packpic{
+  width: 35%;
+  height: 180rpx;
+  margin-top: 10rpx;
+  border: solid 1rpx #09ADF9;
+  margin-left: 10rpx;
+  border-radius: 25rpx;
+}
+.packimage{
+  width: 90%;
+  margin: 0px auto;
+  height: 160rpx;
+  margin-top: 10rpx;
+}
+.packtxt{
+  /* width: 74.9%; */
+  /* height: 199rpx; */
+  font-size: 13px;
+  margin-left: 70rpx;
+}
+.writeform{
+  width: 90%;
+  margin: 0px auto;
+  text-align: left;
+  margin-top: 17rpx;
+}
+.title{
+  font-size: 17px;
+  color: #09ADF9;
+  font-weight: bold;
+}
+.formwrite{
+  width: 100%;
+  
+}
+.nextbtn{
+  width: 100%;
+  margin: 0px auto;
+  font-size: 22px;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+  background-color: orange;
+  color: white;
+  margin-top: 30rpx;
+}
+.packadver{
+  line-height: 115rpx;
+  font-size: 16px;
+}
+.packprice{
+  line-height: 50rpx;
+  font-size: 17px;
+  color: red;
+}
+.formpack{
+  font-size: 15px;
+  border: solid 1rpx #ccc;
+  margin-top: 15rpx;
+}

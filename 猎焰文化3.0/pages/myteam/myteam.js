@@ -46,16 +46,19 @@ Page({
       },
       success: function (res) {
        console.log(res.data);
-       if(res.data!=null){
+       console.log(res.data==null)
+       console.log(res.data=="")
+       if(res.data==null||res.data==""){
+         that.setData({
+           list: 0,
+         })
+       }
+       else {
          that.setData({
            list: 1,
            namelist: res.data
          })
          console.log(that.data.namelist)
-       }else {
-         that.setData({
-           list:0,
-         })
        }
       },
       fail: function (res) {
@@ -141,6 +144,47 @@ Page({
       }
     }
 
+  },
+  choose:function(){
+    var that=this
+    wx.request({
+      url: 'https://www.lieyanwenhua.com/canpush',
+      data: {
+        openid: that.data.openid
+      },
+      method: 'POST',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      success: (res) => {
+        console.log(res.data);
+        if(res.data){
+          wx.request({
+            url: 'https://www.lieyanwenhua.com/canpush',
+            data: {
+              openid: that.data.openid
+            },
+            method: 'POST',
+            header: {
+              "Content-Type": "application/x-www-form-urlencoded"
+            },
+            success: (res) => {
+              console.log(res.data);
+              if(res.data){
+                wx.showToast({
+                  title: '开始练车吧',
+                })
+              }
+            }
+          })
+        }else{
+          wx.showModal({
+            title: '提示',
+            content: '报名需要满足4人',
+          })
+        }
+      }
+    })
   }
 
 })

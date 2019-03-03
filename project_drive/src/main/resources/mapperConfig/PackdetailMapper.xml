@@ -8,6 +8,7 @@
     <select id="packdetailall" resultType="com.lieyan.Entity.Packdetail">
         SELECT  *
         FROM package
+
     </select>
 
     <!--通过教练的id找到教练-->

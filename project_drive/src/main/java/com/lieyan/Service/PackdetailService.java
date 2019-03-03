@@ -3,6 +3,8 @@ package com.lieyan.Service;
 import com.lieyan.Entity.Packdetail;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public interface PackdetailService {
     /**
@@ -11,4 +13,10 @@ public interface PackdetailService {
      * @return
      */
     Packdetail packdetailbyid(Integer packid);
+
+    /**
+     *
+     * @return
+     */
+    List<Packdetail> packdetailall();
 }

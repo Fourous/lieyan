@@ -159,6 +159,7 @@ else{
     })
   }
   else {
+ 
     wx.navigateTo({
       url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.detailgood.packname,
     })

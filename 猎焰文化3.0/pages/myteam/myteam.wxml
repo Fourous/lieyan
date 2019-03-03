@@ -27,14 +27,18 @@
 </view>
 <view class='list'>
 <view class='namelist' wx:for="{{namelist}}" wx:key="nameid">
+<view class='teamone'>
+<image class='listavatar' src='{{item.avatarUrl}}'></image>
 <text class='name'>{{item.name}}</text>
 </view>
+</view>
+
 </view>
 
 
 <view class='invite'>
 <button class='invitebtn' open-type="share">邀请好友参加</button>
-<button class='choosebtn' open-type="share">开始学车</button>
+<button class='choosebtn' bindtap='choose'>开始学车</button>
 </view>
 
 

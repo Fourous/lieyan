@@ -47,7 +47,8 @@
     "pages/myteam/myteam",
     "pages/jointeam/jointeam",
     "pages/problems/problems",
-    "pages/jointeamdes/jointeamdes"
+    "pages/jointeamdes/jointeamdes",
+    "pages/threenewpack/threenewpack"
   ],
   "window": {
     "backgroundTextStyle": "dark",

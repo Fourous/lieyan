@@ -119,6 +119,8 @@ public class TeamformController {
                     teamreunite.setTeamname(teamforms.get(i).getTeamname());
                     teamreunite.setOpenid(teamforms.get(i).getOpenid());
                     teamreunite.setPush(teamforms.get(i).getPush());
+                    System.out.println(userService.useropenid(teamforms.get(i).getOpenid()).getAvatarUrl());
+                    teamreunite.setAvatarUrl(userService.useropenid(teamforms.get(i).getOpenid()).getAvatarUrl());
                     list.add(i,teamreunite);
                 }
 

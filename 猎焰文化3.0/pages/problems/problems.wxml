@@ -10,7 +10,6 @@
 
 
       <!-- tab内容 -->
-    
       <swiper class='list_content'  style="height: {{clientHeight?clientHeight+'px':'auto'}}" current='{{currentTab}}' duration='300' interval='1000'  bindchange='switchTab'>
          <!-- 这里是一数列 -->
          <swiper-item wx:for="{{goods}}" class='list_content' wx:for-item='goodsItem' wx:for-index='goodsIndex'>

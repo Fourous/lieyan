@@ -58,7 +58,8 @@ Page({
   to_group:function(){
     wx.navigateTo({
       // url: '../carpackage/carpackage',
-      url: '../packagenew/packagenew',
+      // url: '../packagenew/packagenew',
+      url:'../threenewpack/threenewpack'
     })
 
   },

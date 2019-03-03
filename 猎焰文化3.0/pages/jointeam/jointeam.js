@@ -14,7 +14,8 @@ Page({
     weixin: '',
     userInfo: "",
     openid:"",
-    teamid:""
+    teamid:"",
+    money:""
   },
   show: function () {
     this.setData({ flag: false })
@@ -75,7 +76,24 @@ Page({
    */
   onReady: function () {
     var that = this
+    wx.request({
+      url: 'https://www.lieyanwenhua.com/packageid',
+      data: {
+        packid: 3
+      },
+      method: 'POST',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      success: (res) => {
+        console.log(res.data);
+        that.setData({
+          money:res.data.price
+        })
 
+        console.log(that.data.detailgood);
+      }
+    })
   },
 
   /**
@@ -189,7 +207,7 @@ Page({
                      data: {
                        'openid': that.data.openid,
                        'body': that.data.name,
-                       'money': 1
+                       'money': that.data.money
                      },
                      method: 'POST',
                      header: {

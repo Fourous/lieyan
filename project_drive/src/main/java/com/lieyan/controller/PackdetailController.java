@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @SpringBootApplication
 public class PackdetailController {
@@ -17,4 +19,10 @@ public class PackdetailController {
     public Packdetail packdetailbyid(Integer packid){
         return packdetailService.packdetailbyid(packid);
     }
+//    返回所有的列表
+    @PostMapping("packdetailall")
+    public List<Packdetail> packdetailall(){
+        return packdetailService.packdetailall();
+    }
+
 }

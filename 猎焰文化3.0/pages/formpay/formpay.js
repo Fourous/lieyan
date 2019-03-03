@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    money:null,
     name: null,
     idcard: null,
     tel: null,
@@ -30,7 +31,8 @@ Page({
       address: options.address,
       qq: options.qq,
       packname:options.packname,
-      car: options.car
+      car: options.car,
+      money:options.money
     })
   },
 
@@ -107,7 +109,7 @@ Page({
                     data: {
                       'openid': res.data.openid,
                       'body': that.data.name,
-                      'money': 1
+                      'money': that.data.money*100
                     },
                     method: 'POST',
                     header: {
@@ -132,7 +134,7 @@ Page({
                               'ftel': that.data.tel,
                               'faddress': that.data.address,
                               'fqq': that.data.qq,
-                              'fpack': that.data.car,
+                              'fpack': that.data.packname,
                               'openid':that.data.openid
                             },
                             header: {

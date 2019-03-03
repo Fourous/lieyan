@@ -7,6 +7,15 @@ public class Teamreunite {
     private String openid;
     private String name;
     private Integer push;
+    private String avatarUrl;
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
 
     public void setTid(Integer tid) {
         this.tid = tid;
