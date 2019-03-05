@@ -203,83 +203,84 @@ Page({
                  }
                 else if(res.data==4){
                    wx.request({
-                     url: 'https://www.lieyanwenhua.com/wxPay',
+                     url: 'https://www.lieyanwenhua.com/teamgetin',
                      data: {
-                       'openid': that.data.openid,
-                       'body': that.data.name,
-                       'money': that.data.money
+                       "teamid": that.data.teamid,
+                       "openid": that.data.openid,
+                       "fname": that.data.name,
+                       "address": that.data.address,
+                       "ftel": that.data.tel,
+                       "fpack": 3
                      },
                      method: 'POST',
                      header: {
                        "Content-Type": "application/x-www-form-urlencoded"
                      },
-                     success: function (res) {
-                       console.log(res);
-                       console.log(res.data.timeStamp)
-                       wx.requestPayment({
-                         timeStamp: res.data.timeStamp,
-                         //记住，这边的timeStamp一定要是字符串类型的，不然会报错，我这边在java后端包装成了字符串类型了
-                         nonceStr: res.data.nonceStr,
-                         package: res.data.package,
-                         signType: 'MD5',
-                         paySign: res.data.paySign,
-                         success: function (event) {
-                           // success   
-                           wx.request({
-                             url: 'https://www.lieyanwenhua.com/teamgetin',
-                             data: {
-                               "teamid": that.data.teamid,
-                               "openid": that.data.openid,
-                               "fname": that.data.name,
-                               "address": that.data.address,
-                               "ftel": that.data.tel,
-                               "fpack": 3
-                             },
-                             method: 'POST',
-                             header: {
-                               "Content-Type": "application/x-www-form-urlencoded"
-                             },
-                             success: (res) => {
-                               console.log(res.data);
-                               if (res.data == 4) {
-                                 wx.showToast({
-                                   title: '加入战队成功',
-                                   duration: 2000
-                                 })
-                               }
-                             }
-                           })
-                           console.log(event);
-                           wx.showToast({
-                             title: '支付成功',
-                             icon: 'success',
-                             duration: 2000
-                           });
-                           wx.redirectTo({
-                             url: '../directlogin/directlogin',
-                           })
-                           wx.showToast({
-                             title: '报名成功',
-                           })
-                         },
-                         fail: function (error) {
-                           // fail   
-                           console.log("支付失败")
-                           console.log(error)
-                           wx.showToast({
-                             title: '加入失败',
-                           })
-                         },
-                         complete: function () {
-                           wx.redirectTo({
-                             url: '../directlogin/directlogin',
-                           })
-                           // complete   
-                           console.log("pay complete")
-                         }
-                       });
+                     success: (res) => {
+                       console.log(res.data);
+                       if (res.data == 4) {
+                         wx.showToast({
+                           title: '加入战队成功',
+                           duration: 2000
+                         })
+                       }
                      }
+                   })
+                   console.log(event);
+                   wx.showToast({
+                     title: '支付成功',
+                     icon: 'success',
+                     duration: 2000
                    });
+                   wx.redirectTo({
+                     url: '../directlogin/directlogin',
+                   })
+                   wx.showToast({
+                     title: '报名成功',
+                   })
+                  //  wx.request({
+                  //    url: 'https://www.lieyanwenhua.com/wxPay',
+                  //    data: {
+                  //      'openid': that.data.openid,
+                  //      'body': that.data.name,
+                  //      'money': that.data.money
+                  //    },
+                  //    method: 'POST',
+                  //    header: {
+                  //      "Content-Type": "application/x-www-form-urlencoded"
+                  //    },
+                  //    success: function (res) {
+                  //      console.log(res);
+                  //      console.log(res.data.timeStamp)
+                  //      wx.requestPayment({
+                  //        timeStamp: res.data.timeStamp,
+                  //        //记住，这边的timeStamp一定要是字符串类型的，不然会报错，我这边在java后端包装成了字符串类型了
+                  //        nonceStr: res.data.nonceStr,
+                  //        package: res.data.package,
+                  //        signType: 'MD5',
+                  //        paySign: res.data.paySign,
+                  //        success: function (event) {
+                  //          // success   
+  
+                  //        },
+                  //        fail: function (error) {
+                  //          // fail   
+                  //          console.log("支付失败")
+                  //          console.log(error)
+                  //          wx.showToast({
+                  //            title: '加入失败',
+                  //          })
+                  //        },
+                  //        complete: function () {
+                  //          wx.redirectTo({
+                  //            url: '../directlogin/directlogin',
+                  //          })
+                  //          // complete   
+                  //          console.log("pay complete")
+                  //        }
+                  //      });
+                  //    }
+                  //  });
                 }
                  
                 }

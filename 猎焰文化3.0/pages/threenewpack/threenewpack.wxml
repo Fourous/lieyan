@@ -16,12 +16,10 @@
 <text class='introtop'>套餐活动介绍</text>
 
 <view class='next'>
-<text class='introduce'>1：报名年龄18-25周岁</text>
-<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
-<text class='introduce'>4：报名年龄18-25周岁</text>
-<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>1：学车送话费</text>
+<text class='introduce'>2：学车管家报名驾校即送1000元话费</text>
+<text class='introduce'>3：学员可以获得嗨讯平台的1000元消费卡，可以用于打电话，发短信，购买流量，影视会员，还能购买淘宝、天猫、京东上的商品</text>
+<text class='introduce'>4：学车同时，更多优惠，等你来体验</text>
 </view>
 
 </view>
@@ -63,10 +61,14 @@
   <input type="text" placeholder='qq' value="{{qq}}" bindblur='qq'></input>
   </view>
 
-  
   </view>
 
-<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+<view class='resume'>
+<image class='conpng' bindtap='confirm' src="{{fir?'../image/res1.png':'../image/res2.png'}}"></image>
+<text class='contxt' bindtap='goto'>同意协议</text>
+</view>
+
+<button class='nextbtn {{fir?"active":""}}' bindtap='nexttap'>马上报名</button>
 
 </view>
 
@@ -83,12 +85,9 @@
 <text class='introtop'>套餐活动介绍</text>
 
 <view class='next'>
-<text class='introduce'>1：报名年龄18-25周岁</text>
-<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
-<text class='introduce'>4：报名年龄18-25周岁</text>
-<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>1：极速学车</text>
+<text class='introduce'>2：45天拿证，立返1000元现金</text>
+<text class='introduce'>3：从第一次约上科目一当天开始计算，直到拿到驾驶证当天。时长在45天内（包括45天）即可立返1000元现金！</text>
 </view>
 
 </view>
@@ -133,7 +132,12 @@
   
   </view>
 
-<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+<view class='resume'>
+<image class='conpng' bindtap='confirm' src="{{fir?'../image/res1.png':'../image/res2.png'}}"></image>
+<text class='contxt' bindtap='goto'>同意协议</text>
+</view>
+
+<button class='nextbtn {{fir?"active":""}}' bindtap='nexttap'>马上报名</button>
 
 </view>
 </block>
@@ -147,12 +151,9 @@
 <text class='introtop'>套餐活动介绍</text>
 
 <view class='next'>
-<text class='introduce'>1：报名年龄18-25周岁</text>
-<text class='introduce'>2：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>3：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
-<text class='introduce'>4：报名年龄18-25周岁</text>
-<text class='introduce'>5：招生价格3600元，周一至周五培训</text>
-<text class='introduce'>6：优势，暑假学生班有驾校制定计划；挑选优秀教练员指教，提供最便捷安排，学生班名额有限，报名取消此班型。</text>
+<text class='introduce'>1：团购学车</text>
+<text class='introduce'>2：学车都要学，团购更省钱！</text>
+<text class='introduce'>3：学员4人组团报名学车，即可享受每人200元优惠！一个寝室，一个班级，一个社团，一起学车，一起当老司机！</text>
 </view>
 
 </view>
@@ -199,7 +200,12 @@
   
   </view>
 
-<button class='nextbtn' bindtap='nexttap'>马上报名</button>
+<view class='resume'>
+<image class='conpng' bindtap='confirm' src="{{fir?'../image/res1.png':'../image/res2.png'}}"></image>
+<text class='contxt' bindtap='goto'>同意协议</text>
+</view>
+
+<button class='nextbtn {{fir?"active":""}}' bindtap='nexttap'>马上报名</button>
 
 </view>
 </block>

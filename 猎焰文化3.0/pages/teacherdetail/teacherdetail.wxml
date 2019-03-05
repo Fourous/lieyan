@@ -29,7 +29,27 @@
 </block> 
  </view>
 <block wx:if="{{bindis==0}}">
-<text class='flag'>暂未绑定教练</text>
+<view class='noteacher'>
+<view class='oneteacher'>
+<image class='teacherpic' src='../image/tea1.png'></image>
+<text class='teachername'>章旭</text>
+</view>
+<view class='oneteacher'>
+<image class='teacherpic' src='../image/tea2.png'></image>
+<text class='teachername'>李小</text>
+</view>
+<view class='oneteacher'>
+<image class='teacherpic' src='../image/tea3.png'></image>
+<text class='teachername'>王大牛</text>
+</view>
+<view class='oneteacher'>
+<image class='teacherpic' src='../image/tea4.png'></image>
+<text class='teachername'>萧峰</text>
+</view>
+</view>
+<button class='nohub'>选择教练</button>
+
+
 </block>
 
 

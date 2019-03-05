@@ -19,6 +19,7 @@ Page({
     openid: "",
     off: "",
     packname:"",
+    fir:true,
     goods: [
      {
        id:1,
@@ -120,7 +121,7 @@ Page({
         console.log(that.data.off);
       }
     })
-
+   
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -148,30 +149,31 @@ Page({
         console.log(that.data.openid)
       },
     });
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var that=this
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/testform',
-      data: {
-        openid: that.data.openid
-      },
-      method: 'POST',
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      success: (res) => {
-        console.log(res.data);
-        that.setData({
-          off: res.data
-        })
-        console.log(that.data.off);
-      }
-    })
+    // var that=this
+    // wx.request({
+    //   url: 'https://www.lieyanwenhua.com/testform',
+    //   data: {
+    //     openid: that.data.openid
+    //   },
+    //   method: 'POST',
+    //   header: {
+    //     "Content-Type": "application/x-www-form-urlencoded"
+    //   },
+    //   success: (res) => {
+    //     console.log(res.data);
+    //     that.setData({
+    //       off: res.data
+    //     })
+    //     console.log(that.data.off);
+    //   }
+    // })
   },
 
   /**
@@ -207,6 +209,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  confirm:function(){
+    // 这里签署协议
+  var that=this
+  that.setData({
+    fir:!that.data.fir
+  })
+  },
+  goto:function(){
+    //  去协议
+  wx.navigateTo({
+    url: '../resume/resume',
+  })
   },
   navigateToQuestion: function (e) {
     wx.navigateTo({
@@ -247,80 +262,92 @@ Page({
     })
     console.log(this.data.name + this.data.tel + this.data.address + this.data.qq)
 
-    wx.request({
-      url: 'https://www.lieyanwenhua.com/testform',
-      data: {
-        openid: that.data.openid
-      },
-      method: 'POST',
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      success: (res) => {
-        console.log(res.data);
-        that.setData({
-          off: res.data
-        })
-        console.log(that.data.off);
-      }
-    })
 
-    // 这里判断重复报名
-    if (!that.data.off) {
+if(!that.data.fir){
+
+  wx.request({
+    url: 'https://www.lieyanwenhua.com/testform',
+    data: {
+      openid: that.data.openid
+    },
+    method: 'POST',
+    header: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    success: (res) => {
+      console.log(res.data);
+      that.setData({
+        off: res.data
+      })
+      console.log(that.data.off);
+    }
+  })
+
+  // 这里判断重复报名
+  if (!that.data.off) {
+    wx.showToast({
+      title: '您已经报名',
+    })
+  }
+  else {
+    //首先判断必填项是否为空，为空提示，不为空则继续下一步
+    if (this.data.name == "" | this.data.tel == "" | this.data.address == "" | this.data.qq == "") {
       wx.showToast({
-        title: '您已经报名',
+        title: '必填项缺失',
       })
     }
     else {
-      //首先判断必填项是否为空，为空提示，不为空则继续下一步
-      if (this.data.name == "" | this.data.tel == "" | this.data.address == "" | this.data.qq == "") {
-        wx.showToast({
-          title: '必填项缺失',
+      if (that.data.currentTab == 2) {
+        if (that.data.currentTab == 0) {
+          that.setData({
+            packname: "套餐1"
+          })
+        } else if (that.data.currentTab == 1) {
+          that.setData({
+            packname: "套餐2"
+          })
+        } else if (that.data.currentTab == 2) {
+          that.setData({
+            packname: "套餐3"
+          })
+        }
+        wx.navigateTo({
+          url: '../teampay/teampay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.packname + '&teamname=' + that.data.teamname + '&money=' + that.data.goods[that.data.currentTab].price
         })
       }
-      else {
-        if(that.data.currentTab==2){
-          if (that.data.currentTab == 0) {
-            that.setData({
-              packname: "套餐1"
-            })
-          } else if (that.data.currentTab == 1) {
-            that.setData({
-              packname: "套餐2"
-            })
-          } else if (that.data.currentTab == 2) {
-            that.setData({
-              packname: "套餐3"
-            })
-          }
-          wx.navigateTo({
-            url: '../teampay/teampay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.packname + '&teamname=' + that.data.teamname + '&money=' + that.data.goods[that.data.currentTab].price
-          })
-        }
-        
-        else {
-          if(that.data.currentTab==0){
-            that.setData({
-              packname:"套餐1"
-            })
-          }else if(that.data.currentTab==1){
-            that.setData({
-              packname: "套餐2"
-            })
-          } else if (that.data.currentTab == 2){
-            that.setData({
-              packname: "套餐3"
-            })
-          }
-          wx.navigateTo({
-            url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.packname+ '&money=' + that.data.goods[that.data.currentTab].price
-          })
-        }
-       
 
+      else {
+        if (that.data.currentTab == 0) {
+          that.setData({
+            packname: "套餐1"
+          })
+        } else if (that.data.currentTab == 1) {
+          that.setData({
+            packname: "套餐2"
+          })
+        } else if (that.data.currentTab == 2) {
+          that.setData({
+            packname: "套餐3"
+          })
+        }
+        wx.navigateTo({
+          url: '../formpay/formpay?name=' + that.data.name + '&tel=' + that.data.tel + '&address=' + that.data.address + '&qq=' + that.data.qq + '&car=' + that.data.id + '&packname=' + that.data.packname + '&money=' + that.data.goods[that.data.currentTab].price
+        })
       }
 
+
     }
+
+  }
+
+}else{
+  wx.showToast({
+    title: '请同意协议',
+  })
+}
+
+
+
   }
 
 })

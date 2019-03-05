@@ -48,7 +48,8 @@
     "pages/jointeam/jointeam",
     "pages/problems/problems",
     "pages/jointeamdes/jointeamdes",
-    "pages/threenewpack/threenewpack"
+    "pages/threenewpack/threenewpack",
+    "pages/resume/resume"
   ],
   "window": {
     "backgroundTextStyle": "dark",

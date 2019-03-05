@@ -32,7 +32,7 @@ margin-top: 50rpx;
   /* width: 80%; */
   margin: 0px auto;
   /* height: 300rpx; */
-  display: flex;
+  /* display: flex; */
 }
 .name{
   font-size: 14px;
@@ -92,6 +92,7 @@ margin-top: 50rpx;
 .list{
   margin-top: 50rpx;
   height: 400rpx;
+  display: flex;
 }
 .listavatar{
   width: 150rpx;

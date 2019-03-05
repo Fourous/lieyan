@@ -1,0 +1,5 @@
+<!--pages/resume/resume.wxml-->
+<!-- <text>pages/resume/resume.wxml</text> -->
+<view class='all'>
+<image class='png' src='{{resumepng}}'></image>
+</view>
